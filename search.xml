@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>SpringBoot相关配置</title>
+      <link href="/2024/01/07/SpringBoot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/"/>
+      <url>/2024/01/07/SpringBoot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</url>
+      
+        <content type="html"><![CDATA[<h1>SpringBoot相关配置</h1><h2 id="1-自定义项目LOGO">1.<a href="https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.spring-application.banner">自定义项目LOGO</a></h2><p>在<code>resources</code>文件夹下新建一个<code>banner.txt</code>文件，加入相关内容即可，<a href="https://www.bootschool.net/ascii-art">艺术字生成网站</a></p><figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs txt">---------------+---------------<br>          ___ /^^[___              _<br>         /|^+----+   |#___________//<br>       ( -+ |____|    ______-----+/<br>        ==_________--&#x27;            \<br>          ~_|___|__<br></code></pre></td></tr></table></figure><h2 id="2-跨域请求">2. 跨域请求</h2><p>添加此配置到<code>WebMvc</code>配置类中(推荐)，也可以在每个<code>Controller</code>类上添加注解<code>@CrossOrigin</code></p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Configuration</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">WebMvcConfig</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">WebMvcConfigurer</span> &#123;<br>    <span class="hljs-comment">//允许所有跨域请求</span><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">addCorsMappings</span><span class="hljs-params">(CorsRegistry registry)</span> &#123;<br>        registry.addMapping(<span class="hljs-string">&quot;/**&quot;</span>)<br>                .allowedOriginPatterns(<span class="hljs-string">&quot;*&quot;</span>)<br>                .allowedMethods(<span class="hljs-string">&quot;*&quot;</span>)<br>                .allowedHeaders(<span class="hljs-string">&quot;*&quot;</span>)<br>                .allowCredentials(<span class="hljs-literal">true</span>);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><h2 id="3-application配置文件">3. application配置文件</h2><p><code>application.yml</code></p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">server:</span><br>  <span class="hljs-attr">port:</span> <span class="hljs-number">8080</span><br><br><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">profiles:</span><br>    <span class="hljs-attr">active:</span> <span class="hljs-string">dev</span><br>  <span class="hljs-attr">main:</span><br>    <span class="hljs-attr">allow-circular-references:</span> <span class="hljs-literal">true</span><br>  <span class="hljs-attr">devtools:</span><br>    <span class="hljs-attr">restart:</span><br>      <span class="hljs-attr">enabled:</span> <span class="hljs-literal">true</span><br>      <span class="hljs-comment"># 设置重启的目录</span><br>      <span class="hljs-attr">additional-paths:</span> <span class="hljs-string">src/main/java</span><br><br><span class="hljs-comment"># mybatis-plus配置</span><br><span class="hljs-attr">mybatis-plus:</span><br>  <span class="hljs-attr">configuration:</span><br>    <span class="hljs-attr">map-underscore-to-camel-case:</span> <span class="hljs-literal">true</span>    <span class="hljs-comment">#开启下划线自动转驼峰命名</span><br>  <span class="hljs-attr">type-aliases-package:</span> <span class="hljs-string">com.clb.pojo</span>  <span class="hljs-comment">#别名扫描</span><br>  <span class="hljs-attr">mapper-locations:</span> <span class="hljs-string">classpath:mapper/*.xml</span>  <span class="hljs-comment">#注册mapper</span><br>  <span class="hljs-attr">global-config:</span><br>    <span class="hljs-attr">banner:</span> <span class="hljs-literal">false</span><br>    <span class="hljs-attr">db-config:</span><br>      <span class="hljs-attr">id-type:</span> <span class="hljs-string">auto</span><br><br><span class="hljs-attr">logging:</span><br>  <span class="hljs-attr">level:</span><br>    <span class="hljs-attr">com.clb:</span> <span class="hljs-string">debug</span><br>  <span class="hljs-attr">pattern:</span><br>    <span class="hljs-attr">dateformat:</span> <span class="hljs-string">MM-dd</span> <span class="hljs-string">HH:mm:ss.SSS</span><br></code></pre></td></tr></table></figure><p><code>application-dev.yml</code></p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">config:</span><br>    <span class="hljs-attr">activate:</span><br>      <span class="hljs-attr">on-profile:</span> <span class="hljs-string">dev</span><br>  <span class="hljs-attr">datasource:</span><br>    <span class="hljs-attr">driver-class-name:</span> <span class="hljs-string">com.mysql.cj.jdbc.Driver</span><br>    <span class="hljs-attr">url:</span> <span class="hljs-string">jdbc:mysql://localhost:3306/mybatis?rewriteBatchedStatements=true</span><br>    <span class="hljs-attr">username:</span> <span class="hljs-string">root</span><br>    <span class="hljs-attr">password:</span> <span class="hljs-number">123456</span><br>  <span class="hljs-attr">data:</span><br>    <span class="hljs-attr">redis:</span><br>      <span class="hljs-attr">host:</span> <span class="hljs-number">192.168</span><span class="hljs-number">.0</span><span class="hljs-number">.88</span><br>      <span class="hljs-attr">password:</span> <span class="hljs-number">123456</span><br>      <span class="hljs-attr">port:</span> <span class="hljs-number">6379</span><br>      <span class="hljs-attr">database:</span> <span class="hljs-number">0</span><br></code></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> spring </category>
+          
+          <category> java </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> spring </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>计算机网络</title>
       <link href="/2023/10/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
       <url>/2023/10/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</url>
@@ -248,6 +275,17 @@
     
     
     <entry>
+      <title>charts</title>
+      <link href="/charts/index.html"/>
+      <url>/charts/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -262,17 +300,6 @@
       <title>分类</title>
       <link href="/categories/index.html"/>
       <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>charts</title>
-      <link href="/charts/index.html"/>
-      <url>/charts/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
