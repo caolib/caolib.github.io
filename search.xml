@@ -8,7 +8,7 @@
       <link href="/2024/03/17/springcloud%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/"/>
       <url>/2024/03/17/springcloud%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/</url>
       
-        <content type="html"><![CDATA[<h1>springcloud从入门到放弃</h1><h2 id="gateway">gateway</h2><p><code>Spring Cloud Gateway</code> 是一个基于 Spring 5、Spring Boot 2 和 Project Reactor 的 <strong>API 网关</strong>，以下是使用 Spring Cloud Gateway 的基本步骤：</p><ol><li><strong>添加依赖</strong>：在 Maven 的 <code>pom.xml</code> 文件中，添加 Spring Cloud Gateway 的依赖。</li></ol><figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-gateway<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.2.7.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure><ol start="2"><li><strong>配置路由</strong>：在 <code>application.yml</code> 或 <code>application.properties</code> 文件中，配置路由规则。例如，将所有以 <code>/reader/</code> 开头的请求转发到 <code>reader-service</code> 服务。</li></ol><figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">cloud:</span><br>    <span class="hljs-attr">gateway:</span><br>      <span class="hljs-attr">routes:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">reader_route</span><br>        <span class="hljs-attr">uri:</span> <span class="hljs-string">lb://reader-service</span><br>        <span class="hljs-attr">predicates:</span><br>        <span class="hljs-bullet">-</span> <span class="hljs-string">Path=/reader/**</span><br></code></pre></td></tr></table></figure><ol start="3"><li><strong>添加拦截器</strong></li></ol><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Component</span><br><span class="hljs-meta">@RequiredArgsConstructor</span><br><span class="hljs-meta">@Slf4j</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">JwtTokenInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">GlobalFilter</span>, Ordered &#123;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> StringRedisTemplate redisTemplate;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> Mono&lt;Void&gt; <span class="hljs-title function_">filter</span><span class="hljs-params">(ServerWebExchange exchange, GatewayFilterChain chain)</span> &#123;<br>        <span class="hljs-type">String</span> <span class="hljs-variable">path</span> <span class="hljs-operator">=</span> exchange.getRequest().getPath().value();<br>        <span class="hljs-comment">// 不对/login和/register接口校验</span><br>        <span class="hljs-keyword">if</span> (path.endsWith(<span class="hljs-string">&quot;/login&quot;</span>) || path.endsWith(<span class="hljs-string">&quot;/register&quot;</span>)) &#123;<br>            log.debug(<span class="hljs-string">&quot;直接跳过...&quot;</span>);<br>            <span class="hljs-keyword">return</span> chain.filter(exchange);<br>        &#125;<br><br>        log.debug(<span class="hljs-string">&quot;开始校验...&quot;</span>);<br><br>        <span class="hljs-type">String</span> <span class="hljs-variable">token</span> <span class="hljs-operator">=</span> exchange.getRequest().getHeaders().getFirst(Common.TOKEN);<br>        <span class="hljs-keyword">if</span> (token == <span class="hljs-literal">null</span> || token.isEmpty()) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">try</span> &#123;<br>            <span class="hljs-type">String</span> <span class="hljs-variable">redisToken</span> <span class="hljs-operator">=</span> redisTemplate.opsForValue().get(token);<br>            <span class="hljs-keyword">if</span> (redisToken == <span class="hljs-literal">null</span>) &#123;<br>                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BaseException</span>(Excep.TOKEN_ALREADY_EXPIRED);<br>            &#125;<br>            <span class="hljs-type">Claims</span> <span class="hljs-variable">claims</span> <span class="hljs-operator">=</span> JwtUtils.parseJWT(token);<br>            <span class="hljs-comment">// 保存用户信息</span><br>            ThreadLocalUtil.set(claims);<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">return</span> chain.filter(exchange);<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getOrder</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> -<span class="hljs-number">100</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><ol start="3"><li><p><strong>启动 Gateway</strong>：运行 Spring Boot 应用，启动 Gateway。</p></li><li><p><strong>发送请求</strong>：<strong>发送请求到 Gateway</strong>，Gateway 会根据配置的路由规则，将请求转发到对应的服务。</p></li></ol><p>以上就是使用 Spring Cloud Gateway 的基本步骤。在实际使用中，可能还需要配置其他的功能，例如过滤器、限流、熔断等。</p><p>todo <code>openfeign</code>的使用</p>]]></content>
+        <content type="html"><![CDATA[<h1>springcloud从入门到放弃</h1><h2 id="gateway">gateway</h2><p><code>Spring Cloud Gateway</code> 是一个基于 Spring 5、Spring Boot 2 和 Project Reactor 的 <strong>API 网关</strong>，以下是使用 Spring Cloud Gateway 的基本步骤：</p><ol><li><strong>添加依赖</strong>：在 Maven 的 <code>pom.xml</code> 文件中，添加 Spring Cloud Gateway 的依赖。</li></ol><figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-gateway<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.2.7.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure><ol start="2"><li><strong>配置路由</strong>：在 <code>application.yml</code> 或 <code>application.properties</code> 文件中，配置路由规则。例如，将所有以 <code>/reader/</code> 开头的请求转发到 <code>reader-service</code> 服务。</li></ol><figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">cloud:</span><br>    <span class="hljs-attr">gateway:</span><br>      <span class="hljs-attr">routes:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">reader_route</span><br>        <span class="hljs-attr">uri:</span> <span class="hljs-string">lb://reader-service</span><br>        <span class="hljs-attr">predicates:</span><br>        <span class="hljs-bullet">-</span> <span class="hljs-string">Path=/reader/**</span><br></code></pre></td></tr></table></figure><ol start="3"><li><strong>添加拦截器</strong></li></ol><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Component</span><br><span class="hljs-meta">@RequiredArgsConstructor</span><br><span class="hljs-meta">@Slf4j</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">JwtTokenInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">GlobalFilter</span>, Ordered &#123;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> StringRedisTemplate redisTemplate;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> Mono&lt;Void&gt; <span class="hljs-title function_">filter</span><span class="hljs-params">(ServerWebExchange exchange, GatewayFilterChain chain)</span> &#123;<br>        <span class="hljs-type">String</span> <span class="hljs-variable">path</span> <span class="hljs-operator">=</span> exchange.getRequest().getPath().value();<br>        <span class="hljs-comment">// 不对/login和/register接口校验</span><br>        <span class="hljs-keyword">if</span> (path.endsWith(<span class="hljs-string">&quot;/login&quot;</span>) || path.endsWith(<span class="hljs-string">&quot;/register&quot;</span>)) &#123;<br>            log.debug(<span class="hljs-string">&quot;直接跳过...&quot;</span>);<br>            <span class="hljs-keyword">return</span> chain.filter(exchange);<br>        &#125;<br><br>        log.debug(<span class="hljs-string">&quot;开始校验...&quot;</span>);<br><br>        <span class="hljs-type">String</span> <span class="hljs-variable">token</span> <span class="hljs-operator">=</span> exchange.getRequest().getHeaders().getFirst(Common.TOKEN);<br>        <span class="hljs-keyword">if</span> (token == <span class="hljs-literal">null</span> || token.isEmpty()) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">try</span> &#123;<br>            <span class="hljs-type">String</span> <span class="hljs-variable">redisToken</span> <span class="hljs-operator">=</span> redisTemplate.opsForValue().get(token);<br>            <span class="hljs-keyword">if</span> (redisToken == <span class="hljs-literal">null</span>) &#123;<br>                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BaseException</span>(Excep.TOKEN_ALREADY_EXPIRED);<br>            &#125;<br>            <span class="hljs-type">Claims</span> <span class="hljs-variable">claims</span> <span class="hljs-operator">=</span> JwtUtils.parseJWT(token);<br>            <span class="hljs-comment">// 保存用户信息</span><br>            ThreadLocalUtil.set(claims);<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">return</span> chain.filter(exchange);<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getOrder</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> -<span class="hljs-number">100</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><ol start="3"><li><p><strong>启动 Gateway</strong>：运行 Spring Boot 应用，启动 Gateway。</p></li><li><p><strong>发送请求</strong>：<strong>发送请求到 Gateway</strong>，Gateway 会根据配置的路由规则，将请求转发到对应的服务。</p></li></ol><p>以上就是使用 Spring Cloud Gateway 的基本步骤。在实际使用中，可能还需要配置其他的功能，例如过滤器、限流、熔断等。</p><h2 id="todo-openfeign的使用">todo <code>openfeign</code>的使用</h2>]]></content>
       
       
       <categories>
@@ -487,9 +487,9 @@
     
     
     <entry>
-      <title>charts</title>
-      <link href="/charts/index.html"/>
-      <url>/charts/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -498,9 +498,31 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>charts</title>
+      <link href="/charts/index.html"/>
+      <url>/charts/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -520,31 +542,9 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>即刻短文</title>
       <link href="/essay/index.html"/>
       <url>/essay/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
