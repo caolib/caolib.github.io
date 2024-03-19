@@ -4,11 +4,63 @@
   
     
     <entry>
+      <title>windows定时关机</title>
+      <link href="/2024/03/19/windows%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA/"/>
+      <url>/2024/03/19/windows%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA/</url>
+      
+        <content type="html"><![CDATA[<ol><li>打开控制面板，搜索<strong>计划</strong>，点击<mark>计划任务</mark></li></ol><p><img src="https://s2.loli.net/2024/03/19/8olEi2dyD5xTKcG.png" alt="image-20240319223355706"></p><ol start="2"><li>右键<strong>任务计划程序库</strong>，创建任务</li></ol><p><img src="https://s2.loli.net/2024/03/19/gpT9YVFaxUEWq3C.png" alt="image-20240319223747111"></p><ol start="3"><li>常规</li></ol><p><img src="https://s2.loli.net/2024/03/19/Mr2XbwVfNPxUD8g.png" alt="image-20240319223931837"></p><ol start="4"><li>触发器</li></ol><p><img src="https://s2.loli.net/2024/03/19/oIUu7gqSaji2O83.png" alt="image-20240319224108154"></p><ol start="5"><li>操作，22:55触发，240秒后启动，也就是22:59关机</li></ol><p><img src="https://gitee.com/clibin/image-bed/raw/master/image-20240319224152722.png" alt="image-20240319224152722"></p><ol start="6"><li>条件</li></ol><p><img src="https://gitee.com/clibin/image-bed/raw/master/image-20240319224409803.png" alt="image-20240319224409803"></p><ol start="7"><li>设置<img src="https://gitee.com/clibin/image-bed/raw/master/image-20240319224442431.png" alt="image-20240319224442431"></li></ol><p>最后保存即可，可以通过查看执行记录看看任务有没有正常执行</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> os </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>apifox测试工具</title>
+      <link href="/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
+      <url>/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</url>
+      
+        <content type="html"><![CDATA[<h1>登录自动更新token</h1><blockquote><p>问题：使用apifox测试接口时，令牌过期后，需要重新登录，然后复制粘贴替换全局变量的token，有点麻烦，而且不注意可能会复制错误，怎么实现运行登录接口后自动将返回数据中的token值更新，然后其他请求自动携带全新的token呢</p></blockquote><h2 id="1-给登录接口添加后置操作">1.给登录接口添加后置操作</h2><blockquote><p><strong>1.1 打开项目的登录接口，添加该接口的后置操作</strong></p></blockquote><p><img src="https://img-blog.csdnimg.cn/direct/7f8c671430f344278b015e7c8a5d0e8c.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><blockquote><p><strong>1.2 随便设置一个变量名字，然后点击小箭头</strong></p></blockquote><p><img src="https://img-blog.csdnimg.cn/direct/edd94cadbfb44edbbdca3274e146e06a.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><blockquote><p><strong>1.3 左边是返回结果的结构，书写jsonpath表达式 ，代表左边的json对象，然后就像访问对象属性一样写就可以了，最后看看提取结果和左边是不是对上了，最后点击确定保存，我的token是data中的token，所以是 <code>$.data.token</code></strong></p></blockquote><p><img src="https://img-blog.csdnimg.cn/direct/bed066a49bd940879263f93412173baa.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><blockquote><p><strong>1.4 保存接口文档后测试接口</strong></p></blockquote><p><img src="https://img-blog.csdnimg.cn/direct/1ad4210461e440beaac3b0a749768d08.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><blockquote><p><strong>1.5 如果上面操作无误，点击右上角按钮可以看到在本地环境多了一个变量值token，并且值就是返回结果的token</strong></p></blockquote><p><img src="https://img-blog.csdnimg.cn/direct/63a8edb4bde94b9bb9954e05b32cb14a.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><h2 id="2-设置项目所有接口的auth认证">2.设置项目所有接口的auth认证</h2><blockquote><p><strong>2.1 如图依次点击，key的名字根据自己需要设置，value的值从环境变量读取</strong></p></blockquote><p><img src="https://img-blog.csdnimg.cn/direct/ffd06d59868d424f951575480b1c795d.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><blockquote><p><strong>2.2 读取变量选择之前设置的变量，确定后保存接口的修改</strong></p></blockquote><p><img src="https://img-blog.csdnimg.cn/direct/92030ead665042709df2f6533d8c25b3.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><blockquote><p><strong>3. 测试执行登录接口是否会自动设置token，可以执行登录接口后直接执行其他接口</strong></p></blockquote><p><img src="https://img-blog.csdnimg.cn/direct/906528f23ce64f4e967053adbe2be91c.png" alt="img"><img src="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==" alt="点击并拖拽以移动"></p><p>每次修改完成后记得保存再运行，这样就能简单完成token的自动更换</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 测试 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> apifox </tag>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>springcloud从入门到放弃</title>
       <link href="/2024/03/17/springcloud%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/"/>
       <url>/2024/03/17/springcloud%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/</url>
       
-        <content type="html"><![CDATA[<h1>springcloud从入门到放弃</h1><h2 id="gateway">gateway</h2><p><code>Spring Cloud Gateway</code> 是一个基于 Spring 5、Spring Boot 2 和 Project Reactor 的 <strong>API 网关</strong>，以下是使用 Spring Cloud Gateway 的基本步骤：</p><ol><li><strong>添加依赖</strong>：在 Maven 的 <code>pom.xml</code> 文件中，添加 Spring Cloud Gateway 的依赖。</li></ol><figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-gateway<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.2.7.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure><ol start="2"><li><strong>配置路由</strong>：在 <code>application.yml</code> 或 <code>application.properties</code> 文件中，配置路由规则。例如，将所有以 <code>/reader/</code> 开头的请求转发到 <code>reader-service</code> 服务。</li></ol><figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">cloud:</span><br>    <span class="hljs-attr">gateway:</span><br>      <span class="hljs-attr">routes:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">reader_route</span><br>        <span class="hljs-attr">uri:</span> <span class="hljs-string">lb://reader-service</span><br>        <span class="hljs-attr">predicates:</span><br>        <span class="hljs-bullet">-</span> <span class="hljs-string">Path=/reader/**</span><br></code></pre></td></tr></table></figure><ol start="3"><li><strong>添加拦截器</strong></li></ol><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Component</span><br><span class="hljs-meta">@RequiredArgsConstructor</span><br><span class="hljs-meta">@Slf4j</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">JwtTokenInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">GlobalFilter</span>, Ordered &#123;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> StringRedisTemplate redisTemplate;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> Mono&lt;Void&gt; <span class="hljs-title function_">filter</span><span class="hljs-params">(ServerWebExchange exchange, GatewayFilterChain chain)</span> &#123;<br>        <span class="hljs-type">String</span> <span class="hljs-variable">path</span> <span class="hljs-operator">=</span> exchange.getRequest().getPath().value();<br>        <span class="hljs-comment">// 不对/login和/register接口校验</span><br>        <span class="hljs-keyword">if</span> (path.endsWith(<span class="hljs-string">&quot;/login&quot;</span>) || path.endsWith(<span class="hljs-string">&quot;/register&quot;</span>)) &#123;<br>            log.debug(<span class="hljs-string">&quot;直接跳过...&quot;</span>);<br>            <span class="hljs-keyword">return</span> chain.filter(exchange);<br>        &#125;<br><br>        log.debug(<span class="hljs-string">&quot;开始校验...&quot;</span>);<br><br>        <span class="hljs-type">String</span> <span class="hljs-variable">token</span> <span class="hljs-operator">=</span> exchange.getRequest().getHeaders().getFirst(Common.TOKEN);<br>        <span class="hljs-keyword">if</span> (token == <span class="hljs-literal">null</span> || token.isEmpty()) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">try</span> &#123;<br>            <span class="hljs-type">String</span> <span class="hljs-variable">redisToken</span> <span class="hljs-operator">=</span> redisTemplate.opsForValue().get(token);<br>            <span class="hljs-keyword">if</span> (redisToken == <span class="hljs-literal">null</span>) &#123;<br>                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BaseException</span>(Excep.TOKEN_ALREADY_EXPIRED);<br>            &#125;<br>            <span class="hljs-type">Claims</span> <span class="hljs-variable">claims</span> <span class="hljs-operator">=</span> JwtUtils.parseJWT(token);<br>            <span class="hljs-comment">// 保存用户信息</span><br>            ThreadLocalUtil.set(claims);<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">return</span> chain.filter(exchange);<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getOrder</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> -<span class="hljs-number">100</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><ol start="3"><li><p><strong>启动 Gateway</strong>：运行 Spring Boot 应用，启动 Gateway。</p></li><li><p><strong>发送请求</strong>：<strong>发送请求到 Gateway</strong>，Gateway 会根据配置的路由规则，将请求转发到对应的服务。</p></li></ol><p>以上就是使用 Spring Cloud Gateway 的基本步骤。在实际使用中，可能还需要配置其他的功能，例如过滤器、限流、熔断等。</p><h2 id="todo-openfeign的使用">todo <code>openfeign</code>的使用</h2>]]></content>
+        <content type="html"><![CDATA[<h1>springcloud从入门到放弃</h1><h2 id="gateway">gateway</h2><p><code>Spring Cloud Gateway</code> 是一个基于 Spring 5、Spring Boot 2 和 Project Reactor 的 <strong>API 网关</strong>，以下是使用 Spring Cloud Gateway 的基本步骤：</p><ol><li><strong>添加依赖</strong>：在 Maven 的 <code>pom.xml</code> 文件中，添加 Spring Cloud Gateway 的依赖。</li></ol><figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-gateway<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.2.7.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure><ol start="2"><li><strong>配置路由</strong>：在 <code>application.yml</code> 或 <code>application.properties</code> 文件中，配置路由规则。例如，将所有以 <code>/reader/</code> 开头的请求转发到 <code>reader-service</code> 服务。</li></ol><figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">cloud:</span><br>    <span class="hljs-attr">gateway:</span><br>      <span class="hljs-attr">routes:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">reader_route</span><br>        <span class="hljs-attr">uri:</span> <span class="hljs-string">lb://reader-service</span><br>        <span class="hljs-attr">predicates:</span><br>        <span class="hljs-bullet">-</span> <span class="hljs-string">Path=/reader/**</span><br></code></pre></td></tr></table></figure><ol start="3"><li><strong>添加拦截器</strong></li></ol><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Component</span><br><span class="hljs-meta">@RequiredArgsConstructor</span><br><span class="hljs-meta">@Slf4j</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">JwtTokenInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">GlobalFilter</span>, Ordered &#123;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> StringRedisTemplate redisTemplate;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> Mono&lt;Void&gt; <span class="hljs-title function_">filter</span><span class="hljs-params">(ServerWebExchange exchange, GatewayFilterChain chain)</span> &#123;<br>        <span class="hljs-type">String</span> <span class="hljs-variable">path</span> <span class="hljs-operator">=</span> exchange.getRequest().getPath().value();<br>        <span class="hljs-comment">// 不对/login和/register接口校验</span><br>        <span class="hljs-keyword">if</span> (path.endsWith(<span class="hljs-string">&quot;/login&quot;</span>) || path.endsWith(<span class="hljs-string">&quot;/register&quot;</span>)) &#123;<br>            log.debug(<span class="hljs-string">&quot;直接跳过...&quot;</span>);<br>            <span class="hljs-keyword">return</span> chain.filter(exchange);<br>        &#125;<br><br>        log.debug(<span class="hljs-string">&quot;开始校验...&quot;</span>);<br><br>        <span class="hljs-type">String</span> <span class="hljs-variable">token</span> <span class="hljs-operator">=</span> exchange.getRequest().getHeaders().getFirst(Common.TOKEN);<br>        <span class="hljs-keyword">if</span> (token == <span class="hljs-literal">null</span> || token.isEmpty()) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">try</span> &#123;<br>            <span class="hljs-type">String</span> <span class="hljs-variable">redisToken</span> <span class="hljs-operator">=</span> redisTemplate.opsForValue().get(token);<br>            <span class="hljs-keyword">if</span> (redisToken == <span class="hljs-literal">null</span>) &#123;<br>                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BaseException</span>(Excep.TOKEN_ALREADY_EXPIRED);<br>            &#125;<br>            <span class="hljs-type">Claims</span> <span class="hljs-variable">claims</span> <span class="hljs-operator">=</span> JwtUtils.parseJWT(token);<br>            <span class="hljs-comment">// 保存用户信息</span><br>            ThreadLocalUtil.set(claims);<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">return</span> chain.filter(exchange);<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getOrder</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> -<span class="hljs-number">100</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><ol start="3"><li><p><strong>启动 Gateway</strong>：运行 Spring Boot 应用，启动 Gateway。</p></li><li><p><strong>发送请求</strong>：<strong>发送请求到 Gateway</strong>，Gateway 会根据配置的路由规则，将请求转发到对应的服务。</p></li></ol><p>以上就是使用 Spring Cloud Gateway 的基本步骤。在实际使用中，可能还需要配置其他的功能，例如过滤器、限流、熔断等。</p><p><img src="https://camo.githubusercontent.com/f50234cb9f1be4beead6b35d3f6ec558561a79c263728818838447aa56cb5401/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f73756e3032323553554e2f73756e3032323553554e2f6173736574732f696d616765732f68722e676966" alt=""></p><h2 id="todo-openfeign的使用">todo <code>openfeign</code>的使用</h2>]]></content>
       
       
       <categories>
@@ -509,17 +561,6 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>charts</title>
       <link href="/charts/index.html"/>
       <url>/charts/index.html</url>
@@ -545,6 +586,17 @@
       <title>即刻短文</title>
       <link href="/essay/index.html"/>
       <url>/essay/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
