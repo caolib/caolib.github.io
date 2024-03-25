@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>git版本控制系统</title>
+      <link href="/2024/03/25/git/"/>
+      <url>/2024/03/25/git/</url>
+      
+        <content type="html"><![CDATA[<h1><a href="https://git-scm.com/">Git</a></h1><h2 id="介绍">介绍</h2><blockquote><p>Git是一个开源的<strong>分布式版本控制系统</strong>，用于高效地处理从小到大的项目。Git由Linus Torvalds创建，用于管理Linux内核开发。与集中式版本控制系统不同，如CVS或Subversion，Git采用分布式版本库的方式，不需要服务器端软件支持。这使得源代码的发布和交流变得非常方便。Git的速度很快，特别适合大型项目的版本管理。</p></blockquote><h2 id="常用命令">常用命令</h2><p>Git的常用命令包括但不限于以下几个：</p><ul><li><code>git init</code>：初始化一个Git仓库。</li><li><code>git clone [url]</code>：克隆一个仓库到本地。</li><li><code>git add [file]</code>：添加文件到暂存区。</li><li><code>git commit -m &quot;[message]&quot;</code>：提交更新，并附加一条提交信息。</li><li><code>git status</code>：查看仓库当前的状态，显示有变更的文件。</li><li><code>git push [alias] [branch]</code>：将本地分支的更新推送到远程仓库。</li><li><code>git pull [alias] [branch]</code>：从远程仓库拉取更新并合并到本地。</li><li><code>git branch</code>：列出所有本地分支。</li><li><code>git checkout [branch-name]</code>：切换到指定分支。</li><li><code>git merge [branch]</code>：合并指定分支到当前分支。</li></ul><p>工作流程图</p><p><img src="https://gitee.com/clibin/image-bed/raw/master/image-20240325220023918.png" alt="image-20240325220023918"></p><h2 id="分支">分支</h2><p>Git分支是一个非常强大的功能，它允许你在不同的开发线路上独立工作，而不会影响主线（通常是master分支）。这样，你可以在一个分支上开发新功能，而在另一个分支上修复bug，然后再将它们合并回主线。分支的用途包括：</p><ul><li><strong>功能开发和并行开发</strong>：你可以在不同的分支上同时开发多个功能。</li><li><strong>Bug修复和紧急修复</strong>：为了不干扰主要开发，可以在单独的分支上进行bug修复。</li><li><strong>版本发布和稳定的主分支</strong>：保持主分支稳定，只有完全测试通过的代码才能合并。</li><li><strong>实验性开发和试验性分支</strong>：尝试新想法而不影响主分支。</li><li><strong>多人协作和团队开发</strong>：团队成员可以在各自的分支上工作，然后合并他们的更改。</li></ul><p>假设你正在开发一个新功能，我们将其称为“feature-x”。你不希望这些更改影响主分支，因此你可以创建一个新分支并在其中工作。以下是步骤：</p><ol><li><p><strong>创建新分支</strong>：</p><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git branch feature-x<br></code></pre></td></tr></table></figure><p>这将创建一个名为<code>feature-x</code>的新分支。</p></li><li><p><strong>切换到新分支</strong>：</p><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git checkout feature-x<br></code></pre></td></tr></table></figure><p>现在你在<code>feature-x</code>分支上工作。</p></li><li><p><strong>添加更改</strong>： 在<code>feature-x</code>分支上进行更改后，使用以下命令将它们添加到暂存区：</p><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git add .<br></code></pre></td></tr></table></figure></li><li><p><strong>提交更改</strong>： 提交你的更改，并附加一条提交信息：</p><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git commit -m <span class="hljs-string">&quot;Add new feature x&quot;</span><br></code></pre></td></tr></table></figure></li><li><p><strong>切换回主分支</strong>： 完成开发后，切换回主分支：</p><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git checkout master<br></code></pre></td></tr></table></figure></li><li><p><strong>合并分支</strong>： 将<code>feature-x</code>分支的更改合并到主分支：</p><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git merge feature-x<br></code></pre></td></tr></table></figure></li><li><p><strong>推送更改</strong>： 如果你想将更改推送到远程仓库，使用：</p><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">git push origin master<br></code></pre></td></tr></table></figure></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> tools </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>markdown从入门到上天</title>
       <link href="/2024/03/22/markdown/"/>
       <url>/2024/03/22/markdown/</url>
@@ -536,31 +561,6 @@
     
     
     <entry>
-      <title>git</title>
-      <link href="/2023/07/28/git/"/>
-      <url>/2023/07/28/git/</url>
-      
-        <content type="html"><![CDATA[<ul><li>[ ] 待完成</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> tools </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> git </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>C++</title>
       <link href="/2023/07/28/C/"/>
       <url>/2023/07/28/C/</url>
@@ -589,9 +589,9 @@
     
     
     <entry>
-      <title>charts</title>
-      <link href="/charts/index.html"/>
-      <url>/charts/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -611,9 +611,20 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>charts</title>
+      <link href="/charts/index.html"/>
+      <url>/charts/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>即刻短文</title>
+      <link href="/essay/index.html"/>
+      <url>/essay/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -633,31 +644,9 @@
     
     
     <entry>
-      <title>即刻短文</title>
-      <link href="/essay/index.html"/>
-      <url>/essay/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>link</title>
       <link href="/link/index.html"/>
       <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -671,6 +660,17 @@
       <url>/self/onedark.css</url>
       
         <content type="html"><![CDATA[/*!  Theme: OneDark  Author: Lalit Magant (http://github.com/tilal6991)  License: ~ MIT (or more permissive) [via base16-schemes-source]  Maintainer: @highlightjs/core-team  Version: 2021.09.0*//*  WARNING: DO NOT EDIT THIS FILE DIRECTLY.  This theme file was auto-generated from the Base16 scheme onedark  by the Highlight.js Base16 template builder.  - https://github.com/highlightjs/base16-highlightjs*//* 新添加的内容  -------------------------------------   --hl-color                  代码框字体顔色 【必须】 (把下面.hljs的 color复制到这里来)  --hl-bg                     代码框背景色 【必须】 (把下面.hljs的 background复制到这里来)  --hltools-bg: #321a0f       代码框顶部工具栏背景色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hltools-color: #fff       代码框顶部工具栏字体顔色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hlnumber-bg: #221a0f      代码框行数背景色 【可选】(如果已经关掉 line_number,可以不用配置这个)  --hlnumber-color: #fff      代码框行数字体顔色 【可选】 (如果已经关掉 line_number,可以不用配置这个)  --hlscrollbar-bg: #d3af86   代码框滚动条顔色 【可选】（默认为主题主顔色）  --hlexpand-bg: #d3af86      代码框底部展开背景色 【可选】(如果已经关掉 highlight_height_limit,可以不用配置这个)*/:root {  --hl-color: #abb2bf;  --hl-bg: #282c34;  --hltools-bg: #282C34;  --hltools-color: #fff;  --hlnumber-bg: #282C34;  --hlnumber-color: #353b45;  --hlexpand-bg: #282C34;}/*base00  #282c34  Default Backgroundbase01  #353b45  Lighter Background (Used for status bars, line number and folding marks)base02  #3e4451  Selection Backgroundbase03  #545862  Comments, Invisibles, Line Highlightingbase04  #565c64  Dark Foreground (Used for status bars)base05  #abb2bf  Default Foreground, Caret, Delimiters, Operatorsbase06  #b6bdca  Light Foreground (Not often used)base07  #c8ccd4  Light Background (Not often used)base08  #e06c75  Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deletedbase09  #d19a66  Integers, Boolean, Constants, XML Attributes, Markup Link Urlbase0A  #e5c07b  Classes, Markup Bold, Search Text Backgroundbase0B  #98c379  Strings, Inherited Class, Markup Code, Diff Insertedbase0C  #56b6c2  Support, Regular Expressions, Escape Characters, Markup Quotesbase0D  #61afef  Functions, Methods, Attribute IDs, Headingsbase0E  #c678dd  Keywords, Storage, Selector, Markup Italic, Diff Changedbase0F  #be5046  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>*/pre code.hljs {  display: block;  overflow-x: auto;  padding: 1em;}code.hljs {  padding: 3px 5px;}.hljs {  color: #abb2bf;  background: #171717;  /* background: #00282c34; */}.hljs::selection,.hljs ::selection {  background-color: #3e4451;  color: #abb2bf;}/* purposely do not highlight these things */.hljs-formula,.hljs-params,.hljs-property{}/* base03 - #545862 -  Comments, Invisibles, Line Highlighting */.hljs-comment {  color: #545862;}/* base04 - #565c64 -  Dark Foreground (Used for status bars) */.hljs-tag {  color: #565c64;}/* base05 - #abb2bf -  Default Foreground, Caret, Delimiters, Operators */.hljs-subst,.hljs-punctuation,.hljs-operator {  color: #abb2bf;}.hljs-operator {  opacity: 0.7;}/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */.hljs-bullet,.hljs-variable,.hljs-template-variable,.hljs-selector-tag,.hljs-name,.hljs-deletion {  color: #e06c75;}/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */.hljs-symbol,.hljs-number,.hljs-link,.hljs-attr,.hljs-variable.constant_,.hljs-literal {  color: #d19a66;}/* base0A - Classes, Markup Bold, Search Text Background */.hljs-title,.hljs-class .hljs-title,.hljs-title.class_{  color: #e5c07b;}.hljs-strong {  font-weight:bold;  color: #e5c07b;}/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */.hljs-code,.hljs-addition,.hljs-title.class_.inherited__,.hljs-string {  color: #98c379;}/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */.hljs-built_in,.hljs-doctag, /* guessing */.hljs-quote,.hljs-keyword.hljs-atrule,.hljs-regexp {  color: #56b6c2;}/* base0D - Functions, Methods, Attribute IDs, Headings */.hljs-function .hljs-title,.hljs-attribute,.ruby .hljs-property,.hljs-title.function_,.hljs-section {  color: #61afef;}/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */.hljs-type,/* .hljs-selector-id, *//* .hljs-selector-class, *//* .hljs-selector-attr, *//* .hljs-selector-pseudo, */.hljs-template-tag,.diff .hljs-meta,.hljs-keyword {  color: #c678dd;}.hljs-emphasis {  color: #c678dd;  font-style: italic;}/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */.hljs-meta,/*  prevent top level .keyword and .string scopes  from leaking into meta by accident*/.hljs-meta .hljs-keyword,.hljs-meta .hljs-string{  color: #be5046;}.hljs-meta .hljs-keyword,/* for v10 compatible themes */.hljs-meta-keyword {  font-weight: bold;}]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
