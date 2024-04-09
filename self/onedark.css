@@ -30,14 +30,12 @@
 :root {
   --hl-color: #abb2bf;
   --hl-bg: #282c34;
-  --hltools-bg: #282C34;
+  --hltools-bg: #282c34;
   --hltools-color: #fff;
-  --hlnumber-bg: #282C34;
+  --hlnumber-bg: #282c34;
   --hlnumber-color: #353b45;
-  --hlexpand-bg: #282C34;
+  --hlexpand-bg: #282c34;
 }
-
-
 
 /*
 base00  #282c34  Default Background
@@ -70,8 +68,8 @@ code.hljs {
 
 .hljs {
   color: #abb2bf;
-  background: #171717;
-  /* background: #00282c34; */
+  /* background: #171717; */
+  background: #00282c34;
 }
 
 .hljs::selection,
@@ -80,12 +78,11 @@ code.hljs {
   color: #abb2bf;
 }
 
-
 /* purposely do not highlight these things */
 .hljs-formula,
 .hljs-params,
-.hljs-property
-{}
+.hljs-property {
+}
 
 /* base03 - #545862 -  Comments, Invisibles, Line Highlighting */
 .hljs-comment {
@@ -131,13 +128,12 @@ code.hljs {
 /* base0A - Classes, Markup Bold, Search Text Background */
 .hljs-title,
 .hljs-class .hljs-title,
-.hljs-title.class_
-{
+.hljs-title.class_ {
   color: #e5c07b;
 }
 
 .hljs-strong {
-  font-weight:bold;
+  font-weight: bold;
   color: #e5c07b;
 }
 
@@ -190,8 +186,7 @@ code.hljs {
   from leaking into meta by accident
 */
 .hljs-meta .hljs-keyword,
-.hljs-meta .hljs-string
-{
+.hljs-meta .hljs-string {
   color: #be5046;
 }
 

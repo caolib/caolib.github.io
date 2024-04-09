@@ -19162,7 +19162,7 @@ p.p.gray {
   background-color: var(--anzhiyu-card-bg);
 }
 [data-theme='dark'] #article-container pre > code {
-  background: #171717;
+  background: #282c34;
 }
 [data-theme='dark'] #article-container figure.highlight {
   -webkit-box-shadow: none;
