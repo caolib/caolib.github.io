@@ -1,0 +1,45 @@
+/** 抖音字效 **/
+
+@-webkit-keyframes uk-text-shadow-glitch {
+  0% {
+    text-shadow: none;
+  }
+  25% {
+    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;
+  }
+  50% {
+    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;
+  }
+  75% {
+    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;
+  }
+  to {
+    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;
+  }
+}
+@keyframes uk-text-shadow-glitch {
+  0% {
+    text-shadow: none;
+  }
+  25% {
+    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;
+  }
+  50% {
+    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;
+  }
+  75% {
+    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;
+  }
+  to {
+    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;
+  }
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  -webkit-animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79)
+    0s infinite normal both running;
+  animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79) 0s
+    infinite normal both running;
+}
