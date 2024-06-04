@@ -274,7 +274,7 @@ if (true) {
 <p>登录redis客户端redis-cli:computer:</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 直接登录 -h ip地址 -p 端口号 -a 密码(不用密码也能登陆，但是没有权限)</span><br>redis-cli -h localhost -p 6379 -a 123456<br><br><span class="hljs-comment"># 推荐登录后再用密码进行认证</span><br><span class="hljs-comment"># 1.登录</span><br>redis-cli (-h localhost -p 6379 如果是本地登陆可以省略)<br><br><span class="hljs-comment"># 2.身份认证 OK &gt;&gt;&gt; 成功</span><br>&gt; auth 123456<br><br><span class="hljs-comment"># 查看命令的帮助信息</span><br><span class="hljs-built_in">help</span> [<span class="hljs-built_in">command</span>]<br></code></pre></td></tr></table></figure>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img2.imgtp.com/2024/04/04/4WG8EHcc.webp" alt="CopyQ" />
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img2.imgtp.com/2024/04/04/4WG8EHcc.webp" alt="CopyQ">
 <blockquote>
 <p><strong>redis有==16==个数据库(0-15)，默认使用的是==0==，可以使用select切换数据库</strong></p>
 </blockquote>
@@ -309,7 +309,7 @@ if (true) {
 <hr>
 <h3 id="Redis-Key">Redis-Key</h3>
 <p>查看一个或者多个key是否存在，返回个数<code>exists [key...]</code></p>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img2.imgtp.com/2024/04/04/kOLycrII.webp" alt="CopyQ" />
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img2.imgtp.com/2024/04/04/kOLycrII.webp" alt="CopyQ">
 <p>设置过期时间(多长时间后过期自动从数据库删除)<code>expire [key] [time] 单位默认是秒</code></p>
 <blockquote>
 <figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">expire name 3	<span class="hljs-comment"># 3秒后过期，过期了数据就没了</span><br></code></pre></td></tr></table></figure>
@@ -614,7 +614,7 @@ if (true) {
 </ol>
 <figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@SpringBootTest</span><br><span class="hljs-keyword">class</span> <span class="hljs-title class_">Redis02SpringbootApplicationTests</span> &#123;<br>    <span class="hljs-meta">@Autowired</span><br>    <span class="hljs-keyword">private</span> RedisTemplate redisTemplate;<br>    <span class="hljs-meta">@Test</span><br>    <span class="hljs-keyword">void</span> <span class="hljs-title function_">contextLoads</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-comment">//方法和redis命令一一对应</span><br>        <span class="hljs-comment">//opsForValue()   操作String</span><br>        <span class="hljs-comment">//opsForList()    操作List</span><br>        <span class="hljs-comment">//......</span><br>        redisTemplate.opsForValue().set(<span class="hljs-string">&quot;name&quot;</span>, <span class="hljs-string">&quot;坤坤&quot;</span>);<br>      System.out.println(redisTemplate.opsForValue().get(<span class="hljs-string">&quot;name&quot;</span>));<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
 <p>redis中各种数据类型对应的操作方法</p>
-<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img2.imgtp.com/2024/04/04/HHpI88A1.jpg" alt="1693648470356" />
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null,this.src=&quot;/img/404.jpg&quot;" data-lazy-src="https://img2.imgtp.com/2024/04/04/HHpI88A1.jpg" alt="1693648470356">
 <ol start="4">
 <li>==序列化== ：
 <ul>
