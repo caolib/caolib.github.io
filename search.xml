@@ -4,11 +4,37 @@
   
     
     <entry>
+      <title>测试</title>
+      <link href="/2024/06/04/%E6%B5%8B%E8%AF%95/"/>
+      <url>/2024/06/04/%E6%B5%8B%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<p><img src="%E6%B5%8B%E8%AF%95/image-20240604171153251.png" alt="image-20240604171153251"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>test2</title>
+      <link href="/2024/06/04/test2/"/>
+      <url>/2024/06/04/test2/</url>
+      
+        <content type="html"><![CDATA[<p><img src="test2/image-20240604171215534.png" alt="image-20240604171215534"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test</title>
       <link href="/2024/06/04/test/"/>
       <url>/2024/06/04/test/</url>
       
-        <content type="html"><![CDATA[<p><img src="../../themes/anzhiyu/source/img/image-20240604163052623-1717490035050-1.png" alt="image-20240604163052623"></p><p><img src="/img/image-20240604163409728.png" alt="image-20240604163409728"></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="/img/image-20240604163409728.png" alt="image-20240604163409728"></p>]]></content>
       
       
       
@@ -615,11 +641,11 @@
     
     
     <entry>
-      <title>便携小空调 - 为你的夏日带去清凉!</title>
-      <link href="/air-conditioner/index.html"/>
-      <url>/air-conditioner/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[<blockquote><p>吹赛博空调，过电子人生</p></blockquote><style>.copyright-box a {  border-bottom: none !important;  padding: 0 !important;}</style><div id="air-conditioner-vue"></div><script defer data-pjax src='https://npm.elemecdn.com/anzhiyu-air-conditioner@1.0.1/index.3f125bc6.js'></script>]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -637,11 +663,11 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>便携小空调 - 为你的夏日带去清凉!</title>
+      <link href="/air-conditioner/index.html"/>
+      <url>/air-conditioner/index.html</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[<blockquote><p>吹赛博空调，过电子人生</p></blockquote><style>.copyright-box a {  border-bottom: none !important;  padding: 0 !important;}</style><div id="air-conditioner-vue"></div><script defer data-pjax src='https://npm.elemecdn.com/anzhiyu-air-conditioner@1.0.1/index.3f125bc6.js'></script>]]></content>
       
     </entry>
     
