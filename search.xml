@@ -8,7 +8,7 @@
       <link href="/2024/06/04/test/"/>
       <url>/2024/06/04/test/</url>
       
-        <content type="html"><![CDATA[<p><img src="../../themes/anzhiyu/source/img/image-20240604163052623-1717490035050-1.png" alt="image-20240604163052623"></p><p><img src="../../themes/anzhiyu/source/img/image-20240604163409728.png" alt="image-20240604163409728"></p>]]></content>
+        <content type="html"><![CDATA[<p><img src="../../themes/anzhiyu/source/img/image-20240604163052623-1717490035050-1.png" alt="image-20240604163052623"></p><p><img src="/img/image-20240604163409728.png" alt="image-20240604163409728"></p>]]></content>
       
       
       
@@ -626,9 +626,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>charts</title>
+      <link href="/charts/index.html"/>
+      <url>/charts/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -637,9 +637,9 @@
     
     
     <entry>
-      <title>charts</title>
-      <link href="/charts/index.html"/>
-      <url>/charts/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
