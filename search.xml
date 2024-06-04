@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>测试用</title>
+      <link href="/2024/06/04/test/"/>
+      <url>/2024/06/04/test/</url>
+      
+        <content type="html"><![CDATA[<p><img src="assets/image-20240604160825329.png" alt="image-20240604160825329"></p><p><img src="%E6%8B%BE%E5%85%89_%E8%B4%AA%E9%A3%9F%E9%AC%BC_6244.jpg" alt="拾光_贪食鬼_6244"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> test </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> git </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>npm、yarn 包管理器</title>
       <link href="/2024/03/27/npm-yarn/"/>
       <url>/2024/03/27/npm-yarn/</url>
@@ -591,9 +616,9 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -613,9 +638,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -635,9 +660,9 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title>即刻短文</title>
+      <link href="/essay/index.html"/>
+      <url>/essay/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -657,9 +682,9 @@
     
     
     <entry>
-      <title>即刻短文</title>
-      <link href="/essay/index.html"/>
-      <url>/essay/index.html</url>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -668,11 +693,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/self/one-light-theme.css"/>
-      <url>/self/one-light-theme.css</url>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
-        <content type="html"><![CDATA[/** 抖音字效 **/@-webkit-keyframes uk-text-shadow-glitch {  0% {    text-shadow: none;  }  25% {    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;  }  50% {    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;  }  75% {    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;  }  to {    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;  }}@keyframes uk-text-shadow-glitch {  0% {    text-shadow: none;  }  25% {    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;  }  50% {    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;  }  75% {    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;  }  to {    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;  }}/* 一级标题 */h1 {  font-size: 50px;  text-align: center;  -webkit-animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79)    0s infinite normal both running;  animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79) 0s    infinite normal both running;}/* 引用框 */blockquote {  border-top-right-radius: 10px;  border-bottom-right-radius: 10px;  margin-bottom: 16px;  padding: 10px 10px 10px 20px;  font-size: 0.9em;  background: #ffffff;  border-left: 5px solid #166ff3;  color: #6a737d;  overflow: auto;  box-shadow: 4px 5px 10px 2px rgb(173 173 173);  -webkit-overflow-scrolling: touch;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -690,11 +715,11 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title></title>
+      <link href="/self/one-light-theme.css"/>
+      <url>/self/one-light-theme.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/** 抖音字效 **/@-webkit-keyframes uk-text-shadow-glitch {  0% {    text-shadow: none;  }  25% {    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;  }  50% {    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;  }  75% {    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;  }  to {    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;  }}@keyframes uk-text-shadow-glitch {  0% {    text-shadow: none;  }  25% {    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;  }  50% {    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;  }  75% {    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;  }  to {    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;  }}/* 一级标题 */h1 {  font-size: 50px;  text-align: center;  -webkit-animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79)    0s infinite normal both running;  animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79) 0s    infinite normal both running;}/* 引用框 */blockquote {  border-top-right-radius: 10px;  border-bottom-right-radius: 10px;  margin-bottom: 16px;  padding: 10px 10px 10px 20px;  font-size: 0.9em;  background: #ffffff;  border-left: 5px solid #166ff3;  color: #6a737d;  overflow: auto;  box-shadow: 4px 5px 10px 2px rgb(173 173 173);  -webkit-overflow-scrolling: touch;}]]></content>
       
     </entry>
     
