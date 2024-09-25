@@ -60,7 +60,7 @@
       <link href="/2024/03/19/windows%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA/"/>
       <url>/2024/03/19/windows%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA/</url>
       
-        <content type="html"><![CDATA[<ol><li>打开控制面板，搜索<strong>计划</strong>，点击<mark>计划任务</mark></li></ol><p><img src="https://s2.loli.net/2024/03/19/8olEi2dyD5xTKcG.png" alt="image-20240319223355706"></p><ol start="2"><li>右键<strong>任务计划程序库</strong>，创建任务</li></ol><p><img src="https://s2.loli.net/2024/03/19/gpT9YVFaxUEWq3C.png" alt="image-20240319223747111"></p><ol start="3"><li>常规</li></ol><p><img src="https://s2.loli.net/2024/03/19/Mr2XbwVfNPxUD8g.png" alt="image-20240319223931837"></p><ol start="4"><li>触发器</li></ol><p><img src="https://s2.loli.net/2024/03/19/oIUu7gqSaji2O83.png" alt="image-20240319224108154"></p><ol start="5"><li>操作，22:55触发，240秒后启动，也就是22:59关机</li></ol><p><img src="https://img2.imgtp.com/2024/04/04/JB9cJCiy.png" alt="image-20240319224152722"></p><ol start="6"><li>条件</li></ol><p><img src="https://img2.imgtp.com/2024/04/04/1CTTQHty.png" alt="image-20240319224409803"></p><ol start="7"><li>设置<img src="https://img2.imgtp.com/2024/04/04/vZu4bFVM.png" alt="image-20240319224442431"></li></ol><p>最后保存即可，这样就能在断电前一分钟让电脑自动关机了，可以通过查看执行记录看看任务有没有正常执行或者自己写一个脚本添加在关机指令之后的第二条指令</p>]]></content>
+        <content type="html"><![CDATA[<ol><li>打开控制面板，搜索<strong>计划</strong>，点击<mark>计划任务</mark></li></ol><p><img src="https://s2.loli.net/2024/03/19/8olEi2dyD5xTKcG.png" alt="image-20240319223355706"></p><ol start="2"><li>右键<strong>任务计划程序库</strong>，创建任务</li></ol><p><img src="https://s2.loli.net/2024/03/19/gpT9YVFaxUEWq3C.png" alt="image-20240319223747111"></p><ol start="3"><li>常规</li></ol><p><img src="https://s2.loli.net/2024/03/19/Mr2XbwVfNPxUD8g.png" alt="image-20240319223931837"></p><ol start="4"><li>触发器</li></ol><p><img src="https://s2.loli.net/2024/03/19/oIUu7gqSaji2O83.png" alt="image-20240319224108154"></p><ol start="5"><li>操作，22:55触发，240秒后启动，也就是22:59关机</li></ol><p><img src="https://s2.loli.net/2024/09/25/upVvQNW6Zt2IdC8.png" alt="image-20240319224152722"></p><ol start="6"><li>条件<blockquote><p><strong>添加这个条件后，即使电脑在休眠，也会自动唤醒电脑然后关机！</strong></p></blockquote></li></ol><p><img src="https://s2.loli.net/2024/09/25/Ex9OzeNFTprJBdt.png" alt="image-20240319224409803"></p><ol start="7"><li>设置<img src="https://s2.loli.net/2024/09/25/6YbUoycx5kMfw7h.png" alt="image-20240319224442431"></li></ol><p>最后保存即可，这样就能在断电前一分钟让电脑自动关机了，可以通过查看执行记录看看任务有没有正常执行或者自己写一个脚本添加在关机指令之后的第二条指令</p>]]></content>
       
       
       <categories>
@@ -602,17 +602,6 @@
     
     
     <entry>
-      <title>charts</title>
-      <link href="/charts/index.html"/>
-      <url>/charts/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于</title>
       <link href="/about/index.html"/>
       <url>/about/index.html</url>
@@ -624,20 +613,9 @@
     
     
     <entry>
-      <title>即刻短文</title>
-      <link href="/essay/index.html"/>
-      <url>/essay/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>charts</title>
+      <link href="/charts/index.html"/>
+      <url>/charts/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -657,11 +635,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/self/one-light-theme.css"/>
-      <url>/self/one-light-theme.css</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[/** 抖音字效 **/@-webkit-keyframes uk-text-shadow-glitch {  0% {    text-shadow: none;  }  25% {    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;  }  50% {    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;  }  75% {    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;  }  to {    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;  }}@keyframes uk-text-shadow-glitch {  0% {    text-shadow: none;  }  25% {    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;  }  50% {    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;  }  75% {    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;  }  to {    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;  }}/* 一级标题 */h1 {  font-size: 50px;  text-align: center;  -webkit-animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79)    0s infinite normal both running;  animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79) 0s    infinite normal both running;}/* 引用框 */blockquote {  border-top-right-radius: 10px;  border-bottom-right-radius: 10px;  margin-bottom: 16px;  padding: 10px 10px 10px 20px;  font-size: 0.9em;  background: #ffffff;  border-left: 5px solid #166ff3;  color: #6a737d;  overflow: auto;  box-shadow: 4px 5px 10px 2px rgb(173 173 173);  -webkit-overflow-scrolling: touch;}]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>即刻短文</title>
+      <link href="/essay/index.html"/>
+      <url>/essay/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -680,10 +669,10 @@
     
     <entry>
       <title></title>
-      <link href="/self/onedark.css"/>
-      <url>/self/onedark.css</url>
+      <link href="/self/one-light-theme.css"/>
+      <url>/self/one-light-theme.css</url>
       
-        <content type="html"><![CDATA[/*!  Theme: OneDark  Author: Lalit Magant (http://github.com/tilal6991)  License: ~ MIT (or more permissive) [via base16-schemes-source]  Maintainer: @highlightjs/core-team  Version: 2021.09.0*//*  WARNING: DO NOT EDIT THIS FILE DIRECTLY.  This theme file was auto-generated from the Base16 scheme onedark  by the Highlight.js Base16 template builder.  - https://github.com/highlightjs/base16-highlightjs*//* 新添加的内容  -------------------------------------   --hl-color                  代码框字体顔色 【必须】 (把下面.hljs的 color复制到这里来)  --hl-bg                     代码框背景色 【必须】 (把下面.hljs的 background复制到这里来)  --hltools-bg: #321a0f       代码框顶部工具栏背景色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hltools-color: #fff       代码框顶部工具栏字体顔色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hlnumber-bg: #221a0f      代码框行数背景色 【可选】(如果已经关掉 line_number,可以不用配置这个)  --hlnumber-color: #fff      代码框行数字体顔色 【可选】 (如果已经关掉 line_number,可以不用配置这个)  --hlscrollbar-bg: #d3af86   代码框滚动条顔色 【可选】（默认为主题主顔色）  --hlexpand-bg: #d3af86      代码框底部展开背景色 【可选】(如果已经关掉 highlight_height_limit,可以不用配置这个)*/:root {  --hl-color: #abb2bf;  --hl-bg: #282c34;  --hltools-bg: #282c34;  --hltools-color: #fff;  --hlnumber-bg: #282c34;  --hlnumber-color: #353b45;  --hlexpand-bg: #282c34;}/*base00  #282c34  Default Backgroundbase01  #353b45  Lighter Background (Used for status bars, line number and folding marks)base02  #3e4451  Selection Backgroundbase03  #545862  Comments, Invisibles, Line Highlightingbase04  #565c64  Dark Foreground (Used for status bars)base05  #abb2bf  Default Foreground, Caret, Delimiters, Operatorsbase06  #b6bdca  Light Foreground (Not often used)base07  #c8ccd4  Light Background (Not often used)base08  #e06c75  Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deletedbase09  #d19a66  Integers, Boolean, Constants, XML Attributes, Markup Link Urlbase0A  #e5c07b  Classes, Markup Bold, Search Text Backgroundbase0B  #98c379  Strings, Inherited Class, Markup Code, Diff Insertedbase0C  #56b6c2  Support, Regular Expressions, Escape Characters, Markup Quotesbase0D  #61afef  Functions, Methods, Attribute IDs, Headingsbase0E  #c678dd  Keywords, Storage, Selector, Markup Italic, Diff Changedbase0F  #be5046  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>*/pre code.hljs {  display: block;  overflow-x: auto;  padding: 1em;}code.hljs {  padding: 3px 5px;}.hljs {  color: #abb2bf;  /* background: #171717; */  background: #00282c34;}.hljs::selection,.hljs ::selection {  background-color: #3e4451;  color: #abb2bf;}/* purposely do not highlight these things */.hljs-formula,.hljs-params,.hljs-property {}/* base03 - #545862 -  Comments, Invisibles, Line Highlighting */.hljs-comment {  color: #545862;}/* base04 - #565c64 -  Dark Foreground (Used for status bars) */.hljs-tag {  color: #565c64;}/* base05 - #abb2bf -  Default Foreground, Caret, Delimiters, Operators */.hljs-subst,.hljs-punctuation,.hljs-operator {  color: #abb2bf;}.hljs-operator {  opacity: 0.7;}/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */.hljs-bullet,.hljs-variable,.hljs-template-variable,.hljs-selector-tag,.hljs-name,.hljs-deletion {  color: #e06c75;}/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */.hljs-symbol,.hljs-number,.hljs-link,.hljs-attr,.hljs-variable.constant_,.hljs-literal {  color: #d19a66;}/* base0A - Classes, Markup Bold, Search Text Background */.hljs-title,.hljs-class .hljs-title,.hljs-title.class_ {  color: #e5c07b;}.hljs-strong {  font-weight: bold;  color: #e5c07b;}/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */.hljs-code,.hljs-addition,.hljs-title.class_.inherited__,.hljs-string {  color: #98c379;}/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */.hljs-built_in,.hljs-doctag, /* guessing */.hljs-quote,.hljs-keyword.hljs-atrule,.hljs-regexp {  color: #56b6c2;}/* base0D - Functions, Methods, Attribute IDs, Headings */.hljs-function .hljs-title,.hljs-attribute,.ruby .hljs-property,.hljs-title.function_,.hljs-section {  color: #61afef;}/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */.hljs-type,/* .hljs-selector-id, *//* .hljs-selector-class, *//* .hljs-selector-attr, *//* .hljs-selector-pseudo, */.hljs-template-tag,.diff .hljs-meta,.hljs-keyword {  color: #c678dd;}.hljs-emphasis {  color: #c678dd;  font-style: italic;}/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */.hljs-meta,/*  prevent top level .keyword and .string scopes  from leaking into meta by accident*/.hljs-meta .hljs-keyword,.hljs-meta .hljs-string {  color: #be5046;}.hljs-meta .hljs-keyword,/* for v10 compatible themes */.hljs-meta-keyword {  font-weight: bold;}]]></content>
+        <content type="html"><![CDATA[/** 抖音字效 **/@-webkit-keyframes uk-text-shadow-glitch {  0% {    text-shadow: none;  }  25% {    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;  }  50% {    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;  }  75% {    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;  }  to {    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;  }}@keyframes uk-text-shadow-glitch {  0% {    text-shadow: none;  }  25% {    text-shadow: -1px -1px 0 #ff0048, 1px 1px 0 #3234ff;  }  50% {    text-shadow: 1px -1px 0 #ff0048, -1px 1px 0 #3234ff;  }  75% {    text-shadow: -1px 1px 0 #ff0048, 1px -1px 0 #3234ff;  }  to {    text-shadow: 1px 1px 0 #ff0048, -1px -1px 0 #3234ff;  }}/* 一级标题 */h1 {  font-size: 50px;  text-align: center;  -webkit-animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79)    0s infinite normal both running;  animation: uk-text-shadow-glitch 0.95s cubic-bezier(1, -1.91, 0, 2.79) 0s    infinite normal both running;}/* 引用框 */blockquote {  border-top-right-radius: 10px;  border-bottom-right-radius: 10px;  margin-bottom: 16px;  padding: 10px 10px 10px 20px;  font-size: 0.9em;  background: #ffffff;  border-left: 5px solid #166ff3;  color: #6a737d;  overflow: auto;  box-shadow: 4px 5px 10px 2px rgb(173 173 173);  -webkit-overflow-scrolling: touch;}]]></content>
       
     </entry>
     
@@ -695,6 +684,17 @@
       <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/self/onedark.css"/>
+      <url>/self/onedark.css</url>
+      
+        <content type="html"><![CDATA[/*!  Theme: OneDark  Author: Lalit Magant (http://github.com/tilal6991)  License: ~ MIT (or more permissive) [via base16-schemes-source]  Maintainer: @highlightjs/core-team  Version: 2021.09.0*//*  WARNING: DO NOT EDIT THIS FILE DIRECTLY.  This theme file was auto-generated from the Base16 scheme onedark  by the Highlight.js Base16 template builder.  - https://github.com/highlightjs/base16-highlightjs*//* 新添加的内容  -------------------------------------   --hl-color                  代码框字体顔色 【必须】 (把下面.hljs的 color复制到这里来)  --hl-bg                     代码框背景色 【必须】 (把下面.hljs的 background复制到这里来)  --hltools-bg: #321a0f       代码框顶部工具栏背景色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hltools-color: #fff       代码框顶部工具栏字体顔色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hlnumber-bg: #221a0f      代码框行数背景色 【可选】(如果已经关掉 line_number,可以不用配置这个)  --hlnumber-color: #fff      代码框行数字体顔色 【可选】 (如果已经关掉 line_number,可以不用配置这个)  --hlscrollbar-bg: #d3af86   代码框滚动条顔色 【可选】（默认为主题主顔色）  --hlexpand-bg: #d3af86      代码框底部展开背景色 【可选】(如果已经关掉 highlight_height_limit,可以不用配置这个)*/:root {  --hl-color: #abb2bf;  --hl-bg: #282c34;  --hltools-bg: #282c34;  --hltools-color: #fff;  --hlnumber-bg: #282c34;  --hlnumber-color: #353b45;  --hlexpand-bg: #282c34;}/*base00  #282c34  Default Backgroundbase01  #353b45  Lighter Background (Used for status bars, line number and folding marks)base02  #3e4451  Selection Backgroundbase03  #545862  Comments, Invisibles, Line Highlightingbase04  #565c64  Dark Foreground (Used for status bars)base05  #abb2bf  Default Foreground, Caret, Delimiters, Operatorsbase06  #b6bdca  Light Foreground (Not often used)base07  #c8ccd4  Light Background (Not often used)base08  #e06c75  Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deletedbase09  #d19a66  Integers, Boolean, Constants, XML Attributes, Markup Link Urlbase0A  #e5c07b  Classes, Markup Bold, Search Text Backgroundbase0B  #98c379  Strings, Inherited Class, Markup Code, Diff Insertedbase0C  #56b6c2  Support, Regular Expressions, Escape Characters, Markup Quotesbase0D  #61afef  Functions, Methods, Attribute IDs, Headingsbase0E  #c678dd  Keywords, Storage, Selector, Markup Italic, Diff Changedbase0F  #be5046  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>*/pre code.hljs {  display: block;  overflow-x: auto;  padding: 1em;}code.hljs {  padding: 3px 5px;}.hljs {  color: #abb2bf;  /* background: #171717; */  background: #00282c34;}.hljs::selection,.hljs ::selection {  background-color: #3e4451;  color: #abb2bf;}/* purposely do not highlight these things */.hljs-formula,.hljs-params,.hljs-property {}/* base03 - #545862 -  Comments, Invisibles, Line Highlighting */.hljs-comment {  color: #545862;}/* base04 - #565c64 -  Dark Foreground (Used for status bars) */.hljs-tag {  color: #565c64;}/* base05 - #abb2bf -  Default Foreground, Caret, Delimiters, Operators */.hljs-subst,.hljs-punctuation,.hljs-operator {  color: #abb2bf;}.hljs-operator {  opacity: 0.7;}/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */.hljs-bullet,.hljs-variable,.hljs-template-variable,.hljs-selector-tag,.hljs-name,.hljs-deletion {  color: #e06c75;}/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */.hljs-symbol,.hljs-number,.hljs-link,.hljs-attr,.hljs-variable.constant_,.hljs-literal {  color: #d19a66;}/* base0A - Classes, Markup Bold, Search Text Background */.hljs-title,.hljs-class .hljs-title,.hljs-title.class_ {  color: #e5c07b;}.hljs-strong {  font-weight: bold;  color: #e5c07b;}/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */.hljs-code,.hljs-addition,.hljs-title.class_.inherited__,.hljs-string {  color: #98c379;}/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */.hljs-built_in,.hljs-doctag, /* guessing */.hljs-quote,.hljs-keyword.hljs-atrule,.hljs-regexp {  color: #56b6c2;}/* base0D - Functions, Methods, Attribute IDs, Headings */.hljs-function .hljs-title,.hljs-attribute,.ruby .hljs-property,.hljs-title.function_,.hljs-section {  color: #61afef;}/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */.hljs-type,/* .hljs-selector-id, *//* .hljs-selector-class, *//* .hljs-selector-attr, *//* .hljs-selector-pseudo, */.hljs-template-tag,.diff .hljs-meta,.hljs-keyword {  color: #c678dd;}.hljs-emphasis {  color: #c678dd;  font-style: italic;}/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */.hljs-meta,/*  prevent top level .keyword and .string scopes  from leaking into meta by accident*/.hljs-meta .hljs-keyword,.hljs-meta .hljs-string {  color: #be5046;}.hljs-meta .hljs-keyword,/* for v10 compatible themes */.hljs-meta-keyword {  font-weight: bold;}]]></content>
       
     </entry>
     
