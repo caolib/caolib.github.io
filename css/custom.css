@@ -394,3 +394,7 @@ div#category {
     border-radius: 10px;
     background-color: transparent;
 }
+
+#article-container code {
+    line-height: 1.5;
+}
