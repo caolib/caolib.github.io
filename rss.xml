@@ -15,8 +15,37 @@
     <atom:link href="https://clibin.gitee.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>bin_blog</description>
-    <pubDate>Thu, 26 Dec 2024 11:10:35 GMT</pubDate>
+    <pubDate>Fri, 27 Dec 2024 13:31:13 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>邮箱开启SMTP服务</title>
+      <link>https://clibin.gitee.io/2024/12/27/%E5%BC%80%E5%90%AFSMTP%E6%9C%8D%E5%8A%A1/</link>
+      <guid>https://clibin.gitee.io/2024/12/27/%E5%BC%80%E5%90%AFSMTP%E6%9C%8D%E5%8A%A1/</guid>
+      <pubDate>Fri, 27 Dec 2024 12:43:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;开启邮件SMTP服务&quot;&gt;&lt;a href=&quot;#开启邮件SMTP服务&quot; class=&quot;headerlink&quot; title=&quot;开启邮件SMTP服务&quot;&gt;&lt;/a&gt;开启邮件SMTP服务&lt;/h1&gt;&lt;h2 id=&quot;SMTP服务是什么？&quot;&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/SMTP/">SMTP</category>
+      
+      <category domain="https://clibin.gitee.io/tags/email/">email</category>
+      
+      
+      <comments>https://clibin.gitee.io/2024/12/27/%E5%BC%80%E5%90%AFSMTP%E6%9C%8D%E5%8A%A1/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>openfeign远程调用</title>
@@ -194,8 +223,8 @@
     
     <item>
       <title>nacos从入门到入土</title>
-      <link>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E/</link>
-      <guid>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E/</guid>
+      <link>https://clibin.gitee.io/2024/03/16/nacos/</link>
+      <guid>https://clibin.gitee.io/2024/03/16/nacos/</guid>
       <pubDate>Sat, 16 Mar 2024 10:42:42 GMT</pubDate>
       
         
@@ -217,7 +246,7 @@
       <category domain="https://clibin.gitee.io/tags/nacos/">nacos</category>
       
       
-      <comments>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E/#disqus_thread</comments>
+      <comments>https://clibin.gitee.io/2024/03/16/nacos/#disqus_thread</comments>
       
     </item>
     
@@ -574,33 +603,6 @@
       
       
       <comments>https://clibin.gitee.io/2023/07/28/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>C++</title>
-      <link>https://clibin.gitee.io/2023/07/28/C/</link>
-      <guid>https://clibin.gitee.io/2023/07/28/C/</guid>
-      <pubDate>Fri, 28 Jul 2023 13:03:14 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;C-核心编程&quot;&gt;&lt;a href=&quot;#C-核心编程&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/c/">c++</category>
-      
-      
-      <comments>https://clibin.gitee.io/2023/07/28/C/#disqus_thread</comments>
       
     </item>
     

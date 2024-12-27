@@ -6,7 +6,7 @@
   <link href="https://clibin.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://clibin.gitee.io/"/>
-  <updated>2024-12-26T11:10:35.651Z</updated>
+  <updated>2024-12-27T13:31:13.062Z</updated>
   <id>https://clibin.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>邮箱开启SMTP服务</title>
+    <link href="https://clibin.gitee.io/2024/12/27/%E5%BC%80%E5%90%AFSMTP%E6%9C%8D%E5%8A%A1/"/>
+    <id>https://clibin.gitee.io/2024/12/27/%E5%BC%80%E5%90%AFSMTP%E6%9C%8D%E5%8A%A1/</id>
+    <published>2024-12-27T12:43:00.000Z</published>
+    <updated>2024-12-27T13:31:13.062Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;开启邮件SMTP服务&quot;&gt;&lt;a href=&quot;#开启邮件SMTP服务&quot; class=&quot;headerlink&quot; title=&quot;开启邮件SMTP服务&quot;&gt;&lt;/a&gt;开启邮件SMTP服务&lt;/h1&gt;&lt;h2 id=&quot;SMTP服务是什么？&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="tools" scheme="https://clibin.gitee.io/categories/tools/"/>
+    
+    
+    <category term="SMTP" scheme="https://clibin.gitee.io/tags/SMTP/"/>
+    
+    <category term="email" scheme="https://clibin.gitee.io/tags/email/"/>
+    
+  </entry>
   
   <entry>
     <title>openfeign远程调用</title>
@@ -180,8 +207,8 @@
   
   <entry>
     <title>nacos从入门到入土</title>
-    <link href="https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E/"/>
-    <id>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E/</id>
+    <link href="https://clibin.gitee.io/2024/03/16/nacos/"/>
+    <id>https://clibin.gitee.io/2024/03/16/nacos/</id>
     <published>2024-03-16T10:42:42.000Z</published>
     <updated>2024-12-27T02:00:33.584Z</updated>
     
@@ -534,31 +561,6 @@
     
     
     <category term="os" scheme="https://clibin.gitee.io/tags/os/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>C++</title>
-    <link href="https://clibin.gitee.io/2023/07/28/C/"/>
-    <id>https://clibin.gitee.io/2023/07/28/C/</id>
-    <published>2023-07-28T13:03:14.000Z</published>
-    <updated>2024-12-26T11:09:57.543Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;C-核心编程&quot;&gt;&lt;a href=&quot;#C-核心编程&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="c++" scheme="https://clibin.gitee.io/tags/c/"/>
     
   </entry>
   
