@@ -67,41 +67,12 @@
       <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
       
       
-      <category domain="https://clibin.gitee.io/tags/springboot/">springboot</category>
-      
       <category domain="https://clibin.gitee.io/tags/%E9%82%AE%E4%BB%B6/">邮件</category>
+      
+      <category domain="https://clibin.gitee.io/tags/springboot/">springboot</category>
       
       
       <comments>https://clibin.gitee.io/2024/12/25/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>npm、yarn 包管理器</title>
-      <link>https://clibin.gitee.io/2024/03/27/npm-yarn/</link>
-      <guid>https://clibin.gitee.io/2024/03/27/npm-yarn/</guid>
-      <pubDate>Wed, 27 Mar 2024 05:37:44 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h2 id=&quot;npm&quot;&gt;&lt;a href=&quot;#npm&quot; class=&quot;headerlink&quot; title=&quot;npm&quot;&gt;&lt;/a&gt;npm&lt;/h2&gt;&lt;h3 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%89%8D%E7%AB%AF/">前端</category>
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%89%8D%E7%AB%AF/nodejs/">nodejs</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/npm/">npm</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/03/27/npm-yarn/#disqus_thread</comments>
       
     </item>
     
@@ -223,8 +194,8 @@
     
     <item>
       <title>nacos从入门到入土</title>
-      <link>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F/</link>
-      <guid>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F/</guid>
+      <link>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E/</link>
+      <guid>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E/</guid>
       <pubDate>Sat, 16 Mar 2024 10:42:42 GMT</pubDate>
       
         
@@ -246,14 +217,14 @@
       <category domain="https://clibin.gitee.io/tags/nacos/">nacos</category>
       
       
-      <comments>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E5%85%A5%E5%9C%9F/#disqus_thread</comments>
+      <comments>https://clibin.gitee.io/2024/03/16/nacos%E4%BB%8E/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>shields.io标签生成</title>
-      <link>https://clibin.gitee.io/2024/03/08/%E4%BD%BF%E7%94%A8shields%E7%BB%99%E4%BB%93%E5%BA%93%E7%94%9F%E6%88%90%E6%8A%80%E6%9C%AF%E6%A0%88%E6%A0%87%E7%AD%BE/</link>
-      <guid>https://clibin.gitee.io/2024/03/08/%E4%BD%BF%E7%94%A8shields%E7%BB%99%E4%BB%93%E5%BA%93%E7%94%9F%E6%88%90%E6%8A%80%E6%9C%AF%E6%A0%88%E6%A0%87%E7%AD%BE/</guid>
+      <link>https://clibin.gitee.io/2024/03/08/shields.io%E6%A0%87%E7%AD%BE/</link>
+      <guid>https://clibin.gitee.io/2024/03/08/shields.io%E6%A0%87%E7%AD%BE/</guid>
       <pubDate>Fri, 08 Mar 2024 06:17:48 GMT</pubDate>
       
         
@@ -275,14 +246,14 @@
       <category domain="https://clibin.gitee.io/tags/%E6%A0%87%E7%AD%BE/">标签</category>
       
       
-      <comments>https://clibin.gitee.io/2024/03/08/%E4%BD%BF%E7%94%A8shields%E7%BB%99%E4%BB%93%E5%BA%93%E7%94%9F%E6%88%90%E6%8A%80%E6%9C%AF%E6%A0%88%E6%A0%87%E7%AD%BE/#disqus_thread</comments>
+      <comments>https://clibin.gitee.io/2024/03/08/shields.io%E6%A0%87%E7%AD%BE/#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>markdown从入门到上天</title>
-      <link>https://clibin.gitee.io/2024/03/01/markdown%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%B8%8A%E5%A4%A9/</link>
-      <guid>https://clibin.gitee.io/2024/03/01/markdown%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%B8%8A%E5%A4%A9/</guid>
+      <link>https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/</link>
+      <guid>https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/</guid>
       <pubDate>Fri, 01 Mar 2024 14:13:26 GMT</pubDate>
       
         
@@ -302,7 +273,7 @@
       <category domain="https://clibin.gitee.io/tags/markdown/">markdown</category>
       
       
-      <comments>https://clibin.gitee.io/2024/03/01/markdown%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E4%B8%8A%E5%A4%A9/#disqus_thread</comments>
+      <comments>https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
       
     </item>
     
@@ -399,8 +370,8 @@
     
     <item>
       <title>everything极速搜索</title>
-      <link>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</link>
-      <guid>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/</guid>
+      <link>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/</link>
+      <guid>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/</guid>
       <pubDate>Sun, 18 Feb 2024 07:18:12 GMT</pubDate>
       
         
@@ -422,34 +393,7 @@
       <category domain="https://clibin.gitee.io/tags/%E6%90%9C%E7%B4%A2/">搜索</category>
       
       
-      <comments>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2%E5%B8%B8%E7%94%A8%E6%8A%80%E5%B7%A7/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>springboot相关配置</title>
-      <link>https://clibin.gitee.io/2024/01/07/SpringBoot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</link>
-      <guid>https://clibin.gitee.io/2024/01/07/SpringBoot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</guid>
-      <pubDate>Sun, 07 Jan 2024 05:10:42 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;springboot相关配置&quot;&gt;&lt;a href=&quot;#springboot相关配置&quot; class=&quot;headerlink&quot; title=&quot;springboot相关配置&quot;&gt;&lt;/a&gt;springboot相关配置&lt;/h1&gt;&lt;h2 id=&quot;1-自定义项目LOGO&quot;&gt;&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/springboot/">springboot</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/01/07/SpringBoot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/#disqus_thread</comments>
+      <comments>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/#disqus_thread</comments>
       
     </item>
     
@@ -603,6 +547,60 @@
       
       
       <comments>https://clibin.gitee.io/2023/07/28/mysql/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>操作系统</title>
+      <link>https://clibin.gitee.io/2023/07/28/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</link>
+      <guid>https://clibin.gitee.io/2023/07/28/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/</guid>
+      <pubDate>Fri, 28 Jul 2023 13:04:32 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;第一章-引论&quot;&gt;&lt;a href=&quot;#第一章-引论&quot; class=&quot;headerlink&quot; title=&quot;第一章 引论&quot;&gt;&lt;/a&gt;第一章 引论&lt;/h2&gt;&lt;h3 id=&quot;操作系统的定义&quot;&gt;&lt;a href=&quot;#操作系统的定义&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/%E8%80%83%E7%A0%94/">考研</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/os/">os</category>
+      
+      
+      <comments>https://clibin.gitee.io/2023/07/28/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>C++</title>
+      <link>https://clibin.gitee.io/2023/07/28/C/</link>
+      <guid>https://clibin.gitee.io/2023/07/28/C/</guid>
+      <pubDate>Fri, 28 Jul 2023 13:03:14 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;C-核心编程&quot;&gt;&lt;a href=&quot;#C-核心编程&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/c/">c++</category>
+      
+      
+      <comments>https://clibin.gitee.io/2023/07/28/C/#disqus_thread</comments>
       
     </item>
     
