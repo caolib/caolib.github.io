@@ -28,7 +28,9 @@
         
           
           
-      <description>&lt;h1 id=&quot;springboot发送邮件&quot;&gt;&lt;a href=&quot;#springboot发送邮件&quot; class=&quot;headerlink&quot; title=&quot;springboot发送邮件&quot;&gt;&lt;/a&gt;springboot发送邮件&lt;/h1&gt;&lt;h2 id=&quot;导入依赖&quot;&gt;&lt;a</description>
+      <description>&lt;h1&gt;springboot发送邮件&lt;/h1&gt;
+&lt;h2 id=&quot;导入依赖&quot;&gt;导入依赖&lt;/h2&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span</description>
           
         
       
@@ -57,7 +59,10 @@
         
           
           
-      <description>&lt;h1 id=&quot;开启邮件SMTP服务&quot;&gt;&lt;a href=&quot;#开启邮件SMTP服务&quot; class=&quot;headerlink&quot; title=&quot;开启邮件SMTP服务&quot;&gt;&lt;/a&gt;开启邮件SMTP服务&lt;/h1&gt;&lt;h2 id=&quot;1-SMTP服务是什么？&quot;&gt;&lt;a</description>
+      <description>&lt;h1&gt;开启邮件SMTP服务&lt;/h1&gt;
+&lt;h2 id=&quot;1-SMTP服务是什么？&quot;&gt;1. SMTP服务是什么？&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SMTP&lt;/strong&gt;（Simple Mail Transfer</description>
           
         
       
@@ -86,7 +91,8 @@
         
           
           
-      <description>&lt;h1 id=&quot;openfeign&quot;&gt;&lt;a href=&quot;#openfeign&quot; class=&quot;headerlink&quot; title=&quot;openfeign&quot;&gt;&lt;/a&gt;&lt;a</description>
+      <description>&lt;h1&gt;&lt;a href=&quot;https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/&quot;&gt;openfeign&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;1-feign是什么？&quot;&gt;1.</description>
           
         
       
@@ -115,7 +121,8 @@
         
           
           
-      <description>&lt;h1 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;&lt;a</description>
+      <description>&lt;h1&gt;&lt;a href=&quot;https://nulab.com/zh-cn/learn/software-development/git-tutorial/&quot;&gt;Git&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a</description>
           
         
       
@@ -172,7 +179,8 @@
         
           
           
-      <description>&lt;h1 id=&quot;Apifox&quot;&gt;&lt;a href=&quot;#Apifox&quot; class=&quot;headerlink&quot; title=&quot;Apifox&quot;&gt;&lt;/a&gt;Apifox&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://apifox.com/help/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;h1&gt;Apifox&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://apifox.com/help/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
 &lt;h2</description>
           
         
@@ -202,7 +210,8 @@
         
           
           
-      <description>&lt;h1 id=&quot;springcloud从入门到放弃&quot;&gt;&lt;a href=&quot;#springcloud从入门到放弃&quot; class=&quot;headerlink&quot; title=&quot;springcloud从入门到放弃&quot;&gt;&lt;/a&gt;&lt;a</description>
+      <description>&lt;h1&gt;&lt;a href=&quot;https://sca.aliyun.com/zh-cn/&quot;&gt;springcloud&lt;/a&gt;从入门到放弃&lt;/h1&gt;
+&lt;h2</description>
           
         
       
@@ -231,7 +240,10 @@
         
           
           
-      <description>&lt;h1 id=&quot;nacos&quot;&gt;&lt;a href=&quot;#nacos&quot; class=&quot;headerlink&quot; title=&quot;nacos&quot;&gt;&lt;/a&gt;nacos&lt;/h1&gt;&lt;h2 id=&quot;注册中心&quot;&gt;&lt;a href=&quot;#注册中心&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h1&gt;nacos&lt;/h1&gt;
+&lt;h2 id=&quot;注册中心&quot;&gt;注册中心&lt;/h2&gt;
+&lt;h3 id=&quot;1-下载&quot;&gt;1. 下载&lt;/h3&gt;
+&lt;p&gt;&lt;a</description>
           
         
       
@@ -289,7 +301,10 @@
         
           
           
-      <description>&lt;h1 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h1&gt;Markdown&lt;/h1&gt;
+&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://markdown.com.cn/&quot;&gt;Markdown&lt;/a&gt;</description>
           
         
       
@@ -316,7 +331,11 @@
         
           
           
-      <description>&lt;h2 id=&quot;Pinia&quot;&gt;&lt;a href=&quot;#Pinia&quot; class=&quot;headerlink&quot; title=&quot;Pinia&quot;&gt;&lt;/a&gt;&lt;a</description>
+      <description>&lt;h2 id=&quot;Pinia&quot;&gt;&lt;a href=&quot;https://pinia.vuejs.org/zh/&quot;&gt;Pinia&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!note]&lt;/p&gt;
+&lt;p&gt;Pinia是什么？&lt;/p&gt;
+&lt;p&gt;Pinia 是 ==Vue</description>
           
         
       
@@ -378,7 +397,10 @@
         
           
           
-      <description>&lt;h2 id=&quot;Axios&quot;&gt;&lt;a href=&quot;#Axios&quot; class=&quot;headerlink&quot; title=&quot;Axios&quot;&gt;&lt;/a&gt;&lt;a</description>
+      <description>&lt;h2 id=&quot;Axios&quot;&gt;&lt;a href=&quot;https://www.axios-http.cn/&quot;&gt;Axios&lt;/a&gt;&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Axios是什么？&lt;/p&gt;
+&lt;p&gt;Axios 是一个基于 &lt;em&gt;&lt;a</description>
           
         
       
@@ -407,7 +429,9 @@
         
           
           
-      <description>&lt;h1 id=&quot;everything&quot;&gt;&lt;a href=&quot;#everything&quot; class=&quot;headerlink&quot; title=&quot;everything&quot;&gt;&lt;/a&gt;everything&lt;/h1&gt;&lt;h2 id=&quot;1-指定文件后缀&quot;&gt;&lt;a href=&quot;#1-指定文件后缀&quot;</description>
+      <description>&lt;h1&gt;everything&lt;/h1&gt;
+&lt;h2 id=&quot;1-指定文件后缀&quot;&gt;1.指定文件后缀&lt;/h2&gt;
+&lt;p&gt;搜索文件名，并且==要求后缀==，假设要搜索</description>
           
         
       
@@ -436,7 +460,8 @@
         
           
           
-      <description>&lt;h1 id=&quot;springboot相关配置&quot;&gt;&lt;a href=&quot;#springboot相关配置&quot; class=&quot;headerlink&quot; title=&quot;springboot相关配置&quot;&gt;&lt;/a&gt;springboot相关配置&lt;/h1&gt;&lt;h2 id=&quot;1-自定义项目LOGO&quot;&gt;&lt;a</description>
+      <description>&lt;h1&gt;springboot相关配置&lt;/h1&gt;
+&lt;h2 id=&quot;1-自定义项目LOGO&quot;&gt;1.&lt;a</description>
           
         
       
@@ -463,7 +488,9 @@
         
           
           
-      <description>&lt;h1 id=&quot;计算机网络&quot;&gt;&lt;a href=&quot;#计算机网络&quot; class=&quot;headerlink&quot; title=&quot;计算机网络&quot;&gt;&lt;/a&gt;计算机网络&lt;/h1&gt;&lt;h2 id=&quot;1-计算机网络概述&quot;&gt;&lt;a href=&quot;#1-计算机网络概述&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h1&gt;计算机网络&lt;/h1&gt;
+&lt;h2 id=&quot;1-计算机网络概述&quot;&gt;1. 计算机网络概述&lt;/h2&gt;
+&lt;h3 id=&quot;1-1-作用&quot;&gt;1.1</description>
           
         
       
@@ -491,10 +518,10 @@
           
           
       <description>&lt;img src=&quot;https://mybatis.org/images/mybatis-logo.png&quot;&gt;
-
-
-
-&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;h3</description>
+&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+&lt;h3 id=&quot;什么是-MyBatis？&quot;&gt;什么是 MyBatis？&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;MyBatis</description>
           
         
       
@@ -525,7 +552,10 @@
         
           
           
-      <description>&lt;h1 id=&quot;Redis&quot;&gt;&lt;a href=&quot;#Redis&quot; class=&quot;headerlink&quot; title=&quot;Redis&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://redis.io/&quot;&gt;Redis&lt;/a&gt;&lt;/h1&gt;&lt;h2 id=&quot;什么是Nosql&quot;&gt;&lt;a</description>
+      <description>&lt;h1&gt;&lt;a href=&quot;https://redis.io/&quot;&gt;Redis&lt;/a&gt;&lt;/h1&gt;
+&lt;h2 id=&quot;什么是Nosql&quot;&gt;什么是Nosql&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;==NoSQL==	-&amp;gt; ==not only</description>
           
         
       
@@ -556,7 +586,10 @@
         
           
           
-      <description>&lt;h1 id=&quot;mybatis-plus&quot;&gt;&lt;a href=&quot;#mybatis-plus&quot; class=&quot;headerlink&quot; title=&quot;mybatis-plus&quot;&gt;&lt;/a&gt;mybatis-plus&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot;</description>
+      <description>&lt;h1&gt;mybatis-plus&lt;/h1&gt;
+&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/baomidou/mybatis-plus&quot;&gt;MyBatis-Plus&lt;/a&gt;（简称 MP）是一个 &lt;a</description>
           
         
       
@@ -587,7 +620,9 @@
         
           
           
-      <description>&lt;h1 id=&quot;MySQL&quot;&gt;&lt;a href=&quot;#MySQL&quot; class=&quot;headerlink&quot; title=&quot;MySQL&quot;&gt;&lt;/a&gt;MySQL&lt;/h1&gt;&lt;h2 id=&quot;执行编写顺序&quot;&gt;&lt;a href=&quot;#执行编写顺序&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h1&gt;MySQL&lt;/h1&gt;
+&lt;h2 id=&quot;执行编写顺序&quot;&gt;执行编写顺序&lt;/h2&gt;
+&lt;figure class=&quot;highlight sql&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs sql&quot;&gt;&lt;span</description>
           
         
       

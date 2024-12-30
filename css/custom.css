@@ -393,5 +393,5 @@ div#category {
 }
 
 #article-container code {
-    line-height: 1.5;
+    line-height: 1.5 !important;
 }
