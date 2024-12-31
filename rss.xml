@@ -15,8 +15,37 @@
     <atom:link href="https://clibin.gitee.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>bin_blog</description>
-    <pubDate>Sat, 28 Dec 2024 09:16:26 GMT</pubDate>
+    <pubDate>Tue, 31 Dec 2024 16:32:45 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>公网访问本地服务</title>
+      <link>https://clibin.gitee.io/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/</link>
+      <guid>https://clibin.gitee.io/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/</guid>
+      <pubDate>Tue, 31 Dec 2024 15:44:38 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;blockquote&gt;
+&lt;p&gt;在公网部署前端项目是很方便的，Vercel、Netlify、Cloudflare等等都可以很快地部署一个前端页面（&lt;del&gt;前端部署是这样的，你只要上传文件就可以，而后端部署要考虑的就很多了，没有云服务器&lt;/del&gt;）&lt;/p&gt;
+&lt;p&gt;现在我部署了一</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/IPv6/">IPv6</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/surge/">surge</category>
+      
+      
+      <comments>https://clibin.gitee.io/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>springboot发送邮件</title>
@@ -574,35 +603,6 @@
       
       
       <comments>https://clibin.gitee.io/2023/08/31/mybatis-plus/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>mysql</title>
-      <link>https://clibin.gitee.io/2023/07/28/mysql/</link>
-      <guid>https://clibin.gitee.io/2023/07/28/mysql/</guid>
-      <pubDate>Fri, 28 Jul 2023 13:21:26 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;MySQL&quot;&gt;&lt;a href=&quot;#MySQL&quot; class=&quot;headerlink&quot; title=&quot;MySQL&quot;&gt;&lt;/a&gt;MySQL&lt;/h1&gt;&lt;h2 id=&quot;执行编写顺序&quot;&gt;&lt;a href=&quot;#执行编写顺序&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/">数据库</category>
-      
-      <category domain="https://clibin.gitee.io/tags/mysql/">mysql</category>
-      
-      
-      <comments>https://clibin.gitee.io/2023/07/28/mysql/#disqus_thread</comments>
       
     </item>
     

@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>公网访问本地服务</title>
+      <link href="/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/"/>
+      <url>/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>在公网部署前端项目是很方便的，Vercel、Netlify、Cloudflare等等都可以很快地部署一个前端页面（<del>前端部署是这样的，你只要上传文件就可以，而后端部署要考虑的就很多了，没有云服务器</del>）</p><p>现在我部署了一个前端页面，我想让这个页面可以访问我本地电脑上运行的后端服务，不用云服务器怎么做？</p></blockquote><h2 id="查看IPv6地址"><a href="#查看IPv6地址" class="headerlink" title="查看IPv6地址"></a>查看IPv6地址</h2><p>家里的路由器有IPv6地址，可以使用<code>ipconfig</code>命令查看</p><img src="https://s2.loli.net/2025/01/01/lB1oVpEv8muQhDM.png" alt="image-20250101000149006" style="zoom:67%;" /><h2 id="创建后端项目"><a href="#创建后端项目" class="headerlink" title="创建后端项目"></a>创建后端项目</h2><p>以springboot为例，创建一个后端项目，需要导入<code>spring-boot-starter-web</code>依赖</p><blockquote><p>创建一个简单的测试接口，启动项目访问<code>localhost:8080</code>，会显示Hello World!</p></blockquote><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@RestController</span><br><span class="hljs-meta">@CrossOrigin</span> <span class="hljs-comment">// 允许跨域请求</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">TestController</span> &#123;<br>    <span class="hljs-meta">@GetMapping</span><br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">test</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> <span class="hljs-string">&quot;Hello World!&quot;</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><blockquote><p>在<code>application.yml</code>文件中添加一个配置，启动IPv6功能，重启项目，访问 <code>http://[240e:370:9114**********]:8080/</code>,中间的一长串就是刚才获取的IPv6地址，同样会显示Hello World!</p></blockquote><figure class="highlight yml"><table><tr><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">server:</span><br>  <span class="hljs-attr">address:</span> <span class="hljs-string">&quot;::&quot;</span><br></code></pre></td></tr></table></figure><h2 id="部署前端页面"><a href="#部署前端页面" class="headerlink" title="部署前端页面"></a>部署前端页面</h2><p>创建一个文件夹，在文件夹下添加一个 <code>index.html</code> 文件，作用很简单，就是向我们刚刚创建的接口发送请求，<strong>你需要将下面的ip地址替换</strong></p><figure class="highlight html"><table><tr><td class="code"><pre><code class="hljs html"><span class="hljs-meta">&lt;!DOCTYPE <span class="hljs-keyword">html</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">html</span> <span class="hljs-attr">lang</span>=<span class="hljs-string">&quot;en&quot;</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;viewport&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;width=device-width, initial-scale=1.0&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Test<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">style</span>&gt;</span><span class="language-css"></span><br><span class="language-css">        <span class="hljs-selector-tag">button</span> &#123;</span><br><span class="language-css">            <span class="hljs-attribute">font-size</span>: <span class="hljs-number">50px</span>;</span><br><span class="language-css">            <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">30vw</span>;</span><br><span class="language-css">            <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">20vh</span>;</span><br><span class="language-css">            <span class="hljs-attribute">width</span>: <span class="hljs-number">300px</span>;</span><br><span class="language-css">        &#125;</span><br><span class="language-css">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">style</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;fetchDataBtn&quot;</span>&gt;</span>获取数据<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript"></span><br><span class="language-javascript">        <span class="hljs-variable language_">document</span>.<span class="hljs-title function_">getElementById</span>(<span class="hljs-string">&#x27;fetchDataBtn&#x27;</span>).<span class="hljs-title function_">addEventListener</span>(<span class="hljs-string">&#x27;click&#x27;</span>, <span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) &#123;</span><br><span class="language-javascript">            axios.<span class="hljs-title function_">get</span>(<span class="hljs-string">&#x27;http://[240e:370:9114**********]:8080/&#x27;</span>) <span class="hljs-comment">//替换这个ip</span></span><br><span class="language-javascript">                .<span class="hljs-title function_">then</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params">response</span>) &#123;</span><br><span class="language-javascript">                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">log</span>(<span class="hljs-title class_">JSON</span>.<span class="hljs-title function_">stringify</span>(response.<span class="hljs-property">data</span>, <span class="hljs-literal">null</span>, <span class="hljs-number">2</span>));</span><br><span class="language-javascript">                &#125;)</span><br><span class="language-javascript">                .<span class="hljs-title function_">catch</span>(<span class="hljs-keyword">function</span> (<span class="hljs-params">error</span>) &#123;</span><br><span class="language-javascript">                    <span class="hljs-variable language_">console</span>.<span class="hljs-title function_">error</span>(<span class="hljs-string">&#x27;Error fetching data:&#x27;</span>, error);</span><br><span class="language-javascript">                &#125;);</span><br><span class="language-javascript">        &#125;);</span><br><span class="language-javascript">    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span><br></code></pre></td></tr></table></figure><blockquote><p>这里使用<strong>surge</strong>进行部署这个html页面</p><p>为什么使用它？因为<strong>它可以使用http协议</strong>，本地的springboot服务器使用http，<strong>如果前端部署使用https的话，发送请求会被浏览器拦截</strong>（当然如果你有有效SSL证书也可以把本地服务器改为https，然后前端部署也使用https）</p></blockquote><ul><li><p>安装surge</p><figure class="highlight sh"><table><tr><td class="code"><pre><code class="hljs sh">npm install -g surge<br></code></pre></td></tr></table></figure></li><li><p>执行<code>surge</code>,部署网页，第一次使用需要注册，<strong>输入邮箱</strong>然后<strong>设置一个密码</strong>，随后<strong>验证邮箱</strong></p><figure class="highlight sh"><table><tr><td class="code"><pre><code class="hljs sh">surge<br></code></pre></td></tr></table></figure></li><li><p>之后会询问使用哪个文件夹，默认当前文件夹，<strong>直接回车</strong></p></li><li><p>然后<strong>设置一个域名</strong>，回车就完成了</p></li></ul><h2 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h2><p>打开刚才设置的域名，默认会使用https，<strong>手动修改为http</strong>，点击页面上的按钮，打开控制台就能看到Hello World！了，这样在公网部署的前端项目就能访问本地的后端服务器了，而且不需要云服务器！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> IPv6 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> surge </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>springboot发送邮件</title>
       <link href="/2024/12/28/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/"/>
       <url>/2024/12/28/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/</url>
@@ -543,6 +568,17 @@
     
     
     <entry>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>便携小空调 - 为你的夏日带去清凉!</title>
       <link href="/air-conditioner/index.html"/>
       <url>/air-conditioner/index.html</url>
@@ -554,9 +590,20 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -576,28 +623,6 @@
     
     
     <entry>
-      <title>即刻短文</title>
-      <link href="/essay/index.html"/>
-      <url>/essay/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/css/custom.css"/>
       <url>/css/custom.css</url>
@@ -609,11 +634,11 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
+      <title></title>
+      <link href="/self/onedark.css"/>
+      <url>/self/onedark.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/*!  Theme: OneDark  Author: Lalit Magant (http://github.com/tilal6991)  License: ~ MIT (or more permissive) [via base16-schemes-source]  Maintainer: @highlightjs/core-team  Version: 2021.09.0*//*  WARNING: DO NOT EDIT THIS FILE DIRECTLY.  This theme file was auto-generated from the Base16 scheme onedark  by the Highlight.js Base16 template builder.  - https://github.com/highlightjs/base16-highlightjs*//* 新添加的内容  -------------------------------------   --hl-color                  代码框字体顔色 【必须】 (把下面.hljs的 color复制到这里来)  --hl-bg                     代码框背景色 【必须】 (把下面.hljs的 background复制到这里来)  --hltools-bg: #321a0f       代码框顶部工具栏背景色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hltools-color: #fff       代码框顶部工具栏字体顔色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hlnumber-bg: #221a0f      代码框行数背景色 【可选】(如果已经关掉 line_number,可以不用配置这个)  --hlnumber-color: #fff      代码框行数字体顔色 【可选】 (如果已经关掉 line_number,可以不用配置这个)  --hlscrollbar-bg: #d3af86   代码框滚动条顔色 【可选】（默认为主题主顔色）  --hlexpand-bg: #d3af86      代码框底部展开背景色 【可选】(如果已经关掉 highlight_height_limit,可以不用配置这个)*/:root {  --hl-color: #abb2bf;  --hl-bg: #282c34;  --hltools-bg: #282c34;  --hltools-color: #fff;  --hlnumber-bg: #282c34;  --hlnumber-color: #353b45;  --hlexpand-bg: #282c34;}/*base00  #282c34  Default Backgroundbase01  #353b45  Lighter Background (Used for status bars, line number and folding marks)base02  #3e4451  Selection Backgroundbase03  #545862  Comments, Invisibles, Line Highlightingbase04  #565c64  Dark Foreground (Used for status bars)base05  #abb2bf  Default Foreground, Caret, Delimiters, Operatorsbase06  #b6bdca  Light Foreground (Not often used)base07  #c8ccd4  Light Background (Not often used)base08  #e06c75  Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deletedbase09  #d19a66  Integers, Boolean, Constants, XML Attributes, Markup Link Urlbase0A  #e5c07b  Classes, Markup Bold, Search Text Backgroundbase0B  #98c379  Strings, Inherited Class, Markup Code, Diff Insertedbase0C  #56b6c2  Support, Regular Expressions, Escape Characters, Markup Quotesbase0D  #61afef  Functions, Methods, Attribute IDs, Headingsbase0E  #c678dd  Keywords, Storage, Selector, Markup Italic, Diff Changedbase0F  #be5046  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>*/pre code.hljs {  display: block;  overflow-x: auto;  padding: 1em;}code.hljs {  padding: 3px 5px;}.hljs {  color: #abb2bf;  /* background: #171717; */  background: #00282c34;}.hljs::selection,.hljs ::selection {  background-color: #3e4451;  color: #abb2bf;}/* purposely do not highlight these things */.hljs-formula,.hljs-params,.hljs-property {}/* base03 - #545862 -  Comments, Invisibles, Line Highlighting */.hljs-comment {  color: #545862;}/* base04 - #565c64 -  Dark Foreground (Used for status bars) */.hljs-tag {  color: #565c64;}/* base05 - #abb2bf -  Default Foreground, Caret, Delimiters, Operators */.hljs-subst,.hljs-punctuation,.hljs-operator {  color: #abb2bf;}.hljs-operator {  opacity: 0.7;}/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */.hljs-bullet,.hljs-variable,.hljs-template-variable,.hljs-selector-tag,.hljs-name,.hljs-deletion {  color: #e06c75;}/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */.hljs-symbol,.hljs-number,.hljs-link,.hljs-attr,.hljs-variable.constant_,.hljs-literal {  color: #d19a66;}/* base0A - Classes, Markup Bold, Search Text Background */.hljs-title,.hljs-class .hljs-title,.hljs-title.class_ {  color: #e5c07b;}.hljs-strong {  font-weight: bold;  color: #e5c07b;}/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */.hljs-code,.hljs-addition,.hljs-title.class_.inherited__,.hljs-string {  color: #98c379;}/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */.hljs-built_in,.hljs-doctag, /* guessing */.hljs-quote,.hljs-keyword.hljs-atrule,.hljs-regexp {  color: #56b6c2;}/* base0D - Functions, Methods, Attribute IDs, Headings */.hljs-function .hljs-title,.hljs-attribute,.ruby .hljs-property,.hljs-title.function_,.hljs-section {  color: #61afef;}/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */.hljs-type,/* .hljs-selector-id, *//* .hljs-selector-class, *//* .hljs-selector-attr, *//* .hljs-selector-pseudo, */.hljs-template-tag,.diff .hljs-meta,.hljs-keyword {  color: #c678dd;}.hljs-emphasis {  color: #c678dd;  font-style: italic;}/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */.hljs-meta,/*  prevent top level .keyword and .string scopes  from leaking into meta by accident*/.hljs-meta .hljs-keyword,.hljs-meta .hljs-string {  color: #be5046;}.hljs-meta .hljs-keyword,/* for v10 compatible themes */.hljs-meta-keyword {  font-weight: bold;}]]></content>
       
     </entry>
     
@@ -642,11 +667,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="/self/onedark.css"/>
-      <url>/self/onedark.css</url>
+      <title>即刻短文</title>
+      <link href="/essay/index.html"/>
+      <url>/essay/index.html</url>
       
-        <content type="html"><![CDATA[/*!  Theme: OneDark  Author: Lalit Magant (http://github.com/tilal6991)  License: ~ MIT (or more permissive) [via base16-schemes-source]  Maintainer: @highlightjs/core-team  Version: 2021.09.0*//*  WARNING: DO NOT EDIT THIS FILE DIRECTLY.  This theme file was auto-generated from the Base16 scheme onedark  by the Highlight.js Base16 template builder.  - https://github.com/highlightjs/base16-highlightjs*//* 新添加的内容  -------------------------------------   --hl-color                  代码框字体顔色 【必须】 (把下面.hljs的 color复制到这里来)  --hl-bg                     代码框背景色 【必须】 (把下面.hljs的 background复制到这里来)  --hltools-bg: #321a0f       代码框顶部工具栏背景色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hltools-color: #fff       代码框顶部工具栏字体顔色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hlnumber-bg: #221a0f      代码框行数背景色 【可选】(如果已经关掉 line_number,可以不用配置这个)  --hlnumber-color: #fff      代码框行数字体顔色 【可选】 (如果已经关掉 line_number,可以不用配置这个)  --hlscrollbar-bg: #d3af86   代码框滚动条顔色 【可选】（默认为主题主顔色）  --hlexpand-bg: #d3af86      代码框底部展开背景色 【可选】(如果已经关掉 highlight_height_limit,可以不用配置这个)*/:root {  --hl-color: #abb2bf;  --hl-bg: #282c34;  --hltools-bg: #282c34;  --hltools-color: #fff;  --hlnumber-bg: #282c34;  --hlnumber-color: #353b45;  --hlexpand-bg: #282c34;}/*base00  #282c34  Default Backgroundbase01  #353b45  Lighter Background (Used for status bars, line number and folding marks)base02  #3e4451  Selection Backgroundbase03  #545862  Comments, Invisibles, Line Highlightingbase04  #565c64  Dark Foreground (Used for status bars)base05  #abb2bf  Default Foreground, Caret, Delimiters, Operatorsbase06  #b6bdca  Light Foreground (Not often used)base07  #c8ccd4  Light Background (Not often used)base08  #e06c75  Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deletedbase09  #d19a66  Integers, Boolean, Constants, XML Attributes, Markup Link Urlbase0A  #e5c07b  Classes, Markup Bold, Search Text Backgroundbase0B  #98c379  Strings, Inherited Class, Markup Code, Diff Insertedbase0C  #56b6c2  Support, Regular Expressions, Escape Characters, Markup Quotesbase0D  #61afef  Functions, Methods, Attribute IDs, Headingsbase0E  #c678dd  Keywords, Storage, Selector, Markup Italic, Diff Changedbase0F  #be5046  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>*/pre code.hljs {  display: block;  overflow-x: auto;  padding: 1em;}code.hljs {  padding: 3px 5px;}.hljs {  color: #abb2bf;  /* background: #171717; */  background: #00282c34;}.hljs::selection,.hljs ::selection {  background-color: #3e4451;  color: #abb2bf;}/* purposely do not highlight these things */.hljs-formula,.hljs-params,.hljs-property {}/* base03 - #545862 -  Comments, Invisibles, Line Highlighting */.hljs-comment {  color: #545862;}/* base04 - #565c64 -  Dark Foreground (Used for status bars) */.hljs-tag {  color: #565c64;}/* base05 - #abb2bf -  Default Foreground, Caret, Delimiters, Operators */.hljs-subst,.hljs-punctuation,.hljs-operator {  color: #abb2bf;}.hljs-operator {  opacity: 0.7;}/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */.hljs-bullet,.hljs-variable,.hljs-template-variable,.hljs-selector-tag,.hljs-name,.hljs-deletion {  color: #e06c75;}/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */.hljs-symbol,.hljs-number,.hljs-link,.hljs-attr,.hljs-variable.constant_,.hljs-literal {  color: #d19a66;}/* base0A - Classes, Markup Bold, Search Text Background */.hljs-title,.hljs-class .hljs-title,.hljs-title.class_ {  color: #e5c07b;}.hljs-strong {  font-weight: bold;  color: #e5c07b;}/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */.hljs-code,.hljs-addition,.hljs-title.class_.inherited__,.hljs-string {  color: #98c379;}/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */.hljs-built_in,.hljs-doctag, /* guessing */.hljs-quote,.hljs-keyword.hljs-atrule,.hljs-regexp {  color: #56b6c2;}/* base0D - Functions, Methods, Attribute IDs, Headings */.hljs-function .hljs-title,.hljs-attribute,.ruby .hljs-property,.hljs-title.function_,.hljs-section {  color: #61afef;}/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */.hljs-type,/* .hljs-selector-id, *//* .hljs-selector-class, *//* .hljs-selector-attr, *//* .hljs-selector-pseudo, */.hljs-template-tag,.diff .hljs-meta,.hljs-keyword {  color: #c678dd;}.hljs-emphasis {  color: #c678dd;  font-style: italic;}/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */.hljs-meta,/*  prevent top level .keyword and .string scopes  from leaking into meta by accident*/.hljs-meta .hljs-keyword,.hljs-meta .hljs-string {  color: #be5046;}.hljs-meta .hljs-keyword,/* for v10 compatible themes */.hljs-meta-keyword {  font-weight: bold;}]]></content>
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
