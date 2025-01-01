@@ -15,8 +15,35 @@
     <atom:link href="https://clibin.gitee.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>bin_blog</description>
-    <pubDate>Tue, 31 Dec 2024 16:32:45 GMT</pubDate>
+    <pubDate>Wed, 01 Jan 2025 11:45:25 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>Gateway</title>
+      <link>https://clibin.gitee.io/2025/01/01/Gateway/</link>
+      <guid>https://clibin.gitee.io/2025/01/01/Gateway/</guid>
+      <pubDate>Wed, 01 Jan 2025 05:37:56 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;Gateway&quot;&gt;&lt;a href=&quot;#Gateway&quot; class=&quot;headerlink&quot; title=&quot;Gateway&quot;&gt;&lt;/a&gt;Gateway&lt;/h1&gt;&lt;h2 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/springcloud/">springcloud</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/gateway/">gateway</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/01/01/Gateway/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>公网访问本地服务</title>
@@ -218,35 +245,6 @@
       
       
       <comments>https://clibin.gitee.io/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>springcloud从入门到放弃</title>
-      <link>https://clibin.gitee.io/2024/03/17/springcloud%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/</link>
-      <guid>https://clibin.gitee.io/2024/03/17/springcloud%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/</guid>
-      <pubDate>Sun, 17 Mar 2024 14:22:28 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;springcloud从入门到放弃&quot;&gt;&lt;a href=&quot;#springcloud从入门到放弃&quot; class=&quot;headerlink&quot; title=&quot;springcloud从入门到放弃&quot;&gt;&lt;/a&gt;&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/springcloud/">springcloud</category>
-      
-      <category domain="https://clibin.gitee.io/tags/gateway/">gateway</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/03/17/springcloud%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/#disqus_thread</comments>
       
     </item>
     

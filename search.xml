@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>Gateway</title>
+      <link href="/2025/01/01/Gateway/"/>
+      <url>/2025/01/01/Gateway/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Gateway"><a href="#Gateway" class="headerlink" title="Gateway"></a>Gateway</h1><h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="是什么？"><a href="#是什么？" class="headerlink" title="是什么？"></a>是什么？</h3><blockquote><p>Spring Cloud Gateway 是一个基于 Spring Framework 和 Spring Boot 构建的 <span alt='highlight'>API 网关框架</span>，用于<strong>路由</strong>和<strong>负载均衡</strong>。</p></blockquote><h3 id="有什么用？"><a href="#有什么用？" class="headerlink" title="有什么用？"></a>有什么用？</h3><p><img src="https://docs.spring.io/spring-cloud-gateway/reference/_images/spring_cloud_gateway_diagram.png"></p><ol><li><strong>路由功能</strong>：<code>Spring Cloud Gateway</code> 通过配置的路由规则，将外部请求转发到后端服务。这些路由可以基于请求的 URL、HTTP 方法、请求头等进行匹配。</li><li><strong>负载均衡</strong>：<code>Spring Cloud Gateway</code> 可以与 <code>Spring Cloud LoadBalancer</code> 配合，进行请求的负载均衡，确保请求的流量均衡地分配到各个后端服务。</li><li><strong>过滤器</strong>：可以使用过滤器进行请求和响应的<strong>预处理或后处理</strong>，例如认证、日志记录、请求转发等。</li><li><strong>动态路由</strong>：支持根据条件（如用户身份、请求参数等）动态修改路由规则。</li><li><strong>集成其他 Spring Cloud 组件</strong>：Spring Cloud Gateway 与其他 Spring Cloud 项目（如 Spring Cloud Config、Spring Cloud Discovery、Spring Security 等）无缝集成，能够帮助实现微服务架构中的服务发现、配置管理、安全认证等功能。</li></ol><p><strong>应用场景：</strong></p><ul><li><strong>微服务架构</strong>：作为微服务架构中的 API 网关，Spring Cloud Gateway 可以对外提供统一的入口，简化客户端的访问，同时还能够处理一些常见的网关功能，如身份验证、请求限流等。</li><li><strong>统一路由管理</strong>：在系统中统一管理所有服务的路由规则，简化了客户端的访问和服务间的通信。</li><li><strong>负载均衡和流量控制</strong>：配合负载均衡和限流功能，提高服务的可用性和稳定性。</li></ul><h3 id="相关术语"><a href="#相关术语" class="headerlink" title="相关术语"></a>相关术语</h3><ul><li><p><strong>Route</strong>: 路由，网关的基本构建块。它由一个 <strong>ID</strong>、一个目标 <strong>URI</strong>、一组 <strong>谓词</strong>（predicates）和一组 <strong>过滤器</strong>（filters）定义。如果聚合后的谓词为真，则匹配该路由。</p></li><li><p><strong>Predicate</strong>: 断言，这是一个 Java 8 的 <strong>Function Predicate</strong>。其输入类型是 Spring Framework 的 <strong>ServerWebExchange</strong>。这使得你可以基于 HTTP 请求中的任何内容进行匹配，例如请求头或请求参数。</p></li><li><p><strong>Filter</strong>: 过滤器，这些是由特定工厂构造的 <strong>GatewayFilter</strong> 实例。你可以在发送下游请求之前或之后，修改请求和响应。</p></li></ul><h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="导入依赖"><a href="#导入依赖" class="headerlink" title="导入依赖"></a>导入依赖</h3><p>要通过网关将请求路由到其他微服务，同样需要将网关注册到注册中心，以nacos为例，还需要导入nacos依赖</p><figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-comment">&lt;!-- gateway网关 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-gateway<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br><span class="hljs-comment">&lt;!-- nacos注册发现 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-nacos-discovery<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br><span class="hljs-comment">&lt;!-- nacos配置 --&gt;</span><br><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>com.alibaba.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-alibaba-nacos-config<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure><h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><blockquote><p>[!WARNING]</p><p>Gateway微服务启动时出现：<strong>Spring MVC found on classpath, which is incompatible with Spring Cloud Gateway.</strong></p><p>原因：Spring Cloud Gateway 基于 <strong>Reactive Web</strong>（响应式编程）架构，而 <strong>Spring MVC</strong> 是基于传统的 <strong>Servlet</strong>（阻塞式编程）架构。这两者在同一个应用中<strong>无法共存</strong>，因此会出现冲突</p></blockquote><p>你需要将gateway项目中的<code>spring-boot-starter-web</code>依赖删除，或者通过下面的办法排除依赖，因为可能你没有显式引入mvc依赖，而是因为引入的其他依赖中包含了mvc依赖</p><ul><li>在maven工具窗口找到gateway项目，右键<strong>依赖项</strong>，点击<strong>分析依赖关系</strong></li></ul><p><img src="https://s2.loli.net/2025/01/01/jXYHuesf3F1T9tl.png" alt="image-20250101184836544"></p><ul><li>在搜索框中搜索<strong>mvc</strong>，找到 <code>spring-boot-starter-web</code> 依赖，发现在引入的common模块中</li></ul><p><img src="https://s2.loli.net/2025/01/01/HVWfdLe6kcZy5qp.png" alt="image-20250101185714684"></p><ul><li><p>找到common依赖，排除整个web依赖或者排除spring-webmvc也可以，这里直接排除整个web依赖，刷新maven后重启项目就可以了</p><figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>io.github.caolib<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>common<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>0.0.1-SNAPSHOT<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br>    <span class="hljs-comment">&lt;!-- 排除spring-web --&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">exclusion</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.boot<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>        <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-boot-starter-web<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">exclusion</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure></li></ul><blockquote><p>to be continued……</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> springcloud </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> gateway </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>公网访问本地服务</title>
       <link href="/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/"/>
       <url>/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/</url>
@@ -179,33 +204,6 @@
             <tag> apifox </tag>
             
             <tag> 测试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>springcloud从入门到放弃</title>
-      <link href="/2024/03/17/springcloud%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/"/>
-      <url>/2024/03/17/springcloud%E4%BB%8E%E5%85%A5%E9%97%A8%E5%88%B0%E6%94%BE%E5%BC%83/</url>
-      
-        <content type="html"><![CDATA[<h1 id="springcloud从入门到放弃"><a href="#springcloud从入门到放弃" class="headerlink" title="springcloud从入门到放弃"></a><a href="https://sca.aliyun.com/zh-cn/">springcloud</a>从入门到放弃</h1><h2 id="gateway"><a href="#gateway" class="headerlink" title="gateway"></a>gateway</h2><p>网关的<strong>核心功能特性</strong>：</p><ul><li>请求路由</li><li>权限控制</li><li>限流</li></ul><blockquote><p><strong>网关就像是看门大爷，只有校验身份的请求才能访问到后面的微服务</strong></p></blockquote><p><code>Spring Cloud Gateway</code> 是一个基于 Spring 5、Spring Boot 2 和 Project Reactor 的 <strong>API 网关</strong>，以下是使用 Spring Cloud Gateway 的基本步骤：</p><ol><li><strong>添加依赖</strong>：在 Maven 的 <code>pom.xml</code> 文件中，添加 Spring Cloud Gateway 的依赖。</li></ol><figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-gateway<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.2.7.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure><ol start="2"><li><strong>配置路由</strong>：在 <code>application.yml</code> 或 <code>application.properties</code> 文件中，配置路由规则。例如，将所有以 <code>/reader/</code> 开头的请求转发到 <code>reader-service</code> 服务。</li></ol><figure class="highlight yaml"><table><tr><td class="code"><pre><code class="hljs yaml"><span class="hljs-attr">spring:</span><br>  <span class="hljs-attr">cloud:</span><br>    <span class="hljs-attr">gateway:</span><br>      <span class="hljs-attr">routes:</span> <span class="hljs-comment"># 路由配置</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">id:</span> <span class="hljs-string">reader_route</span> <span class="hljs-comment"># id,自定义但是保证唯一</span><br>        <span class="hljs-attr">uri:</span> <span class="hljs-string">lb://reader-service</span> <span class="hljs-comment"># 可以直接填写服务地址,此处只是指名服务名称,可以实现负载均衡,lb即loadbalance</span><br>        <span class="hljs-attr">predicates:</span> <span class="hljs-comment"># 断言,路径必须是 reader 开头</span><br>        <span class="hljs-bullet">-</span> <span class="hljs-string">Path=/reader/**</span><br></code></pre></td></tr></table></figure><ol start="3"><li><strong>添加JWT拦截器</strong></li></ol><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@Component</span><br><span class="hljs-meta">@RequiredArgsConstructor</span><br><span class="hljs-meta">@Slf4j</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">JwtTokenInterceptor</span> <span class="hljs-keyword">implements</span> <span class="hljs-title class_">GlobalFilter</span>, Ordered &#123;<br><br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> StringRedisTemplate redisTemplate;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> Mono&lt;Void&gt; <span class="hljs-title function_">filter</span><span class="hljs-params">(ServerWebExchange exchange, GatewayFilterChain chain)</span> &#123;<br>        <span class="hljs-type">String</span> <span class="hljs-variable">path</span> <span class="hljs-operator">=</span> exchange.getRequest().getPath().value();<br>        <span class="hljs-comment">// 不对/login和/register接口校验</span><br>        <span class="hljs-keyword">if</span> (path.endsWith(<span class="hljs-string">&quot;/login&quot;</span>) || path.endsWith(<span class="hljs-string">&quot;/register&quot;</span>)) &#123;<br>            log.debug(<span class="hljs-string">&quot;直接跳过...&quot;</span>);<br>            <span class="hljs-keyword">return</span> chain.filter(exchange);<br>        &#125;<br><br>        log.debug(<span class="hljs-string">&quot;开始校验...&quot;</span>);<br><br>        <span class="hljs-type">String</span> <span class="hljs-variable">token</span> <span class="hljs-operator">=</span> exchange.getRequest().getHeaders().getFirst(Common.TOKEN);<br>        <span class="hljs-keyword">if</span> (token == <span class="hljs-literal">null</span> || token.isEmpty()) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">try</span> &#123;<br>            <span class="hljs-type">String</span> <span class="hljs-variable">redisToken</span> <span class="hljs-operator">=</span> redisTemplate.opsForValue().get(token);<br>            <span class="hljs-keyword">if</span> (redisToken == <span class="hljs-literal">null</span>) &#123;<br>                <span class="hljs-keyword">throw</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">BaseException</span>(Excep.TOKEN_ALREADY_EXPIRED);<br>            &#125;<br>            <span class="hljs-type">Claims</span> <span class="hljs-variable">claims</span> <span class="hljs-operator">=</span> JwtUtils.parseJWT(token);<br>            <span class="hljs-comment">// 保存用户信息</span><br>            ThreadLocalUtil.set(claims);<br>        &#125; <span class="hljs-keyword">catch</span> (Exception e) &#123;<br>            exchange.getResponse().setStatusCode(HttpStatus.UNAUTHORIZED);<br>            <span class="hljs-keyword">return</span> exchange.getResponse().setComplete();<br>        &#125;<br><br>        <span class="hljs-keyword">return</span> chain.filter(exchange);<br>    &#125;<br><br>    <span class="hljs-meta">@Override</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-type">int</span> <span class="hljs-title function_">getOrder</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> -<span class="hljs-number">100</span>;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure><ol start="3"><li><p><strong>启动 Gateway</strong>：运行 Spring Boot 应用，启动 Gateway。</p></li><li><p><strong>发送请求</strong>：<strong>发送请求到 Gateway</strong>，Gateway 会根据配置的路由规则，将请求转发到对应的服务。</p></li></ol><p>以上就是使用 Spring Cloud Gateway 的基本步骤。在实际使用中，可能还需要配置其他的功能，例如过滤器、限流、熔断等。</p><p><img src="https://camo.githubusercontent.com/f50234cb9f1be4beead6b35d3f6ec558561a79c263728818838447aa56cb5401/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f73756e3032323553554e2f73756e3032323553554e2f6173736574732f696d616765732f68722e676966"></p><h2 id="openfeign"><a href="#openfeign" class="headerlink" title="openfeign"></a>openfeign</h2><h3 id="基本使用"><a href="#基本使用" class="headerlink" title="基本使用"></a>基本使用</h3><ol><li><p><strong>引入依赖</strong>： 在 <code>pom.xml</code> 文件中添加以下依赖：</p><figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.springframework.cloud<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>spring-cloud-starter-openfeign<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">version</span>&gt;</span>2.2.5.RELEASE<span class="hljs-tag">&lt;/<span class="hljs-name">version</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure></li><li><p><strong>创建 Feign 客户端接口</strong>： 在使用 OpenFeign 时，我们需要创建一个 Feign 客户端接口，用于定义我们想要调用的服务接口。例如：</p><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@FeignClient(name = &quot;user-service&quot;)</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">interface</span> <span class="hljs-title class_">UserServiceClient</span> &#123;<br>    <span class="hljs-meta">@GetMapping(&quot;/users/&#123;id&#125;&quot;)</span><br>    User <span class="hljs-title function_">getUserById</span><span class="hljs-params">(<span class="hljs-meta">@PathVariable(&quot;id&quot;)</span> Long id)</span>;<br><br>    <span class="hljs-meta">@PostMapping(&quot;/users&quot;)</span><br>    User <span class="hljs-title function_">createUser</span><span class="hljs-params">(<span class="hljs-meta">@RequestBody</span> User user)</span>;<br>&#125;<br></code></pre></td></tr></table></figure></li><li><p><strong>注入 Feign 客户端</strong>： 在你的控制器中，使用 <code>@Autowired</code> 将 <code>UserServiceClient</code> 注入，并通过该客户端接口调用远程服务。例如：</p><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@RestController</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">UserController</span> &#123;<br>    <span class="hljs-meta">@Autowired</span><br>    <span class="hljs-keyword">private</span> UserServiceClient userServiceClient;<br><br>    <span class="hljs-meta">@GetMapping(&quot;/users/&#123;id&#125;&quot;)</span><br>    <span class="hljs-keyword">public</span> User <span class="hljs-title function_">getUserById</span><span class="hljs-params">(<span class="hljs-meta">@PathVariable(&quot;id&quot;)</span> Long id)</span> &#123;<br>        <span class="hljs-keyword">return</span> userServiceClient.getUserById(id);<br>    &#125;<br><br>    <span class="hljs-meta">@PostMapping(&quot;/users&quot;)</span><br>    <span class="hljs-keyword">public</span> User <span class="hljs-title function_">createUser</span><span class="hljs-params">(<span class="hljs-meta">@RequestBody</span> User user)</span> &#123;<br>        <span class="hljs-keyword">return</span> userServiceClient.createUser(user);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li><li><p><strong>启用 Feign</strong>： 在 Spring Boot 应用程序的启动类上添加 <code>@EnableFeignClients</code> 注解：</p><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@SpringBootApplication</span><br><span class="hljs-meta">@EnableFeignClients</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Application</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        SpringApplication.run(Application.class, args);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li></ol><p>通过使用 OpenFeign，我们可以更加便捷地编写 HTTP 服务客户端，简化了开发流程。</p><h3 id="配置连接池"><a href="#配置连接池" class="headerlink" title="配置连接池"></a>配置连接池</h3><ol><li><p><strong>添加依赖</strong>： 首先，在 <code>pom.xml</code> 文件中添加 <code>Apache HttpClient</code> 的依赖，以替换 OpenFeign 默认的底层客户端 HttpURLConnection：</p><figure class="highlight xml"><table><tr><td class="code"><pre><code class="hljs xml"><span class="hljs-tag">&lt;<span class="hljs-name">dependency</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">groupId</span>&gt;</span>org.apache.httpcomponents<span class="hljs-tag">&lt;/<span class="hljs-name">groupId</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">artifactId</span>&gt;</span>httpclient<span class="hljs-tag">&lt;/<span class="hljs-name">artifactId</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">dependency</span>&gt;</span><br></code></pre></td></tr></table></figure></li><li><p><strong>配置连接池属性</strong>： 在 <code>application.properties</code> 或 <code>application.yml</code> 中配置连接池的相关属性。你可以根据需求设置以下属性：</p><figure class="highlight properties"><table><tr><td class="code"><pre><code class="hljs properties"><span class="hljs-attr">feign.httpclient.connection-manager.max-total</span>=<span class="hljs-string">20</span><br></code></pre></td></tr></table></figure></li><li><p><strong>启用 HttpClient</strong>： 在 Spring Boot 应用程序的启动类上添加 <code>@EnableFeignClients</code> 注解：</p><figure class="highlight java"><table><tr><td class="code"><pre><code class="hljs java"><span class="hljs-meta">@SpringBootApplication</span><br><span class="hljs-meta">@EnableFeignClients</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MyApplication</span> &#123;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        SpringApplication.run(MyApplication.class, args);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure></li></ol><h2 id="待续……"><a href="#待续……" class="headerlink" title="待续……"></a>待续……</h2>]]></content>
-      
-      
-      <categories>
-          
-          <category> 后端 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> springcloud </tag>
-            
-            <tag> gateway </tag>
             
         </tags>
       
@@ -568,17 +566,6 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>便携小空调 - 为你的夏日带去清凉!</title>
       <link href="/air-conditioner/index.html"/>
       <url>/air-conditioner/index.html</url>
@@ -590,31 +577,20 @@
     
     
     <entry>
-      <title>关于</title>
-      <link href="/about/index.html"/>
-      <url>/about/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>charts</title>
       <link href="/charts/index.html"/>
       <url>/charts/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于</title>
+      <link href="/about/index.html"/>
+      <url>/about/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -634,11 +610,22 @@
     
     
     <entry>
-      <title></title>
-      <link href="/self/onedark.css"/>
-      <url>/self/onedark.css</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
-        <content type="html"><![CDATA[/*!  Theme: OneDark  Author: Lalit Magant (http://github.com/tilal6991)  License: ~ MIT (or more permissive) [via base16-schemes-source]  Maintainer: @highlightjs/core-team  Version: 2021.09.0*//*  WARNING: DO NOT EDIT THIS FILE DIRECTLY.  This theme file was auto-generated from the Base16 scheme onedark  by the Highlight.js Base16 template builder.  - https://github.com/highlightjs/base16-highlightjs*//* 新添加的内容  -------------------------------------   --hl-color                  代码框字体顔色 【必须】 (把下面.hljs的 color复制到这里来)  --hl-bg                     代码框背景色 【必须】 (把下面.hljs的 background复制到这里来)  --hltools-bg: #321a0f       代码框顶部工具栏背景色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hltools-color: #fff       代码框顶部工具栏字体顔色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hlnumber-bg: #221a0f      代码框行数背景色 【可选】(如果已经关掉 line_number,可以不用配置这个)  --hlnumber-color: #fff      代码框行数字体顔色 【可选】 (如果已经关掉 line_number,可以不用配置这个)  --hlscrollbar-bg: #d3af86   代码框滚动条顔色 【可选】（默认为主题主顔色）  --hlexpand-bg: #d3af86      代码框底部展开背景色 【可选】(如果已经关掉 highlight_height_limit,可以不用配置这个)*/:root {  --hl-color: #abb2bf;  --hl-bg: #282c34;  --hltools-bg: #282c34;  --hltools-color: #fff;  --hlnumber-bg: #282c34;  --hlnumber-color: #353b45;  --hlexpand-bg: #282c34;}/*base00  #282c34  Default Backgroundbase01  #353b45  Lighter Background (Used for status bars, line number and folding marks)base02  #3e4451  Selection Backgroundbase03  #545862  Comments, Invisibles, Line Highlightingbase04  #565c64  Dark Foreground (Used for status bars)base05  #abb2bf  Default Foreground, Caret, Delimiters, Operatorsbase06  #b6bdca  Light Foreground (Not often used)base07  #c8ccd4  Light Background (Not often used)base08  #e06c75  Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deletedbase09  #d19a66  Integers, Boolean, Constants, XML Attributes, Markup Link Urlbase0A  #e5c07b  Classes, Markup Bold, Search Text Backgroundbase0B  #98c379  Strings, Inherited Class, Markup Code, Diff Insertedbase0C  #56b6c2  Support, Regular Expressions, Escape Characters, Markup Quotesbase0D  #61afef  Functions, Methods, Attribute IDs, Headingsbase0E  #c678dd  Keywords, Storage, Selector, Markup Italic, Diff Changedbase0F  #be5046  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>*/pre code.hljs {  display: block;  overflow-x: auto;  padding: 1em;}code.hljs {  padding: 3px 5px;}.hljs {  color: #abb2bf;  /* background: #171717; */  background: #00282c34;}.hljs::selection,.hljs ::selection {  background-color: #3e4451;  color: #abb2bf;}/* purposely do not highlight these things */.hljs-formula,.hljs-params,.hljs-property {}/* base03 - #545862 -  Comments, Invisibles, Line Highlighting */.hljs-comment {  color: #545862;}/* base04 - #565c64 -  Dark Foreground (Used for status bars) */.hljs-tag {  color: #565c64;}/* base05 - #abb2bf -  Default Foreground, Caret, Delimiters, Operators */.hljs-subst,.hljs-punctuation,.hljs-operator {  color: #abb2bf;}.hljs-operator {  opacity: 0.7;}/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */.hljs-bullet,.hljs-variable,.hljs-template-variable,.hljs-selector-tag,.hljs-name,.hljs-deletion {  color: #e06c75;}/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */.hljs-symbol,.hljs-number,.hljs-link,.hljs-attr,.hljs-variable.constant_,.hljs-literal {  color: #d19a66;}/* base0A - Classes, Markup Bold, Search Text Background */.hljs-title,.hljs-class .hljs-title,.hljs-title.class_ {  color: #e5c07b;}.hljs-strong {  font-weight: bold;  color: #e5c07b;}/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */.hljs-code,.hljs-addition,.hljs-title.class_.inherited__,.hljs-string {  color: #98c379;}/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */.hljs-built_in,.hljs-doctag, /* guessing */.hljs-quote,.hljs-keyword.hljs-atrule,.hljs-regexp {  color: #56b6c2;}/* base0D - Functions, Methods, Attribute IDs, Headings */.hljs-function .hljs-title,.hljs-attribute,.ruby .hljs-property,.hljs-title.function_,.hljs-section {  color: #61afef;}/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */.hljs-type,/* .hljs-selector-id, *//* .hljs-selector-class, *//* .hljs-selector-attr, *//* .hljs-selector-pseudo, */.hljs-template-tag,.diff .hljs-meta,.hljs-keyword {  color: #c678dd;}.hljs-emphasis {  color: #c678dd;  font-style: italic;}/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */.hljs-meta,/*  prevent top level .keyword and .string scopes  from leaking into meta by accident*/.hljs-meta .hljs-keyword,.hljs-meta .hljs-string {  color: #be5046;}.hljs-meta .hljs-keyword,/* for v10 compatible themes */.hljs-meta-keyword {  font-weight: bold;}]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
       
     </entry>
     
@@ -656,11 +643,11 @@
     
     
     <entry>
-      <title>标签</title>
-      <link href="/tags/index.html"/>
-      <url>/tags/index.html</url>
+      <title></title>
+      <link href="/self/onedark.css"/>
+      <url>/self/onedark.css</url>
       
-        <content type="html"><![CDATA[]]></content>
+        <content type="html"><![CDATA[/*!  Theme: OneDark  Author: Lalit Magant (http://github.com/tilal6991)  License: ~ MIT (or more permissive) [via base16-schemes-source]  Maintainer: @highlightjs/core-team  Version: 2021.09.0*//*  WARNING: DO NOT EDIT THIS FILE DIRECTLY.  This theme file was auto-generated from the Base16 scheme onedark  by the Highlight.js Base16 template builder.  - https://github.com/highlightjs/base16-highlightjs*//* 新添加的内容  -------------------------------------   --hl-color                  代码框字体顔色 【必须】 (把下面.hljs的 color复制到这里来)  --hl-bg                     代码框背景色 【必须】 (把下面.hljs的 background复制到这里来)  --hltools-bg: #321a0f       代码框顶部工具栏背景色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hltools-color: #fff       代码框顶部工具栏字体顔色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hlnumber-bg: #221a0f      代码框行数背景色 【可选】(如果已经关掉 line_number,可以不用配置这个)  --hlnumber-color: #fff      代码框行数字体顔色 【可选】 (如果已经关掉 line_number,可以不用配置这个)  --hlscrollbar-bg: #d3af86   代码框滚动条顔色 【可选】（默认为主题主顔色）  --hlexpand-bg: #d3af86      代码框底部展开背景色 【可选】(如果已经关掉 highlight_height_limit,可以不用配置这个)*/:root {  --hl-color: #abb2bf;  --hl-bg: #282c34;  --hltools-bg: #282c34;  --hltools-color: #fff;  --hlnumber-bg: #282c34;  --hlnumber-color: #353b45;  --hlexpand-bg: #282c34;}/*base00  #282c34  Default Backgroundbase01  #353b45  Lighter Background (Used for status bars, line number and folding marks)base02  #3e4451  Selection Backgroundbase03  #545862  Comments, Invisibles, Line Highlightingbase04  #565c64  Dark Foreground (Used for status bars)base05  #abb2bf  Default Foreground, Caret, Delimiters, Operatorsbase06  #b6bdca  Light Foreground (Not often used)base07  #c8ccd4  Light Background (Not often used)base08  #e06c75  Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deletedbase09  #d19a66  Integers, Boolean, Constants, XML Attributes, Markup Link Urlbase0A  #e5c07b  Classes, Markup Bold, Search Text Backgroundbase0B  #98c379  Strings, Inherited Class, Markup Code, Diff Insertedbase0C  #56b6c2  Support, Regular Expressions, Escape Characters, Markup Quotesbase0D  #61afef  Functions, Methods, Attribute IDs, Headingsbase0E  #c678dd  Keywords, Storage, Selector, Markup Italic, Diff Changedbase0F  #be5046  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>*/pre code.hljs {  display: block;  overflow-x: auto;  padding: 1em;}code.hljs {  padding: 3px 5px;}.hljs {  color: #abb2bf;  /* background: #171717; */  background: #00282c34;}.hljs::selection,.hljs ::selection {  background-color: #3e4451;  color: #abb2bf;}/* purposely do not highlight these things */.hljs-formula,.hljs-params,.hljs-property {}/* base03 - #545862 -  Comments, Invisibles, Line Highlighting */.hljs-comment {  color: #545862;}/* base04 - #565c64 -  Dark Foreground (Used for status bars) */.hljs-tag {  color: #565c64;}/* base05 - #abb2bf -  Default Foreground, Caret, Delimiters, Operators */.hljs-subst,.hljs-punctuation,.hljs-operator {  color: #abb2bf;}.hljs-operator {  opacity: 0.7;}/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */.hljs-bullet,.hljs-variable,.hljs-template-variable,.hljs-selector-tag,.hljs-name,.hljs-deletion {  color: #e06c75;}/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */.hljs-symbol,.hljs-number,.hljs-link,.hljs-attr,.hljs-variable.constant_,.hljs-literal {  color: #d19a66;}/* base0A - Classes, Markup Bold, Search Text Background */.hljs-title,.hljs-class .hljs-title,.hljs-title.class_ {  color: #e5c07b;}.hljs-strong {  font-weight: bold;  color: #e5c07b;}/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */.hljs-code,.hljs-addition,.hljs-title.class_.inherited__,.hljs-string {  color: #98c379;}/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */.hljs-built_in,.hljs-doctag, /* guessing */.hljs-quote,.hljs-keyword.hljs-atrule,.hljs-regexp {  color: #56b6c2;}/* base0D - Functions, Methods, Attribute IDs, Headings */.hljs-function .hljs-title,.hljs-attribute,.ruby .hljs-property,.hljs-title.function_,.hljs-section {  color: #61afef;}/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */.hljs-type,/* .hljs-selector-id, *//* .hljs-selector-class, *//* .hljs-selector-attr, *//* .hljs-selector-pseudo, */.hljs-template-tag,.diff .hljs-meta,.hljs-keyword {  color: #c678dd;}.hljs-emphasis {  color: #c678dd;  font-style: italic;}/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */.hljs-meta,/*  prevent top level .keyword and .string scopes  from leaking into meta by accident*/.hljs-meta .hljs-keyword,.hljs-meta .hljs-string {  color: #be5046;}.hljs-meta .hljs-keyword,/* for v10 compatible themes */.hljs-meta-keyword {  font-weight: bold;}]]></content>
       
     </entry>
     
@@ -670,6 +657,17 @@
       <title>即刻短文</title>
       <link href="/essay/index.html"/>
       <url>/essay/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>标签</title>
+      <link href="/tags/index.html"/>
+      <url>/tags/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
