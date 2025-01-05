@@ -6,7 +6,7 @@
   <link href="https://clibin.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://clibin.gitee.io/"/>
-  <updated>2025-01-03T15:20:31.095Z</updated>
+  <updated>2025-01-01T11:45:25.812Z</updated>
   <id>https://clibin.gitee.io/</id>
   
   <author>
@@ -15,36 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Docker</title>
-    <link href="https://clibin.gitee.io/2025/01/02/Docker/"/>
-    <id>https://clibin.gitee.io/2025/01/02/Docker/</id>
-    <published>2025-01-02T02:37:11.000Z</published>
-    <updated>2025-01-03T15:20:31.095Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1&gt;Docker&lt;/h1&gt;
-&lt;h2 id=&quot;1-简介&quot;&gt;1.简介&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;官方介绍&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一个为增强开发而设计的强大平台&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="运维" scheme="https://clibin.gitee.io/categories/%E8%BF%90%E7%BB%B4/"/>
-    
-    
-    <category term="docker" scheme="https://clibin.gitee.io/tags/docker/"/>
-    
-  </entry>
   
   <entry>
     <title>Gateway</title>
@@ -80,7 +50,7 @@
     <link href="https://clibin.gitee.io/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/"/>
     <id>https://clibin.gitee.io/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/</id>
     <published>2024-12-31T15:44:38.000Z</published>
-    <updated>2025-01-03T10:11:14.620Z</updated>
+    <updated>2025-01-05T02:14:22.848Z</updated>
     
     
       
@@ -248,7 +218,7 @@
     <link href="https://clibin.gitee.io/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     <id>https://clibin.gitee.io/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</id>
     <published>2024-03-18T14:20:23.000Z</published>
-    <updated>2025-01-02T02:31:40.517Z</updated>
+    <updated>2025-01-05T02:14:22.846Z</updated>
     
     
       
@@ -454,7 +424,7 @@
     <link href="https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/"/>
     <id>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/</id>
     <published>2024-02-18T07:18:12.000Z</published>
-    <updated>2025-01-03T07:40:27.990Z</updated>
+    <updated>2025-01-05T02:14:22.840Z</updated>
     
     
       
@@ -483,7 +453,7 @@
     <link href="https://clibin.gitee.io/2024/01/07/SpringBoot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/"/>
     <id>https://clibin.gitee.io/2024/01/07/SpringBoot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</id>
     <published>2024-01-07T05:10:42.000Z</published>
-    <updated>2025-01-03T07:40:49.737Z</updated>
+    <updated>2025-01-05T02:14:22.843Z</updated>
     
     
       
@@ -509,7 +479,7 @@
     <link href="https://clibin.gitee.io/2023/10/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
     <id>https://clibin.gitee.io/2023/10/26/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</id>
     <published>2023-10-26T13:04:32.000Z</published>
-    <updated>2025-01-05T01:39:34.966Z</updated>
+    <updated>2025-01-05T02:16:53.316Z</updated>
     
     
       
@@ -593,6 +563,38 @@
     <category term="数据库" scheme="https://clibin.gitee.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     <category term="NOSQL" scheme="https://clibin.gitee.io/tags/NOSQL/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>mybatis-plus</title>
+    <link href="https://clibin.gitee.io/2023/08/31/mybatis-plus/"/>
+    <id>https://clibin.gitee.io/2023/08/31/mybatis-plus/</id>
+    <published>2023-08-31T09:13:56.000Z</published>
+    <updated>2024-12-28T09:16:26.064Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;mybatis-plus&lt;/h1&gt;
+&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/baomidou/mybatis-plus&quot;&gt;MyBatis-Plus&lt;/a&gt;（简称 MP）是一个 &lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="后端" scheme="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/"/>
+    
+    
+    <category term="mysql" scheme="https://clibin.gitee.io/tags/mysql/"/>
+    
+    <category term="mybatis" scheme="https://clibin.gitee.io/tags/mybatis/"/>
+    
+    <category term="java" scheme="https://clibin.gitee.io/tags/java/"/>
     
   </entry>
   
