@@ -6,7 +6,7 @@
   <link href="https://clibin.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://clibin.gitee.io/"/>
-  <updated>2025-01-09T11:43:37.132Z</updated>
+  <updated>2025-01-11T13:19:47.212Z</updated>
   <id>https://clibin.gitee.io/</id>
   
   <author>
@@ -17,21 +17,45 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>seata</title>
+    <link href="https://clibin.gitee.io/2025/01/11/seata/"/>
+    <id>https://clibin.gitee.io/2025/01/11/seata/</id>
+    <published>2025-01-11T13:03:44.000Z</published>
+    <updated>2025-01-11T13:19:47.212Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Seata&quot;&gt;&lt;a href=&quot;#Seata&quot; class=&quot;headerlink&quot; title=&quot;Seata&quot;&gt;&lt;/a&gt;Seata&lt;/h1&gt;&lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="springcloud" scheme="https://clibin.gitee.io/categories/springcloud/"/>
+    
+    
+    <category term="seata" scheme="https://clibin.gitee.io/tags/seata/"/>
+    
+    <category term="分布式事务" scheme="https://clibin.gitee.io/tags/%E5%88%86%E5%B8%83%E5%BC%8F%E4%BA%8B%E5%8A%A1/"/>
+    
+  </entry>
+  
+  <entry>
     <title>sentinel</title>
     <link href="https://clibin.gitee.io/2025/01/09/sentinel/"/>
     <id>https://clibin.gitee.io/2025/01/09/sentinel/</id>
     <published>2025-01-09T07:19:04.000Z</published>
-    <updated>2025-01-09T11:43:37.132Z</updated>
+    <updated>2025-01-11T13:04:15.434Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;&lt;a href=&quot;https://sentinelguard.io/zh-cn&quot;&gt;sentinel&lt;/a&gt;&lt;/h1&gt;
-&lt;h2 id=&quot;1-简介&quot;&gt;1.简介&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Sentinel&lt;/strong&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;sentinel&quot;&gt;&lt;a href=&quot;#sentinel&quot; class=&quot;headerlink&quot; title=&quot;sentinel&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://sentinelguard.io/zh-cn&quot;&gt;sentinel&lt;/a&gt;&lt;/h1&gt;&lt;h2</summary>
         
       
     
@@ -58,11 +82,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;Gateway&lt;/h1&gt;
-&lt;h2 id=&quot;1-概述&quot;&gt;1.概述&lt;/h2&gt;
-&lt;h3 id=&quot;是什么？&quot;&gt;是什么？&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Spring Cloud Gateway 是一个基于 Spring Framework 和 Spring Boot</summary>
+    <summary type="html">&lt;h1 id=&quot;Gateway&quot;&gt;&lt;a href=&quot;#Gateway&quot; class=&quot;headerlink&quot; title=&quot;Gateway&quot;&gt;&lt;/a&gt;Gateway&lt;/h1&gt;&lt;h2 id=&quot;1-概述&quot;&gt;&lt;a href=&quot;#1-概述&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -80,7 +100,7 @@
     <link href="https://clibin.gitee.io/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/"/>
     <id>https://clibin.gitee.io/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/</id>
     <published>2024-12-31T15:44:38.000Z</published>
-    <updated>2025-01-08T15:25:06.802Z</updated>
+    <updated>2025-01-09T15:27:07.873Z</updated>
     
     
       
@@ -88,8 +108,8 @@
         
         
     <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;在公网部署前端项目是很方便的，Vercel、Netlify、Cloudflare等等都可以很快地部署一个前端页面（&lt;s&gt;前端部署是这样的，你只要上传文件就可以，而后端部署要考虑的就很多了，没有云服务器&lt;/s&gt;）&lt;/p&gt;
-&lt;p&gt;现在我部署了一个前端页</summary>
+&lt;p&gt;在公网部署前端项目是很方便的，Vercel、Netlify、Cloudflare等等都可以很快地部署一个前端页面（&lt;del&gt;前端部署是这样的，你只要上传文件就可以，而后端部署要考虑的就很多了，没有云服务器&lt;/del&gt;）&lt;/p&gt;
+&lt;p&gt;现在我部署了一</summary>
         
       
     
@@ -114,9 +134,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;springboot发送邮件&lt;/h1&gt;
-&lt;h2 id=&quot;导入依赖&quot;&gt;导入依赖&lt;/h2&gt;
-&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span</summary>
+    <summary type="html">&lt;h1 id=&quot;springboot发送邮件&quot;&gt;&lt;a href=&quot;#springboot发送邮件&quot; class=&quot;headerlink&quot; title=&quot;springboot发送邮件&quot;&gt;&lt;/a&gt;springboot发送邮件&lt;/h1&gt;&lt;h2 id=&quot;导入依赖&quot;&gt;&lt;a</summary>
         
       
     
@@ -143,10 +161,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;开启邮件SMTP服务&lt;/h1&gt;
-&lt;h2 id=&quot;1-SMTP服务是什么？&quot;&gt;1. SMTP服务是什么？&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;SMTP&lt;/strong&gt;（Simple Mail Transfer</summary>
+    <summary type="html">&lt;h1 id=&quot;开启邮件SMTP服务&quot;&gt;&lt;a href=&quot;#开启邮件SMTP服务&quot; class=&quot;headerlink&quot; title=&quot;开启邮件SMTP服务&quot;&gt;&lt;/a&gt;开启邮件SMTP服务&lt;/h1&gt;&lt;h2 id=&quot;1-SMTP服务是什么？&quot;&gt;&lt;a</summary>
         
       
     
@@ -173,8 +188,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;&lt;a href=&quot;https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/&quot;&gt;openfeign&lt;/a&gt;&lt;/h1&gt;
-&lt;h2</summary>
+    <summary type="html">&lt;h1 id=&quot;openfeign&quot;&gt;&lt;a href=&quot;#openfeign&quot; class=&quot;headerlink&quot; title=&quot;openfeign&quot;&gt;&lt;/a&gt;&lt;a</summary>
         
       
     
@@ -201,8 +215,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;&lt;a href=&quot;https://nulab.com/zh-cn/learn/software-development/git-tutorial/&quot;&gt;Git&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;&lt;a</summary>
         
       
     
@@ -248,15 +261,14 @@
     <link href="https://clibin.gitee.io/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/"/>
     <id>https://clibin.gitee.io/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</id>
     <published>2024-03-18T14:20:23.000Z</published>
-    <updated>2025-01-05T02:14:22.846Z</updated>
+    <updated>2025-01-09T15:26:46.109Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1&gt;Apifox&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://apifox.com/help/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+    <summary type="html">&lt;h1 id=&quot;Apifox&quot;&gt;&lt;a href=&quot;#Apifox&quot; class=&quot;headerlink&quot; title=&quot;Apifox&quot;&gt;&lt;/a&gt;Apifox&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://apifox.com/help/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
 &lt;h2</summary>
         
       
@@ -284,10 +296,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;nacos&lt;/h1&gt;
-&lt;h2 id=&quot;注册中心&quot;&gt;注册中心&lt;/h2&gt;
-&lt;h3 id=&quot;1-下载&quot;&gt;1. 下载&lt;/h3&gt;
-&lt;p&gt;&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;nacos&quot;&gt;&lt;a href=&quot;#nacos&quot; class=&quot;headerlink&quot; title=&quot;nacos&quot;&gt;&lt;/a&gt;nacos&lt;/h1&gt;&lt;h2 id=&quot;注册中心&quot;&gt;&lt;a href=&quot;#注册中心&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -341,10 +350,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;Markdown&lt;/h1&gt;
-&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;https://markdown.com.cn/&quot;&gt;Markdown&lt;/a&gt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -369,11 +375,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;Pinia&quot;&gt;&lt;a href=&quot;https://pinia.vuejs.org/zh/&quot;&gt;Pinia&lt;/a&gt;&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!note]&lt;/p&gt;
-&lt;p&gt;Pinia是什么？&lt;/p&gt;
-&lt;p&gt;Pinia 是 ==Vue</summary>
+    <summary type="html">&lt;h2 id=&quot;Pinia&quot;&gt;&lt;a href=&quot;#Pinia&quot; class=&quot;headerlink&quot; title=&quot;Pinia&quot;&gt;&lt;/a&gt;&lt;a</summary>
         
       
     
@@ -431,10 +433,7 @@
       
         
         
-    <summary type="html">&lt;h2 id=&quot;Axios&quot;&gt;&lt;a href=&quot;https://www.axios-http.cn/&quot;&gt;Axios&lt;/a&gt;&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Axios是什么？&lt;/p&gt;
-&lt;p&gt;Axios 是一个基于 &lt;em&gt;&lt;a</summary>
+    <summary type="html">&lt;h2 id=&quot;Axios&quot;&gt;&lt;a href=&quot;#Axios&quot; class=&quot;headerlink&quot; title=&quot;Axios&quot;&gt;&lt;/a&gt;&lt;a</summary>
         
       
     
@@ -461,9 +460,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;everything&lt;/h1&gt;
-&lt;h2 id=&quot;1-指定文件后缀&quot;&gt;1.指定文件后缀&lt;/h2&gt;
-&lt;p&gt;搜索文件名，并且==要求后缀==，假设要搜索</summary>
+    <summary type="html">&lt;h1 id=&quot;everything&quot;&gt;&lt;a href=&quot;#everything&quot; class=&quot;headerlink&quot; title=&quot;everything&quot;&gt;&lt;/a&gt;everything&lt;/h1&gt;&lt;h2 id=&quot;1-指定文件后缀&quot;&gt;&lt;a href=&quot;#1-指定文件后缀&quot;</summary>
         
       
     
@@ -490,8 +487,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;springboot相关配置&lt;/h1&gt;
-&lt;h2 id=&quot;1-自定义项目LOGO&quot;&gt;1.&lt;a</summary>
+    <summary type="html">&lt;h1 id=&quot;springboot相关配置&quot;&gt;&lt;a href=&quot;#springboot相关配置&quot; class=&quot;headerlink&quot; title=&quot;springboot相关配置&quot;&gt;&lt;/a&gt;springboot相关配置&lt;/h1&gt;&lt;h2 id=&quot;1-自定义项目LOGO&quot;&gt;&lt;a</summary>
         
       
     
@@ -516,9 +512,7 @@
       
         
         
-    <summary type="html">&lt;h1&gt;计算机网络&lt;/h1&gt;
-&lt;h2 id=&quot;1-计算机网络概述&quot;&gt;1. 计算机网络概述&lt;/h2&gt;
-&lt;h3 id=&quot;1-1-作用&quot;&gt;1.1</summary>
+    <summary type="html">&lt;h1 id=&quot;计算机网络&quot;&gt;&lt;a href=&quot;#计算机网络&quot; class=&quot;headerlink&quot; title=&quot;计算机网络&quot;&gt;&lt;/a&gt;计算机网络&lt;/h1&gt;&lt;h2 id=&quot;1-计算机网络概述&quot;&gt;&lt;a href=&quot;#1-计算机网络概述&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -544,10 +538,10 @@
         
         
     <summary type="html">&lt;img src=&quot;https://mybatis.org/images/mybatis-logo.png&quot;&gt;
-&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
-&lt;h3 id=&quot;什么是-MyBatis？&quot;&gt;什么是 MyBatis？&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;MyBatis</summary>
+
+
+
+&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;h3</summary>
         
       
     
@@ -561,38 +555,6 @@
     <category term="mybatis" scheme="https://clibin.gitee.io/tags/mybatis/"/>
     
     <category term="java" scheme="https://clibin.gitee.io/tags/java/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Redis</title>
-    <link href="https://clibin.gitee.io/2023/08/31/Redis/"/>
-    <id>https://clibin.gitee.io/2023/08/31/Redis/</id>
-    <published>2023-08-31T12:59:08.000Z</published>
-    <updated>2024-12-28T09:16:26.055Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1&gt;&lt;a href=&quot;https://redis.io/&quot;&gt;Redis&lt;/a&gt;&lt;/h1&gt;
-&lt;h2 id=&quot;什么是Nosql&quot;&gt;什么是Nosql&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;==NoSQL==	-&amp;gt; ==not only</summary>
-        
-      
-    
-    
-    
-    <category term="数据库" scheme="https://clibin.gitee.io/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    
-    <category term="redis" scheme="https://clibin.gitee.io/tags/redis/"/>
-    
-    <category term="数据库" scheme="https://clibin.gitee.io/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
-    
-    <category term="NOSQL" scheme="https://clibin.gitee.io/tags/NOSQL/"/>
     
   </entry>
   
