@@ -6,7 +6,7 @@
   <link href="https://clibin.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://clibin.gitee.io/"/>
-  <updated>2025-01-24T14:37:41.459Z</updated>
+  <updated>2025-02-16T11:50:50.872Z</updated>
   <id>https://clibin.gitee.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>rust使用MSVC最小安装</title>
+    <link href="https://clibin.gitee.io/2025/02/16/rust%E4%BD%BF%E7%94%A8MSVC%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%85/"/>
+    <id>https://clibin.gitee.io/2025/02/16/rust%E4%BD%BF%E7%94%A8MSVC%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%85/</id>
+    <published>2025-02-16T07:55:32.000Z</published>
+    <updated>2025-02-16T11:50:50.872Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;1-安装VS生成工具&quot;&gt;1.安装VS生成工具&lt;/h2&gt;
+&lt;p&gt;前往&lt;a href=&quot;https://visualstudio.microsoft.com/zh-hans/downloads/&quot;&gt;VS下载界面&lt;/a&gt;，下滑到底部，找到&lt;strong&gt;VS 2022</summary>
+        
+      
+    
+    
+    
+    <category term="tools" scheme="https://clibin.gitee.io/categories/tools/"/>
+    
+    
+    <category term="rust" scheme="https://clibin.gitee.io/tags/rust/"/>
+    
+    <category term="msvc" scheme="https://clibin.gitee.io/tags/msvc/"/>
+    
+  </entry>
   
   <entry>
     <title>Tauri构建时下载Wix和NSIS失败问题</title>
@@ -212,9 +240,9 @@
     <category term="后端" scheme="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/"/>
     
     
-    <category term="邮件" scheme="https://clibin.gitee.io/tags/%E9%82%AE%E4%BB%B6/"/>
-    
     <category term="springboot" scheme="https://clibin.gitee.io/tags/springboot/"/>
+    
+    <category term="邮件" scheme="https://clibin.gitee.io/tags/%E9%82%AE%E4%BB%B6/"/>
     
   </entry>
   
@@ -562,32 +590,6 @@
     <category term="everything" scheme="https://clibin.gitee.io/tags/everything/"/>
     
     <category term="搜索" scheme="https://clibin.gitee.io/tags/%E6%90%9C%E7%B4%A2/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>springboot相关配置</title>
-    <link href="https://clibin.gitee.io/2024/01/07/springboot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/"/>
-    <id>https://clibin.gitee.io/2024/01/07/springboot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</id>
-    <published>2024-01-07T05:10:42.000Z</published>
-    <updated>2025-01-08T08:55:57.963Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1&gt;springboot相关配置&lt;/h1&gt;
-&lt;h2 id=&quot;1-自定义项目LOGO&quot;&gt;1.&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="后端" scheme="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/"/>
-    
-    
-    <category term="springboot" scheme="https://clibin.gitee.io/tags/springboot/"/>
     
   </entry>
   

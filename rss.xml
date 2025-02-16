@@ -15,8 +15,38 @@
     <atom:link href="https://clibin.gitee.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>bin_blog</description>
-    <pubDate>Fri, 24 Jan 2025 14:37:41 GMT</pubDate>
+    <pubDate>Sun, 16 Feb 2025 11:50:50 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>rust使用MSVC最小安装</title>
+      <link>https://clibin.gitee.io/2025/02/16/rust%E4%BD%BF%E7%94%A8MSVC%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%85/</link>
+      <guid>https://clibin.gitee.io/2025/02/16/rust%E4%BD%BF%E7%94%A8MSVC%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%85/</guid>
+      <pubDate>Sun, 16 Feb 2025 07:55:32 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h2 id=&quot;1-安装VS生成工具&quot;&gt;1.安装VS生成工具&lt;/h2&gt;
+&lt;p&gt;前往&lt;a href=&quot;https://visualstudio.microsoft.com/zh-hans/downloads/&quot;&gt;VS下载界面&lt;/a&gt;，下滑到底部，找到&lt;strong&gt;VS 2022</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/rust/">rust</category>
+      
+      <category domain="https://clibin.gitee.io/tags/msvc/">msvc</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/02/16/rust%E4%BD%BF%E7%94%A8MSVC%E6%9C%80%E5%B0%8F%E5%AE%89%E8%A3%85/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>Tauri构建时下载Wix和NSIS失败问题</title>
@@ -225,9 +255,9 @@
       <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
       
       
-      <category domain="https://clibin.gitee.io/tags/%E9%82%AE%E4%BB%B6/">邮件</category>
-      
       <category domain="https://clibin.gitee.io/tags/springboot/">springboot</category>
+      
+      <category domain="https://clibin.gitee.io/tags/%E9%82%AE%E4%BB%B6/">邮件</category>
       
       
       <comments>https://clibin.gitee.io/2024/12/28/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/#disqus_thread</comments>
@@ -602,34 +632,6 @@
       
       
       <comments>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>springboot相关配置</title>
-      <link>https://clibin.gitee.io/2024/01/07/springboot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</link>
-      <guid>https://clibin.gitee.io/2024/01/07/springboot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/</guid>
-      <pubDate>Sun, 07 Jan 2024 05:10:42 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1&gt;springboot相关配置&lt;/h1&gt;
-&lt;h2 id=&quot;1-自定义项目LOGO&quot;&gt;1.&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/springboot/">springboot</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/01/07/springboot%E7%9B%B8%E5%85%B3%E9%85%8D%E7%BD%AE/#disqus_thread</comments>
       
     </item>
     
