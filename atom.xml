@@ -6,7 +6,7 @@
   <link href="https://clibin.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://clibin.gitee.io/"/>
-  <updated>2025-02-16T11:50:50.872Z</updated>
+  <updated>2025-03-15T03:44:52.282Z</updated>
   <id>https://clibin.gitee.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>cursor重置使用次数</title>
+    <link href="https://clibin.gitee.io/2025/03/15/cursor%E9%87%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%AC%A1%E6%95%B0/"/>
+    <id>https://clibin.gitee.io/2025/03/15/cursor%E9%87%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%AC%A1%E6%95%B0/</id>
+    <published>2025-03-15T03:13:48.000Z</published>
+    <updated>2025-03-15T03:44:52.282Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Cursor重置&quot;&gt;&lt;a href=&quot;#Cursor重置&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="tools" scheme="https://clibin.gitee.io/categories/tools/"/>
+    
+    
+    <category term="cursor" scheme="https://clibin.gitee.io/tags/cursor/"/>
+    
+  </entry>
   
   <entry>
     <title>rust使用MSVC最小安装</title>
@@ -127,14 +152,14 @@
     <link href="https://clibin.gitee.io/2025/01/09/sentinel/"/>
     <id>https://clibin.gitee.io/2025/01/09/sentinel/</id>
     <published>2025-01-09T07:19:04.000Z</published>
-    <updated>2025-02-14T07:05:21.722Z</updated>
+    <updated>2025-03-12T13:21:58.462Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;sentinel&quot;&gt;&lt;a href=&quot;#sentinel&quot; class=&quot;headerlink&quot; title=&quot;sentinel&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://sentinelguard.io/zh-cn&quot;&gt;sentinel&lt;/a&gt;&lt;/h1&gt;&lt;h2</summary>
+    <summary type="html">&lt;h1 id=&quot;sentinel-sentinel&quot;&gt;&lt;a href=&quot;#sentinel-sentinel&quot; class=&quot;headerlink&quot; title=&quot;[sentinel][sentinel]&quot;&gt;&lt;/a&gt;[sentinel][sentinel]&lt;/h1&gt;&lt;h2</summary>
         
       
     
@@ -154,14 +179,15 @@
     <link href="https://clibin.gitee.io/2025/01/01/Gateway/"/>
     <id>https://clibin.gitee.io/2025/01/01/Gateway/</id>
     <published>2025-01-01T05:37:56.000Z</published>
-    <updated>2025-01-18T15:36:10.503Z</updated>
+    <updated>2025-03-11T11:00:59.899Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;h1 id=&quot;Gateway&quot;&gt;&lt;a href=&quot;#Gateway&quot; class=&quot;headerlink&quot; title=&quot;Gateway&quot;&gt;&lt;/a&gt;Gateway&lt;/h1&gt;&lt;h2 id=&quot;1-概述&quot;&gt;&lt;a href=&quot;#1-概述&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h1 id=&quot;Gateway&quot;&gt;&lt;a href=&quot;#Gateway&quot; class=&quot;headerlink&quot; title=&quot;Gateway&quot;&gt;&lt;/a&gt;Gateway&lt;/h1&gt;&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;1-概述&quot;&gt;&lt;a href=&quot;#1-概述&quot;</summary>
         
       
     
@@ -262,7 +288,7 @@
     <link href="https://clibin.gitee.io/2024/12/26/openfeign/"/>
     <id>https://clibin.gitee.io/2024/12/26/openfeign/</id>
     <published>2024-12-26T01:44:56.000Z</published>
-    <updated>2025-01-30T03:46:39.756Z</updated>
+    <updated>2025-03-10T13:20:49.421Z</updated>
     
     
       
@@ -424,7 +450,7 @@
     <link href="https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/"/>
     <id>https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/</id>
     <published>2024-03-01T14:13:26.000Z</published>
-    <updated>2024-12-26T11:10:09.891Z</updated>
+    <updated>2025-03-10T12:40:29.172Z</updated>
     
     
       
@@ -526,33 +552,6 @@
     
     
     <category term="axios" scheme="https://clibin.gitee.io/tags/axios/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>everything极速搜索</title>
-    <link href="https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/"/>
-    <id>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/</id>
-    <published>2024-02-18T07:18:12.000Z</published>
-    <updated>2025-01-05T02:14:22.840Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;everything&quot;&gt;&lt;a href=&quot;#everything&quot; class=&quot;headerlink&quot; title=&quot;everything&quot;&gt;&lt;/a&gt;everything&lt;/h1&gt;&lt;h2 id=&quot;1-指定文件后缀&quot;&gt;&lt;a href=&quot;#1-指定文件后缀&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="tools" scheme="https://clibin.gitee.io/categories/tools/"/>
-    
-    
-    <category term="everything" scheme="https://clibin.gitee.io/tags/everything/"/>
-    
-    <category term="搜索" scheme="https://clibin.gitee.io/tags/%E6%90%9C%E7%B4%A2/"/>
     
   </entry>
   

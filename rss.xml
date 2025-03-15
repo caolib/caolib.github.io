@@ -15,8 +15,35 @@
     <atom:link href="https://clibin.gitee.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>bin_blog</description>
-    <pubDate>Sun, 16 Feb 2025 11:50:50 GMT</pubDate>
+    <pubDate>Sat, 15 Mar 2025 03:44:52 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>cursor重置使用次数</title>
+      <link>https://clibin.gitee.io/2025/03/15/cursor%E9%87%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%AC%A1%E6%95%B0/</link>
+      <guid>https://clibin.gitee.io/2025/03/15/cursor%E9%87%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%AC%A1%E6%95%B0/</guid>
+      <pubDate>Sat, 15 Mar 2025 03:13:48 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;Cursor重置&quot;&gt;&lt;a href=&quot;#Cursor重置&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/cursor/">cursor</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/03/15/cursor%E9%87%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%AC%A1%E6%95%B0/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>rust使用MSVC最小安装</title>
@@ -142,7 +169,7 @@
         
           
           
-      <description>&lt;h1 id=&quot;sentinel&quot;&gt;&lt;a href=&quot;#sentinel&quot; class=&quot;headerlink&quot; title=&quot;sentinel&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://sentinelguard.io/zh-cn&quot;&gt;sentinel&lt;/a&gt;&lt;/h1&gt;&lt;h2</description>
+      <description>&lt;h1 id=&quot;sentinel-sentinel&quot;&gt;&lt;a href=&quot;#sentinel-sentinel&quot; class=&quot;headerlink&quot; title=&quot;[sentinel][sentinel]&quot;&gt;&lt;/a&gt;[sentinel][sentinel]&lt;/h1&gt;&lt;h2</description>
           
         
       
@@ -171,7 +198,8 @@
         
           
           
-      <description>&lt;h1 id=&quot;Gateway&quot;&gt;&lt;a href=&quot;#Gateway&quot; class=&quot;headerlink&quot; title=&quot;Gateway&quot;&gt;&lt;/a&gt;Gateway&lt;/h1&gt;&lt;h2 id=&quot;1-概述&quot;&gt;&lt;a href=&quot;#1-概述&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h1 id=&quot;Gateway&quot;&gt;&lt;a href=&quot;#Gateway&quot; class=&quot;headerlink&quot; title=&quot;Gateway&quot;&gt;&lt;/a&gt;Gateway&lt;/h1&gt;&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;1-概述&quot;&gt;&lt;a href=&quot;#1-概述&quot;</description>
           
         
       
@@ -566,35 +594,6 @@
       
       
       <comments>https://clibin.gitee.io/2024/02/19/Axios/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>everything极速搜索</title>
-      <link>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/</link>
-      <guid>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/</guid>
-      <pubDate>Sun, 18 Feb 2024 07:18:12 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;everything&quot;&gt;&lt;a href=&quot;#everything&quot; class=&quot;headerlink&quot; title=&quot;everything&quot;&gt;&lt;/a&gt;everything&lt;/h1&gt;&lt;h2 id=&quot;1-指定文件后缀&quot;&gt;&lt;a href=&quot;#1-指定文件后缀&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/everything/">everything</category>
-      
-      <category domain="https://clibin.gitee.io/tags/%E6%90%9C%E7%B4%A2/">搜索</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/02/18/Everything%E6%90%9C%E7%B4%A2/#disqus_thread</comments>
       
     </item>
     
