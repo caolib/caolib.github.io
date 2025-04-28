@@ -15,8 +15,66 @@
     <atom:link href="https://clibin.gitee.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>bin_blog</description>
-    <pubDate>Sat, 15 Mar 2025 03:44:52 GMT</pubDate>
+    <pubDate>Sun, 27 Apr 2025 13:48:15 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>IDEA插件-GrepConsole</title>
+      <link>https://clibin.gitee.io/2025/04/27/IDEA%E6%8F%92%E4%BB%B6-grepconsole/</link>
+      <guid>https://clibin.gitee.io/2025/04/27/IDEA%E6%8F%92%E4%BB%B6-grepconsole/</guid>
+      <pubDate>Sun, 27 Apr 2025 12:24:05 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;GrepConsole-插件使用&quot;&gt;&lt;a href=&quot;#GrepConsole-插件使用&quot; class=&quot;headerlink&quot; title=&quot;GrepConsole 插件使用&quot;&gt;&lt;/a&gt;GrepConsole</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/plugin/">plugin</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/plugin/">plugin</category>
+      
+      <category domain="https://clibin.gitee.io/tags/grepconsole/">grepconsole</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/04/27/IDEA%E6%8F%92%E4%BB%B6-grepconsole/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>springboot发送邮件</title>
+      <link>https://clibin.gitee.io/2025/04/27/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/</link>
+      <guid>https://clibin.gitee.io/2025/04/27/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/</guid>
+      <pubDate>Sun, 27 Apr 2025 08:13:10 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;springboot发送邮件&quot;&gt;&lt;a href=&quot;#springboot发送邮件&quot; class=&quot;headerlink&quot; title=&quot;springboot发送邮件&quot;&gt;&lt;/a&gt;springboot发送邮件&lt;/h1&gt;&lt;h2 id=&quot;导入依赖&quot;&gt;&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/springboot/">springboot</category>
+      
+      <category domain="https://clibin.gitee.io/tags/%E9%82%AE%E4%BB%B6/">邮件</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/04/27/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>cursor重置使用次数</title>
@@ -28,8 +86,7 @@
         
           
           
-      <description>&lt;h1&gt;Cursor重置&lt;/h1&gt;
-&lt;p&gt;cursor有一定的免费使用额度，在官网但肯定是不够我们&lt;s&gt;白嫖&lt;/s&gt;使用的，github上有个项目&lt;a</description>
+      <description>&lt;h1 id=&quot;Cursor重置&quot;&gt;&lt;a href=&quot;#Cursor重置&quot; class=&quot;headerlink&quot;</description>
           
         
       
@@ -56,8 +113,7 @@
         
           
           
-      <description>&lt;h2 id=&quot;1-安装VS生成工具&quot;&gt;1.安装VS生成工具&lt;/h2&gt;
-&lt;p&gt;前往&lt;a href=&quot;https://visualstudio.microsoft.com/zh-hans/downloads/&quot;&gt;VS下载界面&lt;/a&gt;，下滑到底部，找到&lt;strong&gt;VS 2022</description>
+      <description>&lt;h2 id=&quot;1-安装VS生成工具&quot;&gt;&lt;a href=&quot;#1-安装VS生成工具&quot; class=&quot;headerlink&quot; title=&quot;1.安装VS生成工具&quot;&gt;&lt;/a&gt;1.安装VS生成工具&lt;/h2&gt;&lt;p&gt;前往&lt;a</description>
           
         
       
@@ -86,7 +142,7 @@
         
           
           
-      <description>&lt;h2</description>
+      <description>&lt;h2 id=&quot;1-问题&quot;&gt;&lt;a href=&quot;#1-问题&quot; class=&quot;headerlink&quot;</description>
           
         
       
@@ -113,9 +169,7 @@
         
           
           
-      <description>&lt;h1&gt;RabbitMQ&lt;/h1&gt;
-&lt;p&gt;TODO&lt;/p&gt;
-</description>
+      <description>&lt;h1 id=&quot;RabbitMQ&quot;&gt;&lt;a href=&quot;#RabbitMQ&quot; class=&quot;headerlink&quot;</description>
           
         
       
@@ -144,11 +198,7 @@
         
           
           
-      <description>&lt;h1&gt;Seata&lt;/h1&gt;
-&lt;h2 id=&quot;1-简介&quot;&gt;1.简介&lt;/h2&gt;
-&lt;p&gt;&lt;a href=&quot;https://seata.apache.org/&quot;&gt;Seata&lt;/a&gt;是什么？&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Seata</description>
+      <description>&lt;h1 id=&quot;Seata&quot;&gt;&lt;a href=&quot;#Seata&quot; class=&quot;headerlink&quot; title=&quot;Seata&quot;&gt;&lt;/a&gt;Seata&lt;/h1&gt;&lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot;</description>
           
         
       
@@ -177,10 +227,7 @@
         
           
           
-      <description>&lt;h1&gt;[sentinel][sentinel]&lt;/h1&gt;
-&lt;h2 id=&quot;1-简介&quot;&gt;1.简介&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Sentinel&lt;/strong&gt;</description>
+      <description>&lt;h1 id=&quot;sentinel-sentinel&quot;&gt;&lt;a href=&quot;#sentinel-sentinel&quot; class=&quot;headerlink&quot; title=&quot;[sentinel][sentinel]&quot;&gt;&lt;/a&gt;[sentinel][sentinel]&lt;/h1&gt;&lt;h2</description>
           
         
       
@@ -209,12 +256,7 @@
         
           
           
-      <description>&lt;h1&gt;Docker&lt;/h1&gt;
-&lt;h2 id=&quot;1-简介&quot;&gt;1.简介&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;官方介绍&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;一个为增强开发而设计的强大平台&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a</description>
+      <description>&lt;h1 id=&quot;Docker&quot;&gt;&lt;a href=&quot;#Docker&quot; class=&quot;headerlink&quot; title=&quot;Docker&quot;&gt;&lt;/a&gt;Docker&lt;/h1&gt;&lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot;</description>
           
         
       
@@ -241,12 +283,8 @@
         
           
           
-      <description>&lt;h1&gt;Gateway&lt;/h1&gt;
-&lt;p&gt;[toc]&lt;/p&gt;
-&lt;h2 id=&quot;1-概述&quot;&gt;1.概述&lt;/h2&gt;
-&lt;h3 id=&quot;是什么？&quot;&gt;是什么？&lt;/h3&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Spring Cloud Gateway 是一个基于 Spring Framework 和</description>
+      <description>&lt;h1 id=&quot;Gateway&quot;&gt;&lt;a href=&quot;#Gateway&quot; class=&quot;headerlink&quot; title=&quot;Gateway&quot;&gt;&lt;/a&gt;Gateway&lt;/h1&gt;&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h2 id=&quot;1-概述&quot;&gt;&lt;a href=&quot;#1-概述&quot;</description>
           
         
       
@@ -273,9 +311,9 @@
         
           
           
-      <description>&lt;blockquote&gt;
-&lt;p&gt;在公网部署前端项目是很方便的，Vercel、Netlify、Cloudflare等等都可以很快地部署一个前端页面（&lt;s&gt;前端部署是这样的，你只要上传文件就可以，而后端部署要考虑的就很多了，没有云服务器&lt;/s&gt;）&lt;/p&gt;
-&lt;p&gt;现在我部署了一个前端页</description>
+      <description>&lt;p&gt;[toc]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;在公网部署前端项目是很方便的，Vercel、Netlify、Cloudflare等等都可以很快地部署一个前端页面（&lt;del&gt;前端部署是这样的，你只要上传文件就可以，而后端部署要考虑的就很多了，没有云服务器&lt;/del&gt;）&lt;/</description>
           
         
       
@@ -295,37 +333,6 @@
     </item>
     
     <item>
-      <title>springboot发送邮件</title>
-      <link>https://clibin.gitee.io/2024/12/28/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/</link>
-      <guid>https://clibin.gitee.io/2024/12/28/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/</guid>
-      <pubDate>Sat, 28 Dec 2024 09:16:26 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1&gt;springboot发送邮件&lt;/h1&gt;
-&lt;h2 id=&quot;导入依赖&quot;&gt;导入依赖&lt;/h2&gt;
-&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/springboot/">springboot</category>
-      
-      <category domain="https://clibin.gitee.io/tags/%E9%82%AE%E4%BB%B6/">邮件</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/12/28/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>邮箱开启SMTP服务</title>
       <link>https://clibin.gitee.io/2024/12/27/%E5%BC%80%E5%90%AFSMTP%E6%9C%8D%E5%8A%A1/</link>
       <guid>https://clibin.gitee.io/2024/12/27/%E5%BC%80%E5%90%AFSMTP%E6%9C%8D%E5%8A%A1/</guid>
@@ -335,10 +342,7 @@
         
           
           
-      <description>&lt;h1&gt;开启邮件SMTP服务&lt;/h1&gt;
-&lt;h2 id=&quot;1-SMTP服务是什么？&quot;&gt;1. SMTP服务是什么？&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;SMTP&lt;/strong&gt;（Simple Mail Transfer</description>
+      <description>&lt;h1 id=&quot;开启邮件SMTP服务&quot;&gt;&lt;a href=&quot;#开启邮件SMTP服务&quot; class=&quot;headerlink&quot; title=&quot;开启邮件SMTP服务&quot;&gt;&lt;/a&gt;开启邮件SMTP服务&lt;/h1&gt;&lt;h2 id=&quot;1-SMTP服务是什么？&quot;&gt;&lt;a</description>
           
         
       
@@ -367,8 +371,7 @@
         
           
           
-      <description>&lt;h1&gt;&lt;a href=&quot;https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/&quot;&gt;openfeign&lt;/a&gt;&lt;/h1&gt;
-&lt;h2</description>
+      <description>&lt;h1 id=&quot;openfeign&quot;&gt;&lt;a href=&quot;#openfeign&quot; class=&quot;headerlink&quot; title=&quot;openfeign&quot;&gt;&lt;/a&gt;&lt;a</description>
           
         
       
@@ -397,8 +400,7 @@
         
           
           
-      <description>&lt;h1&gt;&lt;a href=&quot;https://nulab.com/zh-cn/learn/software-development/git-tutorial/&quot;&gt;Git&lt;/a&gt;&lt;/h1&gt;
-&lt;p&gt;&lt;a</description>
+      <description>&lt;h1 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;&lt;a</description>
           
         
       
@@ -455,8 +457,7 @@
         
           
           
-      <description>&lt;h1&gt;Apifox&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://apifox.com/help/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;h1 id=&quot;Apifox&quot;&gt;&lt;a href=&quot;#Apifox&quot; class=&quot;headerlink&quot; title=&quot;Apifox&quot;&gt;&lt;/a&gt;Apifox&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://apifox.com/help/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
 &lt;h2</description>
           
         
@@ -486,10 +487,7 @@
         
           
           
-      <description>&lt;h1&gt;nacos&lt;/h1&gt;
-&lt;h2 id=&quot;注册中心&quot;&gt;注册中心&lt;/h2&gt;
-&lt;h3 id=&quot;1-下载&quot;&gt;1. 下载&lt;/h3&gt;
-&lt;p&gt;&lt;a</description>
+      <description>&lt;h1 id=&quot;nacos&quot;&gt;&lt;a href=&quot;#nacos&quot; class=&quot;headerlink&quot; title=&quot;nacos&quot;&gt;&lt;/a&gt;nacos&lt;/h1&gt;&lt;h2 id=&quot;注册中心&quot;&gt;&lt;a href=&quot;#注册中心&quot; class=&quot;headerlink&quot;</description>
           
         
       
@@ -547,10 +545,7 @@
         
           
           
-      <description>&lt;h1&gt;Markdown&lt;/h1&gt;
-&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[Markdown][markdown] 是一种轻量级的标记语言，可用于在纯文本文档中添加格式化元素。Markdown 由 John Gruber 于 2004</description>
+      <description>&lt;h1 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</description>
           
         
       
@@ -577,11 +572,7 @@
         
           
           
-      <description>&lt;h2 id=&quot;Pinia&quot;&gt;&lt;a href=&quot;https://pinia.vuejs.org/zh/&quot;&gt;Pinia&lt;/a&gt;&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;[!note]&lt;/p&gt;
-&lt;p&gt;Pinia是什么？&lt;/p&gt;
-&lt;p&gt;Pinia 是 ==Vue</description>
+      <description>&lt;h2 id=&quot;Pinia&quot;&gt;&lt;a href=&quot;#Pinia&quot; class=&quot;headerlink&quot; title=&quot;Pinia&quot;&gt;&lt;/a&gt;&lt;a</description>
           
         
       
@@ -597,39 +588,6 @@
       
       
       <comments>https://clibin.gitee.io/2024/02/20/pinia-vue%E5%AD%98%E5%82%A8%E5%BA%93/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>redis二次校验实现jwt主动“失效”</title>
-      <link>https://clibin.gitee.io/2024/02/19/jwt%E4%BB%A4%E7%89%8C%E4%B8%BB%E5%8A%A8%E5%A4%B1%E6%95%88/</link>
-      <guid>https://clibin.gitee.io/2024/02/19/jwt%E4%BB%A4%E7%89%8C%E4%B8%BB%E5%8A%A8%E5%A4%B1%E6%95%88/</guid>
-      <pubDate>Mon, 19 Feb 2024 09:34:34 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;blockquote&gt;
-&lt;p&gt;问题：jwt令牌一旦生成，就不能再更改，有时候想让令牌提前失效该怎么办？&lt;/p&gt;
-&lt;p&gt;解决方案：使用redis对token进行二次校验，由redis来管理token的过期时间&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/redis/">redis</category>
-      
-      <category domain="https://clibin.gitee.io/tags/jwt/">jwt</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/02/19/jwt%E4%BB%A4%E7%89%8C%E4%B8%BB%E5%8A%A8%E5%A4%B1%E6%95%88/#disqus_thread</comments>
       
     </item>
     
