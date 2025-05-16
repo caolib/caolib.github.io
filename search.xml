@@ -59,10 +59,10 @@
     
     <entry>
       <title>cursor重置使用次数</title>
-      <link href="/2025/03/15/cursor%E9%87%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%AC%A1%E6%95%B0/"/>
-      <url>/2025/03/15/cursor%E9%87%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%AC%A1%E6%95%B0/</url>
+      <link href="//post/cursor-reset-usage-times-dahdp.html"/>
+      <url>//post/cursor-reset-usage-times-dahdp.html</url>
       
-        <content type="html"><![CDATA[<h1 id="Cursor重置"><a href="#Cursor重置" class="headerlink" title="Cursor重置"></a>Cursor重置</h1><p>cursor有一定的免费使用额度，在官网但肯定是不够我们<del>白嫖</del>使用的，github上有个项目<a href="https://github.com/yuaotian/go-cursor-help">^go-cursor-help</a>可以重置账号的使用次数（<del>可以无限白嫖了😋</del>，接下来讲讲怎么操作</p><h2 id="1-删除账号"><a href="#1-删除账号" class="headerlink" title="1.删除账号"></a>1.删除账号</h2><p>先进入<a href="https://www.cursor.com/cn">^cursor</a>官网，点击右上角进入登录，然后进入账号设置，这里可以看到已经使用的次数（我已经重置过一次了</p><p>点击<strong>Delete Account</strong>删除账号</p><p><img src="https://s2.loli.net/2025/03/15/UQZxu8t6MTFYCsj.png" alt="image-20250315112903872"></p><h2 id="2-重置cursor"><a href="#2-重置cursor" class="headerlink" title="2.重置cursor"></a>2.重置cursor</h2><p>来到项目的<a href="https://github.com/yuaotian/go-cursor-help?tab=readme-ov-file#-one-click-solution">^说明文档</a>复制对应平台的命令，我这里使用windows</p><figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">irm</span> https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go<span class="hljs-literal">-cursor-help</span>/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | <span class="hljs-built_in">iex</span><br></code></pre></td></tr></table></figure><p><img src="https://s2.loli.net/2025/03/15/ONpXb3DqmVyk8ih.png" alt="image-20250315113332101"></p><p>打开一个powershell（管理员身份）控制台，粘贴运行就ok了</p><h2 id="3-重新登录"><a href="#3-重新登录" class="headerlink" title="3.重新登录"></a>3.重新登录</h2><p>重置完成后，重启cursor后重新注册登录账号就可以了</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="cursor重置使用次数"><a href="#cursor重置使用次数" class="headerlink" title="cursor重置使用次数"></a>cursor重置使用次数</h1><h1 id="Cursor重置"><a href="#Cursor重置" class="headerlink" title="Cursor重置"></a>Cursor重置</h1><p>cursor有一定的免费使用额度，在官网但肯定是不够我们<del>白嫖</del>使用的，github上有个项目<a href="https://github.com/yuaotian/go-cursor-help">go-cursor-help</a>可以重置账号的使用次数（<del>可以无限白嫖了😋</del> ，接下来讲讲怎么操作</p><h2 id="1-删除账号"><a href="#1-删除账号" class="headerlink" title="1.删除账号"></a>1.删除账号</h2><p>先进入<a href="https://www.cursor.com/cn">cursor</a>官网，点击右上角进入登录，然后进入账号设置，这里可以看到已经使用的次数（我已经重置过一次了</p><p>点击<strong>Delete Account</strong>删除账号</p><p><img src="https://s2.loli.net/2025/03/15/UQZxu8t6MTFYCsj.png" alt="image-20250315112903872"></p><h2 id="2-重置cursor"><a href="#2-重置cursor" class="headerlink" title="2.重置cursor"></a>2.重置cursor</h2><p>来到项目的<a href="https://github.com/yuaotian/go-cursor-help?tab=readme-ov-file#-one-click-solution">说明文档</a>复制对应平台的命令，我这里使用windows</p><figure class="highlight powershell"><table><tr><td class="code"><pre><code class="hljs powershell"><span class="hljs-built_in">irm</span> https://aizaozao.com/accelerate.php/https://raw.githubusercontent.com/yuaotian/go<span class="hljs-literal">-cursor-help</span>/refs/heads/master/scripts/run/cursor_win_id_modifier.ps1 | <span class="hljs-built_in">iex</span><br></code></pre></td></tr></table></figure><p><img src="https://s2.loli.net/2025/03/15/ONpXb3DqmVyk8ih.png" alt="image-20250315113332101"></p><p>打开一个powershell（管理员身份）控制台，粘贴运行就ok了</p><h2 id="3-重新登录"><a href="#3-重新登录" class="headerlink" title="3.重新登录"></a>3.重新登录</h2><p>重置完成后，重启cursor后重新注册登录账号就可以了</p>]]></content>
       
       
       <categories>
@@ -800,9 +800,9 @@
     
     
     <entry>
-      <title>charts</title>
-      <link href="/charts/index.html"/>
-      <url>/charts/index.html</url>
+      <title>分类</title>
+      <link href="/categories/index.html"/>
+      <url>/categories/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -811,9 +811,9 @@
     
     
     <entry>
-      <title>分类</title>
-      <link href="/categories/index.html"/>
-      <url>/categories/index.html</url>
+      <title>charts</title>
+      <link href="/charts/index.html"/>
+      <url>/charts/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
       
@@ -833,11 +833,33 @@
     
     
     <entry>
+      <title>link</title>
+      <link href="/link/index.html"/>
+      <url>/link/index.html</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>即刻短文</title>
       <link href="/essay/index.html"/>
       <url>/essay/index.html</url>
       
         <content type="html"><![CDATA[]]></content>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/self/one-light-theme.css"/>
+      <url>/self/one-light-theme.css</url>
+      
+        <content type="html"><![CDATA[@import url('https://cdn.jsdelivr.net/gh/caolib/cdn@main/css/blog.css');]]></content>
       
     </entry>
     
@@ -855,33 +877,11 @@
     
     
     <entry>
-      <title>link</title>
-      <link href="/link/index.html"/>
-      <url>/link/index.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title></title>
       <link href="/self/onedark.css"/>
       <url>/self/onedark.css</url>
       
         <content type="html"><![CDATA[/*!  Theme: OneDark  Author: Lalit Magant (http://github.com/tilal6991)  License: ~ MIT (or more permissive) [via base16-schemes-source]  Maintainer: @highlightjs/core-team  Version: 2021.09.0*//*  WARNING: DO NOT EDIT THIS FILE DIRECTLY.  This theme file was auto-generated from the Base16 scheme onedark  by the Highlight.js Base16 template builder.  - https://github.com/highlightjs/base16-highlightjs*//* 新添加的内容  -------------------------------------   --hl-color                  代码框字体顔色 【必须】 (把下面.hljs的 color复制到这里来)  --hl-bg                     代码框背景色 【必须】 (把下面.hljs的 background复制到这里来)  --hltools-bg: #321a0f       代码框顶部工具栏背景色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hltools-color: #fff       代码框顶部工具栏字体顔色 【可选】(如果你关掉了 copy、lang 和 shrink,可不用配置这个）  --hlnumber-bg: #221a0f      代码框行数背景色 【可选】(如果已经关掉 line_number,可以不用配置这个)  --hlnumber-color: #fff      代码框行数字体顔色 【可选】 (如果已经关掉 line_number,可以不用配置这个)  --hlscrollbar-bg: #d3af86   代码框滚动条顔色 【可选】（默认为主题主顔色）  --hlexpand-bg: #d3af86      代码框底部展开背景色 【可选】(如果已经关掉 highlight_height_limit,可以不用配置这个)*/:root {  --hl-color: #abb2bf;  --hl-bg: #282c34;  --hltools-bg: #282c34;  --hltools-color: #fff;  --hlnumber-bg: #282c34;  --hlnumber-color: #353b45;  --hlexpand-bg: #282c34;}/*base00  #282c34  Default Backgroundbase01  #353b45  Lighter Background (Used for status bars, line number and folding marks)base02  #3e4451  Selection Backgroundbase03  #545862  Comments, Invisibles, Line Highlightingbase04  #565c64  Dark Foreground (Used for status bars)base05  #abb2bf  Default Foreground, Caret, Delimiters, Operatorsbase06  #b6bdca  Light Foreground (Not often used)base07  #c8ccd4  Light Background (Not often used)base08  #e06c75  Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deletedbase09  #d19a66  Integers, Boolean, Constants, XML Attributes, Markup Link Urlbase0A  #e5c07b  Classes, Markup Bold, Search Text Backgroundbase0B  #98c379  Strings, Inherited Class, Markup Code, Diff Insertedbase0C  #56b6c2  Support, Regular Expressions, Escape Characters, Markup Quotesbase0D  #61afef  Functions, Methods, Attribute IDs, Headingsbase0E  #c678dd  Keywords, Storage, Selector, Markup Italic, Diff Changedbase0F  #be5046  Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?>*/pre code.hljs {  display: block;  overflow-x: auto;  padding: 1em;}code.hljs {  padding: 3px 5px;}.hljs {  color: #abb2bf;  /* background: #171717; */  background: #00282c34;}.hljs::selection,.hljs ::selection {  background-color: #3e4451;  color: #abb2bf;}/* purposely do not highlight these things */.hljs-formula,.hljs-params,.hljs-property {}/* base03 - #545862 -  Comments, Invisibles, Line Highlighting */.hljs-comment {  color: #545862;}/* base04 - #565c64 -  Dark Foreground (Used for status bars) */.hljs-tag {  color: #565c64;}/* base05 - #abb2bf -  Default Foreground, Caret, Delimiters, Operators */.hljs-subst,.hljs-punctuation,.hljs-operator {  color: #abb2bf;}.hljs-operator {  opacity: 0.7;}/* base08 - Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted */.hljs-bullet,.hljs-variable,.hljs-template-variable,.hljs-selector-tag,.hljs-name,.hljs-deletion {  color: #e06c75;}/* base09 - Integers, Boolean, Constants, XML Attributes, Markup Link Url */.hljs-symbol,.hljs-number,.hljs-link,.hljs-attr,.hljs-variable.constant_,.hljs-literal {  color: #d19a66;}/* base0A - Classes, Markup Bold, Search Text Background */.hljs-title,.hljs-class .hljs-title,.hljs-title.class_ {  color: #e5c07b;}.hljs-strong {  font-weight: bold;  color: #e5c07b;}/* base0B - Strings, Inherited Class, Markup Code, Diff Inserted */.hljs-code,.hljs-addition,.hljs-title.class_.inherited__,.hljs-string {  color: #98c379;}/* base0C - Support, Regular Expressions, Escape Characters, Markup Quotes */.hljs-built_in,.hljs-doctag, /* guessing */.hljs-quote,.hljs-keyword.hljs-atrule,.hljs-regexp {  color: #56b6c2;}/* base0D - Functions, Methods, Attribute IDs, Headings */.hljs-function .hljs-title,.hljs-attribute,.ruby .hljs-property,.hljs-title.function_,.hljs-section {  color: #61afef;}/* base0E - Keywords, Storage, Selector, Markup Italic, Diff Changed */.hljs-type,/* .hljs-selector-id, *//* .hljs-selector-class, *//* .hljs-selector-attr, *//* .hljs-selector-pseudo, */.hljs-template-tag,.diff .hljs-meta,.hljs-keyword {  color: #c678dd;}.hljs-emphasis {  color: #c678dd;  font-style: italic;}/* base0F - Deprecated, Opening/Closing Embedded Language Tags, e.g. <?php ?> */.hljs-meta,/*  prevent top level .keyword and .string scopes  from leaking into meta by accident*/.hljs-meta .hljs-keyword,.hljs-meta .hljs-string {  color: #be5046;}.hljs-meta .hljs-keyword,/* for v10 compatible themes */.hljs-meta-keyword {  font-weight: bold;}]]></content>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title></title>
-      <link href="/self/one-light-theme.css"/>
-      <url>/self/one-light-theme.css</url>
-      
-        <content type="html"><![CDATA[@import url('https://cdn.jsdelivr.net/gh/caolib/cdn@main/css/blog.css');]]></content>
       
     </entry>
     
