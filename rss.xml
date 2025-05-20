@@ -15,8 +15,37 @@
     <atom:link href="https://clibin.gitee.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>bin_blog</description>
-    <pubDate>Sun, 27 Apr 2025 13:48:15 GMT</pubDate>
+    <pubDate>Fri, 16 May 2025 14:42:05 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>ddns绑定IPv6地址</title>
+      <link>https://clibin.gitee.io/2025/05/16/ddns%E7%BB%91%E5%AE%9AIPv6%E5%9C%B0%E5%9D%80/</link>
+      <guid>https://clibin.gitee.io/2025/05/16/ddns%E7%BB%91%E5%AE%9AIPv6%E5%9C%B0%E5%9D%80/</guid>
+      <pubDate>Fri, 16 May 2025 14:39:31 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;使用DDNS绑定域名和IPv6地址&quot;&gt;&lt;a href=&quot;#使用DDNS绑定域名和IPv6地址&quot; class=&quot;headerlink&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/ddns%E7%BB%91%E5%AE%9AIPv6%E5%9C%B0%E5%9D%80/">ddns绑定IPv6地址</category>
+      
+      <category domain="https://clibin.gitee.io/tags/IPv6/">IPv6</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/05/16/ddns%E7%BB%91%E5%AE%9AIPv6%E5%9C%B0%E5%9D%80/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>IDEA插件-GrepConsole</title>
@@ -323,9 +352,9 @@
       <category domain="https://clibin.gitee.io/categories/IPv6/">IPv6</category>
       
       
-      <category domain="https://clibin.gitee.io/tags/surge/">surge</category>
-      
       <category domain="https://clibin.gitee.io/tags/IPv6/">IPv6</category>
+      
+      <category domain="https://clibin.gitee.io/tags/surge/">surge</category>
       
       
       <comments>https://clibin.gitee.io/2024/12/31/%E5%85%AC%E7%BD%91%E8%AE%BF%E9%97%AE%E6%9C%AC%E5%9C%B0%E6%9C%8D%E5%8A%A1/#disqus_thread</comments>
@@ -559,35 +588,6 @@
       
       
       <comments>https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>pinia-vue存储库</title>
-      <link>https://clibin.gitee.io/2024/02/20/pinia-vue%E5%AD%98%E5%82%A8%E5%BA%93/</link>
-      <guid>https://clibin.gitee.io/2024/02/20/pinia-vue%E5%AD%98%E5%82%A8%E5%BA%93/</guid>
-      <pubDate>Mon, 19 Feb 2024 17:01:31 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h2 id=&quot;Pinia&quot;&gt;&lt;a href=&quot;#Pinia&quot; class=&quot;headerlink&quot; title=&quot;Pinia&quot;&gt;&lt;/a&gt;&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%89%8D%E7%AB%AF/">前端</category>
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%89%8D%E7%AB%AF/vue/">vue</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/pinia/">pinia</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/02/20/pinia-vue%E5%AD%98%E5%82%A8%E5%BA%93/#disqus_thread</comments>
       
     </item>
     

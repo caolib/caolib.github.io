@@ -6,7 +6,7 @@
   <link href="https://clibin.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://clibin.gitee.io/"/>
-  <updated>2025-04-27T13:48:15.992Z</updated>
+  <updated>2025-05-16T14:42:05.459Z</updated>
   <id>https://clibin.gitee.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ddns绑定IPv6地址</title>
+    <link href="https://clibin.gitee.io/2025/05/16/ddns%E7%BB%91%E5%AE%9AIPv6%E5%9C%B0%E5%9D%80/"/>
+    <id>https://clibin.gitee.io/2025/05/16/ddns%E7%BB%91%E5%AE%9AIPv6%E5%9C%B0%E5%9D%80/</id>
+    <published>2025-05-16T14:39:31.000Z</published>
+    <updated>2025-05-16T14:42:05.459Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;使用DDNS绑定域名和IPv6地址&quot;&gt;&lt;a href=&quot;#使用DDNS绑定域名和IPv6地址&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="tools" scheme="https://clibin.gitee.io/categories/tools/"/>
+    
+    
+    <category term="ddns绑定IPv6地址" scheme="https://clibin.gitee.io/tags/ddns%E7%BB%91%E5%AE%9AIPv6%E5%9C%B0%E5%9D%80/"/>
+    
+    <category term="IPv6" scheme="https://clibin.gitee.io/tags/IPv6/"/>
+    
+  </entry>
   
   <entry>
     <title>IDEA插件-GrepConsole</title>
@@ -302,9 +329,9 @@
     <category term="IPv6" scheme="https://clibin.gitee.io/categories/IPv6/"/>
     
     
-    <category term="surge" scheme="https://clibin.gitee.io/tags/surge/"/>
-    
     <category term="IPv6" scheme="https://clibin.gitee.io/tags/IPv6/"/>
+    
+    <category term="surge" scheme="https://clibin.gitee.io/tags/surge/"/>
     
   </entry>
   
@@ -367,7 +394,7 @@
     <link href="https://clibin.gitee.io/2024/03/25/git/"/>
     <id>https://clibin.gitee.io/2024/03/25/git/</id>
     <published>2024-03-25T13:45:03.000Z</published>
-    <updated>2025-04-27T08:13:10.952Z</updated>
+    <updated>2025-05-20T04:21:29.866Z</updated>
     
     
       
@@ -519,33 +546,6 @@
     
     
     <category term="markdown" scheme="https://clibin.gitee.io/tags/markdown/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>pinia-vue存储库</title>
-    <link href="https://clibin.gitee.io/2024/02/20/pinia-vue%E5%AD%98%E5%82%A8%E5%BA%93/"/>
-    <id>https://clibin.gitee.io/2024/02/20/pinia-vue%E5%AD%98%E5%82%A8%E5%BA%93/</id>
-    <published>2024-02-19T17:01:31.000Z</published>
-    <updated>2025-04-27T08:13:10.958Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h2 id=&quot;Pinia&quot;&gt;&lt;a href=&quot;#Pinia&quot; class=&quot;headerlink&quot; title=&quot;Pinia&quot;&gt;&lt;/a&gt;&lt;a</summary>
-        
-      
-    
-    
-    
-    <category term="前端" scheme="https://clibin.gitee.io/categories/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="vue" scheme="https://clibin.gitee.io/categories/%E5%89%8D%E7%AB%AF/vue/"/>
-    
-    
-    <category term="pinia" scheme="https://clibin.gitee.io/tags/pinia/"/>
     
   </entry>
   
