@@ -15,8 +15,35 @@
     <atom:link href="https://clibin.gitee.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>bin_blog</description>
-    <pubDate>Sat, 28 Jun 2025 08:07:55 GMT</pubDate>
+    <pubDate>Tue, 01 Jul 2025 14:08:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>我常用的VSCode插件</title>
+      <link>https://clibin.gitee.io/2025/06/30/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84VSCode%E6%8F%92%E4%BB%B6/</link>
+      <guid>https://clibin.gitee.io/2025/06/30/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84VSCode%E6%8F%92%E4%BB%B6/</guid>
+      <pubDate>Mon, 30 Jun 2025 15:25:29 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1 id=&quot;我常用的VSCode插件&quot;&gt;&lt;a href=&quot;#我常用的VSCode插件&quot; class=&quot;headerlink&quot; title=&quot;我常用的VSCode插件&quot;&gt;&lt;/a&gt;我常用的VSCode插件&lt;/h1&gt;&lt;h2 id=&quot;1-插件&quot;&gt;&lt;a href=&quot;#1-插件&quot;</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/VSCode/">VSCode</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/06/30/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84VSCode%E6%8F%92%E4%BB%B6/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>springboot发送邮件</title>
@@ -553,33 +580,6 @@
       
       
       <comments>https://clibin.gitee.io/2024/03/08/shields.io%E6%A0%87%E7%AD%BE/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>markdown从入门到上天</title>
-      <link>https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/</link>
-      <guid>https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/</guid>
-      <pubDate>Fri, 01 Mar 2024 14:13:26 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/markdown/">markdown</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
       
     </item>
     

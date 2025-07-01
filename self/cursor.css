@@ -1,0 +1,61 @@
+/* 默认光标替换 */
+html {
+    cursor: url('../img/mouse/Default.cur'), default !important;
+    /* 自定义光标，回退到默认 */
+}
+
+/* 链接状态光标 */
+a,
+[href],
+[data-hover] {
+    cursor: url('../img/mouse/Link.cur'), pointer !important;
+    /* 链接光标 */
+}
+
+/* 文本输入状态光标 */
+input,
+textarea,
+[contenteditable] {
+    cursor: url('../img/mouse/IBeam.cur'), text !important;
+    /* 文本光标 */
+}
+
+/* 可拖动元素光标 */
+[draggable="true"] {
+    cursor: url('../img/mouse/Move.cur'), move !important;
+    /* 移动光标 */
+}
+
+/* 禁用状态光标 */
+[disabled] {
+    cursor: url('../img/mouse/Unavailiable.cur'), not-allowed !important;
+    /* 禁用光标 */
+}
+
+/* 忙碌状态光标 */
+.busy-cursor {
+    cursor: url('../img/mouse/Busy.ani'), wait !important;
+    /* 等待光标(动画) */
+}
+
+
+/* 帮助状态光标 */
+.help-cursor {
+    cursor: url('../img/mouse/Help.cur'), help !important;
+    /* 帮助光标 */
+}
+
+/* 触摸设备适配 - 隐藏自定义光标 */
+@media (hover: none) {
+
+    #moonlight-cursor,
+    .crystal-trail {
+        display: none !important;
+        /* 触摸设备上隐藏 */
+    }
+
+    body {
+        cursor: default !important;
+        /* 使用系统默认光标 */
+    }
+}

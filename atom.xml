@@ -6,7 +6,7 @@
   <link href="https://clibin.gitee.io/atom.xml" rel="self"/>
   
   <link href="https://clibin.gitee.io/"/>
-  <updated>2025-06-28T08:07:55.108Z</updated>
+  <updated>2025-07-01T14:08:31.847Z</updated>
   <id>https://clibin.gitee.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>我常用的VSCode插件</title>
+    <link href="https://clibin.gitee.io/2025/06/30/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84VSCode%E6%8F%92%E4%BB%B6/"/>
+    <id>https://clibin.gitee.io/2025/06/30/%E6%88%91%E5%B8%B8%E7%94%A8%E7%9A%84VSCode%E6%8F%92%E4%BB%B6/</id>
+    <published>2025-06-30T15:25:29.000Z</published>
+    <updated>2025-07-01T14:08:31.847Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;我常用的VSCode插件&quot;&gt;&lt;a href=&quot;#我常用的VSCode插件&quot; class=&quot;headerlink&quot; title=&quot;我常用的VSCode插件&quot;&gt;&lt;/a&gt;我常用的VSCode插件&lt;/h1&gt;&lt;h2 id=&quot;1-插件&quot;&gt;&lt;a href=&quot;#1-插件&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="tools" scheme="https://clibin.gitee.io/categories/tools/"/>
+    
+    
+    <category term="VSCode" scheme="https://clibin.gitee.io/tags/VSCode/"/>
+    
+  </entry>
   
   <entry>
     <title>springboot发送邮件</title>
@@ -513,31 +538,6 @@
     <category term="shields.io" scheme="https://clibin.gitee.io/tags/shields-io/"/>
     
     <category term="标签" scheme="https://clibin.gitee.io/tags/%E6%A0%87%E7%AD%BE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown从入门到上天</title>
-    <link href="https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/"/>
-    <id>https://clibin.gitee.io/2024/03/01/markdown%E4%BD%BF%E7%94%A8/</id>
-    <published>2024-03-01T14:13:26.000Z</published>
-    <updated>2025-06-28T08:07:55.103Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;h1 id=&quot;Markdown&quot;&gt;&lt;a href=&quot;#Markdown&quot; class=&quot;headerlink&quot; title=&quot;Markdown&quot;&gt;&lt;/a&gt;Markdown&lt;/h1&gt;&lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="tools" scheme="https://clibin.gitee.io/categories/tools/"/>
-    
-    
-    <category term="markdown" scheme="https://clibin.gitee.io/tags/markdown/"/>
     
   </entry>
   
