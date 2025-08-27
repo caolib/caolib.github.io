@@ -15,8 +15,220 @@
     <atom:link href="https://clibin.gitee.io/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>bin_blog</description>
-    <pubDate>Tue, 01 Jul 2025 14:08:31 GMT</pubDate>
+    <pubDate>Sat, 23 Aug 2025 10:10:06 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>免费的端口映射工具 ChmlFrp</title>
+      <link>https://clibin.gitee.io/2025/08/23/ChmlFrp/</link>
+      <guid>https://clibin.gitee.io/2025/08/23/ChmlFrp/</guid>
+      <pubDate>Sat, 23 Aug 2025 08:37:51 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1&gt;免费的端口映射工具 ChmlFrp&lt;/h1&gt;
+&lt;p&gt;前言：之前我写过一篇关于cloudflare tunnel的使用教程，ChmlFrp是一个类似的工具，也可以用来进行内网穿透，同样是一个免费的工具，免费版会有一定限制，对个人来说还是够用的，&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/08/23/ChmlFrp/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>IDEA相关的设置和技巧</title>
+      <link>https://clibin.gitee.io/2025/08/23/IDEA%E7%9B%B8%E5%85%B3%E7%9A%84%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%8A%80%E5%B7%A7/</link>
+      <guid>https://clibin.gitee.io/2025/08/23/IDEA%E7%9B%B8%E5%85%B3%E7%9A%84%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%8A%80%E5%B7%A7/</guid>
+      <pubDate>Sat, 23 Aug 2025 06:56:26 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1&gt;IDEA相关的设置和技巧&lt;/h1&gt;
+&lt;h2 id=&quot;1-布局设置&quot;&gt;1.布局设置&lt;/h2&gt;
+&lt;p&gt;IDEA的布局自定义程度很高，顶部工具栏，侧边栏都可以随意定制，设置好的布局方案可以保存，在新项目中快速使用&lt;/p&gt;
+&lt;h3 id=&quot;1-1-工具栏设置&quot;&gt;1.1</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/IDEA/">IDEA</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/08/23/IDEA%E7%9B%B8%E5%85%B3%E7%9A%84%E8%AE%BE%E7%BD%AE%E5%92%8C%E6%8A%80%E5%B7%A7/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>windows暂停更新</title>
+      <link>https://clibin.gitee.io/2025/08/19/windows%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0/</link>
+      <guid>https://clibin.gitee.io/2025/08/19/windows%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0/</guid>
+      <pubDate>Tue, 19 Aug 2025 01:26:53 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1&gt;windows暂停更新&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;[!CAUTION]&lt;/p&gt;
+&lt;p&gt;最近Windows的一个更新出现了一个比较严重的问题，该更新被曝存在严重Bug，可能&lt;strong&gt;导致SSD和HDD出现故障&lt;/strong&gt;，特别是大量写入的场景下，</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/os/">os</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/windows/">windows</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/08/19/windows%E6%9A%82%E5%81%9C%E6%9B%B4%E6%96%B0/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>Android Studio安装中文插件</title>
+      <link>https://clibin.gitee.io/2025/07/28/Android%20Studio%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E6%8F%92%E4%BB%B6/</link>
+      <guid>https://clibin.gitee.io/2025/07/28/Android%20Studio%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E6%8F%92%E4%BB%B6/</guid>
+      <pubDate>Mon, 28 Jul 2025 09:40:11 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1&gt;Android Studio安装中文插件&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;不知道为什么，Android</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/Android-Studio/">Android Studio</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/07/28/Android%20Studio%E5%AE%89%E8%A3%85%E4%B8%AD%E6%96%87%E6%8F%92%E4%BB%B6/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>cloudflare Tunnel</title>
+      <link>https://clibin.gitee.io/2025/07/26/cloudflare%20tunnel/</link>
+      <guid>https://clibin.gitee.io/2025/07/26/cloudflare%20tunnel/</guid>
+      <pubDate>Sat, 26 Jul 2025 09:58:30 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1&gt;Cloudflare Tunnel 内网穿透工具&lt;/h1&gt;
+&lt;h2 id=&quot;1-简介&quot;&gt;1.简介&lt;/h2&gt;
+&lt;h3 id=&quot;1-1-介绍&quot;&gt;1.1 介绍&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;官方介绍：Cloudflare Tunnel</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">内网穿透</category>
+      
+      <category domain="https://clibin.gitee.io/tags/cloudflare/">cloudflare</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/07/26/cloudflare%20tunnel/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>openlist安装与使用</title>
+      <link>https://clibin.gitee.io/2025/07/19/openlist/</link>
+      <guid>https://clibin.gitee.io/2025/07/19/openlist/</guid>
+      <pubDate>Sat, 19 Jul 2025 07:39:49 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1&gt;openlist安装与使用&lt;/h1&gt;
+&lt;h2 id=&quot;1-安装openlist&quot;&gt;1.安装openlist&lt;/h2&gt;
+&lt;p&gt;使用下面命令安装openlist，&lt;strong&gt;注意修改安装路径&lt;/strong&gt;，你也可以查看&lt;a</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/openlist/">openlist</category>
+      
+      <category domain="https://clibin.gitee.io/tags/%E7%BD%91%E7%9B%98/">网盘</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/07/19/openlist/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>springboot发送邮件</title>
+      <link>https://clibin.gitee.io/2025/07/15/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/</link>
+      <guid>https://clibin.gitee.io/2025/07/15/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/</guid>
+      <pubDate>Tue, 15 Jul 2025 02:16:56 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;h1&gt;springboot发送邮件&lt;/h1&gt;
+&lt;h2 id=&quot;导入依赖&quot;&gt;导入依赖&lt;/h2&gt;
+&lt;figure class=&quot;highlight xml&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs xml&quot;&gt;&lt;span</description>
+          
+        
+      
+      
+      
+      
+      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
+      
+      
+      <category domain="https://clibin.gitee.io/tags/springboot/">springboot</category>
+      
+      <category domain="https://clibin.gitee.io/tags/%E9%82%AE%E4%BB%B6/">邮件</category>
+      
+      
+      <comments>https://clibin.gitee.io/2025/07/15/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>我常用的VSCode插件</title>
@@ -28,7 +240,14 @@
         
           
           
-      <description>&lt;h1 id=&quot;我常用的VSCode插件&quot;&gt;&lt;a href=&quot;#我常用的VSCode插件&quot; class=&quot;headerlink&quot; title=&quot;我常用的VSCode插件&quot;&gt;&lt;/a&gt;我常用的VSCode插件&lt;/h1&gt;&lt;h2 id=&quot;1-插件&quot;&gt;&lt;a href=&quot;#1-插件&quot;</description>
+      <description>&lt;h1&gt;我常用的VSCode插件&lt;/h1&gt;
+&lt;h2 id=&quot;1-插件&quot;&gt;1.插件&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ESLint&lt;/strong&gt;，代码检查工具，js前端项目必备&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Auto</description>
           
         
       
@@ -46,85 +265,6 @@
     </item>
     
     <item>
-      <title>springboot发送邮件</title>
-      <link>https://clibin.gitee.io/2025/06/28/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/</link>
-      <guid>https://clibin.gitee.io/2025/06/28/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/</guid>
-      <pubDate>Sat, 28 Jun 2025 08:07:55 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;springboot发送邮件&quot;&gt;&lt;a href=&quot;#springboot发送邮件&quot; class=&quot;headerlink&quot; title=&quot;springboot发送邮件&quot;&gt;&lt;/a&gt;springboot发送邮件&lt;/h1&gt;&lt;h2 id=&quot;导入依赖&quot;&gt;&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/springboot/">springboot</category>
-      
-      <category domain="https://clibin.gitee.io/tags/%E9%82%AE%E4%BB%B6/">邮件</category>
-      
-      
-      <comments>https://clibin.gitee.io/2025/06/28/springboot%E5%8F%91%E9%80%81%E9%82%AE%E4%BB%B6/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>IDEA常用插件</title>
-      <link>https://clibin.gitee.io/post/common-idea-plugins-z1cxkje.html</link>
-      <guid>https://clibin.gitee.io/post/common-idea-plugins-z1cxkje.html</guid>
-      <pubDate>Sun, 27 Apr 2025 08:21:26 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;IDEA常用插件&quot;&gt;&lt;a href=&quot;#IDEA常用插件&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      
-      
-      <comments>https://clibin.gitee.io/post/common-idea-plugins-z1cxkje.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>cursor重置使用次数</title>
-      <link>https://clibin.gitee.io/post/cursor-reset-usage-times-dahdp.html</link>
-      <guid>https://clibin.gitee.io/post/cursor-reset-usage-times-dahdp.html</guid>
-      <pubDate>Sat, 15 Mar 2025 03:13:48 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;cursor重置使用次数&quot;&gt;&lt;a href=&quot;#cursor重置使用次数&quot; class=&quot;headerlink&quot; title=&quot;cursor重置使用次数&quot;&gt;&lt;/a&gt;cursor重置使用次数&lt;/h1&gt;&lt;h1 id=&quot;Cursor重置&quot;&gt;&lt;a</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/cursor/">cursor</category>
-      
-      
-      <comments>https://clibin.gitee.io/post/cursor-reset-usage-times-dahdp.html#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
       <title>cursor重置使用次数</title>
       <link>https://clibin.gitee.io/2025/03/15/cursor%E9%87%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%AC%A1%E6%95%B0/</link>
       <guid>https://clibin.gitee.io/2025/03/15/cursor%E9%87%8D%E7%BD%AE%E4%BD%BF%E7%94%A8%E6%AC%A1%E6%95%B0/</guid>
@@ -134,7 +274,8 @@
         
           
           
-      <description>&lt;h1 id=&quot;Cursor重置&quot;&gt;&lt;a href=&quot;#Cursor重置&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h1&gt;Cursor重置&lt;/h1&gt;
+&lt;p&gt;cursor有一定的免费使用额度，在官网但肯定是不够我们&lt;s&gt;白嫖&lt;/s&gt;使用的，github上有个项目&lt;a</description>
           
         
       
@@ -161,7 +302,8 @@
         
           
           
-      <description>&lt;h2 id=&quot;1-安装VS生成工具&quot;&gt;&lt;a href=&quot;#1-安装VS生成工具&quot; class=&quot;headerlink&quot; title=&quot;1.安装VS生成工具&quot;&gt;&lt;/a&gt;1.安装VS生成工具&lt;/h2&gt;&lt;p&gt;前往&lt;a</description>
+      <description>&lt;h2 id=&quot;1-安装VS生成工具&quot;&gt;1.安装VS生成工具&lt;/h2&gt;
+&lt;p&gt;前往&lt;a href=&quot;https://visualstudio.microsoft.com/zh-hans/downloads/&quot;&gt;VS下载界面&lt;/a&gt;，下滑到底部，找到&lt;strong&gt;VS 2022</description>
           
         
       
@@ -190,7 +332,7 @@
         
           
           
-      <description>&lt;h2 id=&quot;1-问题&quot;&gt;&lt;a href=&quot;#1-问题&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h2</description>
           
         
       
@@ -217,7 +359,9 @@
         
           
           
-      <description>&lt;h1 id=&quot;RabbitMQ&quot;&gt;&lt;a href=&quot;#RabbitMQ&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h1&gt;RabbitMQ&lt;/h1&gt;
+&lt;p&gt;TODO&lt;/p&gt;
+</description>
           
         
       
@@ -246,7 +390,11 @@
         
           
           
-      <description>&lt;h1 id=&quot;Seata&quot;&gt;&lt;a href=&quot;#Seata&quot; class=&quot;headerlink&quot; title=&quot;Seata&quot;&gt;&lt;/a&gt;Seata&lt;/h1&gt;&lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h1&gt;Seata&lt;/h1&gt;
+&lt;h2 id=&quot;1-简介&quot;&gt;1.简介&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://seata.apache.org/&quot;&gt;Seata&lt;/a&gt;是什么？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Seata</description>
           
         
       
@@ -275,7 +423,10 @@
         
           
           
-      <description>&lt;h1 id=&quot;sentinel-sentinel&quot;&gt;&lt;a href=&quot;#sentinel-sentinel&quot; class=&quot;headerlink&quot; title=&quot;[sentinel][sentinel]&quot;&gt;&lt;/a&gt;[sentinel][sentinel]&lt;/h1&gt;&lt;h2</description>
+      <description>&lt;h1&gt;sentinel&lt;/h1&gt;
+&lt;h2 id=&quot;1-简介&quot;&gt;1.简介&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://sentinelguard.io/zh-cn&quot;&gt;Sentinel&lt;/a&gt;</description>
           
         
       
@@ -304,7 +455,12 @@
         
           
           
-      <description>&lt;h1 id=&quot;Docker&quot;&gt;&lt;a href=&quot;#Docker&quot; class=&quot;headerlink&quot; title=&quot;Docker&quot;&gt;&lt;/a&gt;Docker&lt;/h1&gt;&lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot;</description>
+      <description>&lt;h1&gt;Docker&lt;/h1&gt;
+&lt;h2 id=&quot;1-简介&quot;&gt;1.简介&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;官方介绍&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;一个为增强开发而设计的强大平台&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a</description>
           
         
       
@@ -331,8 +487,12 @@
         
           
           
-      <description>&lt;h1 id=&quot;Gateway&quot;&gt;&lt;a href=&quot;#Gateway&quot; class=&quot;headerlink&quot; title=&quot;Gateway&quot;&gt;&lt;/a&gt;Gateway&lt;/h1&gt;&lt;p&gt;[toc]&lt;/p&gt;
-&lt;h2 id=&quot;1-概述&quot;&gt;&lt;a href=&quot;#1-概述&quot;</description>
+      <description>&lt;h1&gt;gateway&lt;/h1&gt;
+&lt;p&gt;[[toc]]&lt;/p&gt;
+&lt;h2 id=&quot;1-概述&quot;&gt;1.概述&lt;/h2&gt;
+&lt;h3 id=&quot;是什么？&quot;&gt;是什么？&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Spring Cloud Gateway 是一个基于 Spring Framework</description>
           
         
       
@@ -360,8 +520,8 @@
           
           
       <description>&lt;blockquote&gt;
-&lt;p&gt;在公网部署前端项目是很方便的，Vercel、Netlify、Cloudflare等等都可以很快地部署一个前端页面（&lt;del&gt;前端部署是这样的，你只要上传文件就可以，而后端部署要考虑的就很多了，没有云服务器&lt;/del&gt;）&lt;/p&gt;
-&lt;p&gt;现在我部署了一</description>
+&lt;p&gt;在公网部署前端项目是很方便的，Vercel、Netlify、Cloudflare等等都可以很快地部署一个前端页面（&lt;s&gt;前端部署是这样的，你只要上传文件就可以，而后端部署要考虑的就很多了，没有云服务器&lt;/s&gt;）&lt;/p&gt;
+&lt;p&gt;现在我部署了一个前端页</description>
           
         
       
@@ -390,7 +550,10 @@
         
           
           
-      <description>&lt;h1 id=&quot;开启邮件SMTP服务&quot;&gt;&lt;a href=&quot;#开启邮件SMTP服务&quot; class=&quot;headerlink&quot; title=&quot;开启邮件SMTP服务&quot;&gt;&lt;/a&gt;开启邮件SMTP服务&lt;/h1&gt;&lt;h2 id=&quot;1-SMTP服务是什么？&quot;&gt;&lt;a</description>
+      <description>&lt;h1&gt;开启邮件SMTP服务&lt;/h1&gt;
+&lt;h2 id=&quot;1-SMTP服务是什么？&quot;&gt;1. SMTP服务是什么？&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;SMTP&lt;/strong&gt;（Simple Mail Transfer</description>
           
         
       
@@ -419,7 +582,8 @@
         
           
           
-      <description>&lt;h1 id=&quot;openfeign&quot;&gt;&lt;a href=&quot;#openfeign&quot; class=&quot;headerlink&quot; title=&quot;openfeign&quot;&gt;&lt;/a&gt;&lt;a</description>
+      <description>&lt;h1&gt;&lt;a href=&quot;https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/&quot;&gt;openfeign&lt;/a&gt;&lt;/h1&gt;
+&lt;h2</description>
           
         
       
@@ -448,7 +612,8 @@
         
           
           
-      <description>&lt;h1 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;&lt;a</description>
+      <description>&lt;h1&gt;&lt;a href=&quot;https://nulab.com/zh-cn/learn/software-development/git-tutorial/&quot;&gt;Git&lt;/a&gt;&lt;/h1&gt;
+&lt;p&gt;&lt;a</description>
           
         
       
@@ -462,124 +627,6 @@
       
       
       <comments>https://clibin.gitee.io/2024/03/25/git/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>windows定时关机</title>
-      <link>https://clibin.gitee.io/2024/03/19/windows%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA/</link>
-      <guid>https://clibin.gitee.io/2024/03/19/windows%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA/</guid>
-      <pubDate>Tue, 19 Mar 2024 14:28:39 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;ol&gt;
-&lt;li&gt;打开控制面板，搜索&lt;strong&gt;计划&lt;/strong&gt;，点击&lt;mark&gt;计划任务&lt;/mark&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/03/19/8olEi2dyD5xTKcG.png&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/os/">os</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/windows/">windows</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/03/19/windows%E5%AE%9A%E6%97%B6%E5%85%B3%E6%9C%BA/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>apifox测试工具</title>
-      <link>https://clibin.gitee.io/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</link>
-      <guid>https://clibin.gitee.io/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/</guid>
-      <pubDate>Mon, 18 Mar 2024 14:20:23 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;Apifox&quot;&gt;&lt;a href=&quot;#Apifox&quot; class=&quot;headerlink&quot; title=&quot;Apifox&quot;&gt;&lt;/a&gt;Apifox&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://apifox.com/help/&quot;&gt;官方文档&lt;/a&gt;&lt;/p&gt;
-&lt;h2</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E6%B5%8B%E8%AF%95/">测试</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/apifox/">apifox</category>
-      
-      <category domain="https://clibin.gitee.io/tags/%E6%B5%8B%E8%AF%95/">测试</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/03/18/apifox%E6%B5%8B%E8%AF%95%E5%B7%A5%E5%85%B7/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>nacos从入门到入土</title>
-      <link>https://clibin.gitee.io/2024/03/16/nacos/</link>
-      <guid>https://clibin.gitee.io/2024/03/16/nacos/</guid>
-      <pubDate>Sat, 16 Mar 2024 10:42:42 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;h1 id=&quot;nacos&quot;&gt;&lt;a href=&quot;#nacos&quot; class=&quot;headerlink&quot; title=&quot;nacos&quot;&gt;&lt;/a&gt;nacos&lt;/h1&gt;&lt;h2 id=&quot;注册中心&quot;&gt;&lt;a href=&quot;#注册中心&quot; class=&quot;headerlink&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/%E5%90%8E%E7%AB%AF/">后端</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/springcloud/">springcloud</category>
-      
-      <category domain="https://clibin.gitee.io/tags/nacos/">nacos</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/03/16/nacos/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>shields.io标签生成</title>
-      <link>https://clibin.gitee.io/2024/03/08/shields.io%E6%A0%87%E7%AD%BE/</link>
-      <guid>https://clibin.gitee.io/2024/03/08/shields.io%E6%A0%87%E7%AD%BE/</guid>
-      <pubDate>Fri, 08 Mar 2024 06:17:48 GMT</pubDate>
-      
-        
-        
-          
-          
-      <description>&lt;p&gt;&lt;img src=&quot;https://s2.loli.net/2024/12/27/jbADFXHUvPEy8dV.png&quot;</description>
-          
-        
-      
-      
-      
-      
-      <category domain="https://clibin.gitee.io/categories/tools/">tools</category>
-      
-      
-      <category domain="https://clibin.gitee.io/tags/shields-io/">shields.io</category>
-      
-      <category domain="https://clibin.gitee.io/tags/%E6%A0%87%E7%AD%BE/">标签</category>
-      
-      
-      <comments>https://clibin.gitee.io/2024/03/08/shields.io%E6%A0%87%E7%AD%BE/#disqus_thread</comments>
       
     </item>
     
