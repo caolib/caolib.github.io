@@ -1,10 +1,9 @@
 @font-face {
-    font-family: ZhuZiAYuanJWD;
-    src: url(https://npm.elemecdn.com/anzhiyu-blog@1.1.6/fonts/ZhuZiAWan.woff2);
+    font-family: '汉仪有圆';
+    src: url(https://cdn.caolib.qzz.io/fonts/HYYouYuan.ttf);
     font-display: swap;
     font-weight: lighter;
 }
-
 
 @font-face {
     font-family: '喵字果汁体';
@@ -16,7 +15,7 @@
 
 
 :root {
-    --font-family: 'Cascadia Code', '喵字果汁体', 霞鹜文楷, ZhuZiAYuanJWD, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-family: 'Cascadia Code', '汉仪有圆', '喵字果汁体', 霞鹜文楷, ZhuZiAYuanJWD, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 div#menus {
